@@ -1,0 +1,18 @@
+<div id="outerWrap">
+	{{ theme:partial name="header" }}
+	    <div id="outer-content">
+		    <div id="content">
+		    
+				<!-- slider -->
+				{{ if page:slug  == 'home' }}
+					{{ theme:partial name="slider" }}
+				{{ endif }}
+				<!-- /slider -->
+				
+				{{ theme:partial name="nav" }}
+					 <br><br><br><br><br><br>       
+		        {{ template:body }}
+		    </div>
+		</div>
+	{{ theme:partial name="footer" }}
+</div>

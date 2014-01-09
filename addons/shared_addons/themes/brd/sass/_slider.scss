@@ -1,0 +1,15 @@
+#slides{
+	position:relative;
+	h3{
+		position:absolute;
+		left: 12%;
+		top:30%;
+
+		font-size: 3.75em;
+		text-transform:uppercase;
+		font-family: $fjalla;
+		color:#fff;
+		letter-spacing: -1px;
+		z-index:11;
+	}
+} 

@@ -63,7 +63,8 @@ body {
 
 nav {
   padding: 0 4.2%;
-  font-family: "Fjalla One", sans-serif; }
+  font-family: "Fjalla One", sans-serif;
+  background: url("/assets/img/divider.jpg") center bottom no-repeat; }
   nav a {
     text-decoration: none;
     text-transform: uppercase; }

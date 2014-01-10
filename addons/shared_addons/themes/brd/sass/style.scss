@@ -3,6 +3,7 @@
 2. sass --watch sass:css  
 **/
 @import 'reset';
+@import 'variables';
 @import 'layout';
 @import 'nav';
 @import 'slider';

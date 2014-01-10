@@ -1,6 +1,7 @@
 nav{
 	padding: 0 $side-padding;
 	font-family: $fjalla;
+	background: url('/assets/img/divider.jpg') center bottom no-repeat;
 	a{
 		text-decoration:none;
 		text-transform: uppercase;
@@ -19,10 +20,10 @@ nav{
 			float:left;
 			a{
 				font-size:1em;
-				color:$lt-grey;
+				color:$lt-grey; 
 			}
 			&.current{
-				background: $red;
+				background: $red;  
 				a{
 					color:#fff;	
 				}

@@ -43,3 +43,7 @@ ERROR - 2014-01-10 01:06:46 --> Page Missing: assets/img/slider_3.jpg
 ERROR - 2014-01-10 01:06:46 --> Page Missing: assets/img/slider_5.jpg
 ERROR - 2014-01-10 01:06:46 --> Page Missing: assets/img/slider_2.jpg
 ERROR - 2014-01-10 01:06:46 --> Page Missing: assets/img/slider_4.jpg
+ERROR - 2014-01-10 04:50:00 --> Page Missing: assets/js/slidejs.js
+ERROR - 2014-01-10 04:50:11 --> Page Missing: assets/js/slidejs.js
+ERROR - 2014-01-10 04:50:38 --> Page Missing: assets/js/slidejs.js
+ERROR - 2014-01-10 05:25:41 --> Page Missing: assets/img.prev_btn.png

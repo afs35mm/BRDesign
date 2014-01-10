@@ -14,6 +14,7 @@ nav{
 	ul#nav{
 		float:right;
 		display:block;
+		margin-bottom: 2em;
 		li{
 			padding: 2.5em 1.5em;
 			display:block;
@@ -30,23 +31,53 @@ nav{
 			}
 		}
 	}
-	ul#social{
-		float:right;
-		display:block;
-		padding:2em 0 0 2em;
-		li{
-			float:left;
-			display:block;
-			margin-right:.5em;
-			a{
-
-			}
-		}
-	}
 	.bottom{
 		display:block;
 		width:100%;
 		height:4px;
 		background:blue;
+	}
+}
+
+ul#social{
+	float:right;
+	display:block;
+	padding:2em 0 0 2em;
+	li{
+		float:left;
+		display:block;
+		margin-right:.5em;
+		a{
+
+		}
+	}
+}
+
+footer{
+	background: url('/assets/img/divider.jpg') center top no-repeat;
+	font-size:0.875em;
+	color:$lt-grey;
+	padding: 0 $side-padding;
+	margin-bottom:4em;
+	a{
+		color:$lt-grey;
+		text-decoration:none;
+		float:left;
+	}
+	a:hover{
+		text-decoration:underline;
+	}
+	ul#social{
+		margin: 0 auto;
+		position: absolute;
+		width: 121px;
+		left: 0;
+		right: 0;
+	}
+	h4{
+		float:right;
+	}
+	.align{
+		line-height:5em;
 	}
 }

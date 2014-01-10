@@ -1,10 +1,32 @@
-<footer>
-    <p>Copyright &copy;{{ helper:date format="Y" }}</p>
-    {{ widgets:area slug="footer" }}
+<footer class="cf">
+    
+    <a class="align" href="#">Contact Us</a>
+    
+    <ul id="social" class="cf">
+		<li>
+			<a href="#">
+				<img src="/assets/img/fb_social.gif" alt="">
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<img src="/assets/img/li_social.gif" alt="">
+			</a>
+		</li>
+		<li> 
+			<a href="#">
+				<img src="/assets/img/pin_social.gif" alt="">
+			</a>
+		</li>
+	</ul>
+	
+	<h4 class="align">&copy; 2013 BRDesign Associates</h4>
+	
 </footer>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-{{ theme:js file="jquery.slides.js" }}
-{{ theme:js file="main.js" }}
+<script src="/assets/js/slidesjs.js"></script>
+<script src="/assets/js/carousel.js"></script> 
+<script src="/assets/js/main.js"></script>
 </body>
 </html>

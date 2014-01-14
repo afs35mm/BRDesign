@@ -74,8 +74,11 @@ body {
   max-width: 1280px;
   margin: 0 auto; }
 
+#main {
+  padding: 5em 4.2%; }
+
 nav {
-  padding: 0 4.2%;
+  margin: 0 4.2%;
   font-family: "Fjalla One", sans-serif;
   background: url("/assets/img/divider.jpg") center bottom no-repeat; }
   nav a {
@@ -119,7 +122,7 @@ footer {
   background: url("/assets/img/divider.jpg") center top no-repeat;
   font-size: 0.875em;
   color: #6b6b6b;
-  padding: 0 4.2%;
+  margin: 0 4.2%;
   margin-bottom: 4em; }
   footer a {
     color: #6b6b6b;

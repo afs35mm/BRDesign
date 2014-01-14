@@ -1,21 +1,17 @@
-<div id="outerWrap" class="{{ page:slug }}">
-	{{ theme:partial name="header" }}
-	    <div id="outer-content">
-		    <div id="content">
-		    
-				<!-- slider -->
-				{{ if page:slug  == 'home' }}
-					{{ theme:partial name="slider" }}
-				{{ endif }}
-				<!-- /slider -->
-				
-				{{ theme:partial name="nav" }}
-				
-				<br><br><br><br><br><br>       
-		        {{ template:body }}
-		        <br><br><br><br><br><br>
-		        	
-		    </div>
-		</div>
-	{{ theme:partial name="footer" }}
-</div>
+{{ theme:partial name="header" }}  
+		
+		<!-- slider -->
+		{{ if page:slug  == 'home' }}
+			{{ theme:partial name="slider" }}
+		{{ endif }}
+		<!-- /slider -->
+		
+		{{ theme:partial name="nav" }}
+		
+		<div id="main">
+        
+	        {{ template:body }}
+        
+        </div>     
+        
+{{ theme:partial name="footer" }}

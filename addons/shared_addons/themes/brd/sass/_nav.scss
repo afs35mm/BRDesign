@@ -1,5 +1,5 @@
 nav{
-	padding: 0 $side-padding;
+	margin: 0 $side-padding;
 	font-family: $fjalla;
 	background: url('/assets/img/divider.jpg') center bottom no-repeat;
 	a{
@@ -57,7 +57,7 @@ footer{
 	background: url('/assets/img/divider.jpg') center top no-repeat;
 	font-size:0.875em;
 	color:$lt-grey;
-	padding: 0 $side-padding;
+	margin: 0 $side-padding;
 	margin-bottom:4em;
 	a{
 		color:$lt-grey;

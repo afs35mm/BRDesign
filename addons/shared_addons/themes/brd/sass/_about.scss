@@ -21,14 +21,47 @@
 			font-family:$fjalla;
 			padding-bottom:5px;
 		}	
+		p{
+			font-size:1.125em;
+			line-height:1.5em;
+		}
 	}
 	.col-4:last-child{
 		padding-right:0;
 	}
 	#greyBoxContent{
 		background: #dcdcdc;
-		width:100%;
+		width:100%; 
 		@include border-box;
 		padding: 3em 4.5em;
+		p{
+			font-size: 1.5em;
+			line-height:1.375em;
+		}
+	}
+	#bottomRow{
+		margin-top:3em;
+		#left{
+			float:left;
+			width:50%;
+			padding-right:8%;
+			@include border-box;
+			font-size: 1.5em;
+			line-height:1.375em;
+		}
+		#right{
+			float:left;
+			width:50%;
+			ul{
+				float:left;
+				li{
+					font-size:1em;
+					padding: 0 0 .8em 0;
+				}
+			}
+			ul:first-child{
+				margin-right:6%;
+			}
+		}
 	}
 }

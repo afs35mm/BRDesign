@@ -7,25 +7,32 @@
         	<div class="cf row">
 	        	<div class="col-4">
 	        		<h3>listening</h3>
-	        		{{ listening }}
+	        		<p>{{ listening }}</p>
 	        	</div>
 	        	<div class="col-4">
 	        		<h3>translating</h3>
-	        		{{ translating }}
+	        		<p>{{ translating }}</p>
 	        	</div>
 	        	<div class="col-4">
 	        		<h3>communicating</h3>
-	        		{{ listening }}
+	        		<p>{{ listening }}</p>
 	        	</div>
 	        	<div class="col-4">
 	        		<h3>delivering</h3>
-	        		{{ listening }}
+	        		<p>{{ listening }}</p>
 	        	</div>
 	        </div>
         	<div id="greyBoxContent">
-        		{{ grey_box_content }}
+        		<p>{{ grey_box_content }}</p>
         	</div>
-
+        	<div id="bottomRow" class="cf">
+        		<div id="left">
+        			<p>{{bottom_left_blurb}}</p>
+        		</div>
+        		<div id="right">
+        			{{bottom_right_list}}
+        		</div>
+        	</div>
         </div>     
         
 {{ theme:partial name="footer" }}

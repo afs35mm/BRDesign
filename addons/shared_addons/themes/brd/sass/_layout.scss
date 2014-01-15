@@ -12,5 +12,6 @@ body{
 	margin: 0 auto;
 }
 #main{
-	padding: 5em $side-padding; 
+	padding: 12em $side-padding 5em; 
+	z-index:20;
 }

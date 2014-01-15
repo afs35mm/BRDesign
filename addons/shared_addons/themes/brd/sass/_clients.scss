@@ -1,0 +1,18 @@
+.clients #main{
+	a img{
+		border: 1px solid $lt-grey;
+		@include border-box;
+		display: block;
+		float:left;
+		width:15%;
+		margin: 0 2% 2% 0;
+		opacity:0.6;
+	}
+	a:nth-child(6n+0) img{
+		//border: 1px solid red !important;
+		margin-right:0;
+	}
+	a img:hover{
+		opacity:1.0;
+	}
+}

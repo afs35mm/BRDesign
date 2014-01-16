@@ -5,10 +5,10 @@
 		
 		<div id="main">
 		    <div class="cf">
-		    {{ files:listing folder="clients" fetch="root" }}
-				<a href="#">
-			    	<img src="/uploads/default/files/{{filename}}" data-folder="clients" alt="" />
-				</a>
+		    {{ files:listing folder="clients" }}
+				
+			    <img src="/uploads/default/files/{{filename}}" data-folder="clients" alt="" />
+				
 			{{ /files:listing }}
 		    </div>
         

@@ -1,6 +1,6 @@
 var BRD = BRD || {};
 
-BRD.Carousel = (function(){
+BRD.slider = (function(){
 
 		var config = {
 			hero: {
@@ -18,15 +18,12 @@ BRD.Carousel = (function(){
 			},
 		};
 
-		var findCarousels = function(){
-			$('.BRD-ui-module').each(function(index){
-				var carouselType = $(this).data('carousel');
-				$(this).slidesjs( config[carouselType] );
-			});
-		};
-
-        var init = function(){
-        	findCarousels();
+        var init = function($el, moduleInstance){
+        	if( moduleInstance != undefined && config[moduleInstance] != undefined){
+        		$el.slidesjs( config[moduleInstance] );
+        	}else{
+        		$el.slidejs();
+        	}
         };
 
         return {

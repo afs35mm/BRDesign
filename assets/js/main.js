@@ -10,7 +10,6 @@ BRD.App = (function(){
 
         var bindDomEvents = function(){
         	config.$window.scroll(function(){
-		    	//console.log(config.$window.scrollTop());
 				if( config.$window.scrollTop() >= config.navTop ){
 					config.$nav.addClass('fixed');
 				}else{
@@ -19,10 +18,19 @@ BRD.App = (function(){
 		    });
         };
 
+        var findUiModules = function(){
+			$('.BRD-ui-module').each(function(index){
+				var $el, moduleType, moduleInstance;
+				$el = $(this);
+				moduleType = $el.data('module');
+				moduleInstance = $el.data(moduleType);
+                BRD[moduleType].init($el, moduleInstance);
+			});
+		};
+
         var init = function(){
-            BRD.Carousel.init();
             bindDomEvents();
-            console.log(config.navTop);
+            findUiModules();
         };
 
         return {

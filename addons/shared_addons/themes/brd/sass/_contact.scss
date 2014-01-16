@@ -1,0 +1,32 @@
+.contact #main{
+	h3{
+		font-family: $fjalla;
+		color:$drk-grey;
+		font-size:1.875em;
+		text-transform: uppercase;
+		padding-bottom:.6em;
+	}	
+	a.email{
+		color: $lt-grey;
+		font-size: 1.5em;
+		text-decoration:none;
+	}
+	a:hover{
+		text-decoration:underline;
+	}
+	#map_canvas{
+		margin-top:2em;	
+	}
+	address{
+		padding-top:2em;
+		font-size:1.5em;
+		line-height:1.4em;
+		color:$lt-grey;
+		display:inline-block;
+	}
+	a.roundedButton{
+		float:right;
+		margin-top:2em;
+
+	}
+}

@@ -1,16 +1,24 @@
 {{ theme:partial name="header" }}  
-		
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>		
 	
 		{{ theme:partial name="nav" }}
 		
 		<div id="main">
-
-			{{ widgets:area slug="google_map" }}
-			this is the map:<br>sdf
-			{{ widgets:area id="2"}}
+			<H3>How can we help you?</H3>
+			<a class="email" href="mail:tomrait@brdesignassociates.com">mrait@brdesignassociates.com</a>
+			<div class="BRD-ui-module" data-module="contactMap" id="map_canvas" style="width:100%; height:400px;">
+				
+			</div>
 			
+			<address>
+			233 Spring Street, Suite 801<br>
+			New York, NY 10013<br>
+			tel: 212.524.8585  //  fax: 212.524.8501
+			</address>
+			
+			<a href="https://www.google.com/maps/preview#!data=!1m4!1m3!1d28347!2d-74.0032844!3d40.7253337!4m15!3m12!1m0!1m1!1s233+Spring+St%2C+New+York%2C+NY+10013!3m8!1m3!1d453740!2d-73.979681!3d40.697488!3m2!1i1081!2i900!4f13.1!7m1!3b1&fid=0" target="_blank" class="roundedButton"> Get Directions</a>
 
-<!-- 			{{ contact:form name="text|required" email="text|required|valid_email" subject="dropdown|Support|Sales|Feedback|Other" message="textarea" attachment="file|zip" }}
+			<!--{{ contact:form name="text|required" email="text|required|valid_email" subject="dropdown|Support|Sales|Feedback|Other" message="textarea" attachment="file|zip" }}
 			Name:{{ name }}
 			Email:{{ email }}
 			Subject:{{ subject }}

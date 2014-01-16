@@ -12,7 +12,6 @@ nav{
 		background: url('/assets/img/divider.jpg') center bottom no-repeat;	
 		margin: 0 $side-padding;
 	}
-
 	a{
 		text-decoration:none;
 		text-transform: uppercase;
@@ -95,4 +94,11 @@ footer{
 	.align{
 		line-height:5em;
 	}
+}
+
+@media (max-width: 860px) {
+  nav ul#nav li {
+  		padding-left: .75em;
+  		padding-right: .75em;
+  	}
 }

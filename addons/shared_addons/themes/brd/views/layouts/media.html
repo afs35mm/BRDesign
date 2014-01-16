@@ -1,0 +1,20 @@
+{{ theme:partial name="header" }}  
+		
+	
+		{{ theme:partial name="nav" }}
+		
+		<div id="main">
+			{{ streams:cycle stream="media" }}
+			 
+			    {{ entries }}
+			 
+			        <h2>{{ media_blurb }}</h2>
+			        <img src="{{ media_image:image }}" alt="">
+			        <h2>{{ media_link }}</h2>
+			 
+			    {{ /entries }}
+
+			{{ /streams:cycle }}
+        </div>     
+        
+{{ theme:partial name="footer" }}

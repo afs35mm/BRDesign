@@ -1,5 +1,5 @@
 .clients #main{
-	a img{
+	img{
 		border: 1px solid $lt-grey;
 		@include border-box;
 		display: block;
@@ -8,11 +8,11 @@
 		margin: 0 2% 2% 0;
 		opacity:0.6;
 	}
-	a:nth-child(6n+0) img{
+	img:nth-child(6n+0) {
 		//border: 1px solid red !important;
 		margin-right:0;
 	}
-	a img:hover{
+	img:hover{
 		opacity:1.0;
 	}
 }

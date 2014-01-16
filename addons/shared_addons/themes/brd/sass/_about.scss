@@ -32,7 +32,7 @@
 	#greyBoxContent{
 		background: #dcdcdc;
 		width:100%; 
-		@include border-box;
+		@include border-box; 
 		padding: 3em 4.5em;
 		p{
 			font-size: 1.5em;
@@ -54,6 +54,7 @@
 			width:50%;
 			ul{
 				float:left;
+				width:46%;
 				li{
 					font-size:1em;
 					padding: 0 0 .8em 0;

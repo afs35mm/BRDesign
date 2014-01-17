@@ -47,21 +47,30 @@
 		z-index:11;
 	}
 } 
-#home-backgroundSlider{
-	width: 109.2%;
-	left: -4.55%;
-	.carousel,
-	.carousel .mask {
-		width: 109.15%;
-		height: auto;
+#doubleSlider{
+	position:relative;
+	#backgroundSlider{
+		width: 109.2%;
+		left: -4.55%;
+		.carousel,
+		.carousel .mask {
+			width: 109.15%;
+			height: auto;
+		}
+	}
+	#foregroundSlider{
+		background:red;
+		position:absolute !important;
+		top:0;
+		width: 500px;
+		.carousel,
+		.carousel .mask {
+			width: 500px;
+		}
 	}
 }
-#home-foregroundSlider{
-	background:red;
-}
+
 @media (max-width: $small) {
-  .slidesjs-navigation{
-		display:none;
-	}
+
 }
 

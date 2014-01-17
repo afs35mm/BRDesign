@@ -4,7 +4,16 @@ BRD.slider = (function(){
 
 		var config = {
 			hero: {
-				iAutoRotate: 2000
+				iAutoRotate: 2000,
+				bUseThumbnails: false,
+				fAspectRatio: 2.105263
+			},
+			homeBackground: {
+				fAspectRatio: 2.24168,
+				BtnPaginate:'none'
+			},
+			homeForeground: {
+				
 			},
 		};
 

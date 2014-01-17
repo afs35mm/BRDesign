@@ -11,8 +11,8 @@
 		<div id="main">
         
 	        {{ template:body }}
-        
-        	<div id="home-backgroundSlider" class="BRD-ui-module carousel" data-module="slider" data-slider="homeBackground">
+        <div id="doubleSlider">
+        	<div id="backgroundSlider" class="BRD-ui-module carousel" data-module="slider" data-slider="homeBackground">
 			    <div class="mask">
 			        <ul>
 			            <li>
@@ -27,7 +27,7 @@
 			        </ul>
 			    </div>
 			</div>
-			<div id="home-foregroundSlider" class="BRD-ui-module carousel" data-module="slider" data-slider="homeForeground">
+			<div id="foregroundSlider" class="BRD-ui-module carousel" data-module="slider" data-slider="homeForeground">
 	            <div class="mask">
 	                <ul>
 	                    <li>one</li>
@@ -36,5 +36,5 @@
 	                </ul>
 	            </div>
 	        </div>
-        
+        </div>
 {{ theme:partial name="footer" }}

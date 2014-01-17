@@ -2,6 +2,10 @@ var BRD = BRD || {};
 
 BRD.slider = (function(){
 
+		var sayHay = function(){
+			alert('haaay');
+		};
+
 		var config = {
 			hero: {
 				iAutoRotate: 2000,
@@ -13,7 +17,9 @@ BRD.slider = (function(){
 				BtnPaginate:'none'
 			},
 			homeForeground: {
-				
+				fAspectRatio: 3,
+				BtnPaginate:'none',
+				fnPaginateBegin: sayHay
 			},
 		};
 

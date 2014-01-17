@@ -51,7 +51,7 @@
 			bEndlessPaging	: true,		// carousel endlessly paginates
 			bSwipeEvents	: false,	// carousel supports a swipe event
 			bUseThumbnails	: true,		// include thumbnails to navigate to click a particular slide/slidegroup
-			fAspectRatio	: 2.1333,		// aspect ratio to mainto responsiveness of carousel
+			fAspectRatio	: 1,		// aspect ratio to mainto responsiveness of carousel
 			fnPaginateBegin	: null,		// a callback that fires before a pagination animation begins
 			fnPaginateEnd	: null,		// a callback that fires when a pagination animation ends
 			iNumToPaginate	: 1,		// number of items to paginate
@@ -414,8 +414,8 @@
 			oCarousel.$thumbnailAnchors = oCarousel.$thumbnails.children();
 			
 			// set up the click handler for the anchors and initial selected style 
-			//oCarousel.$thumbnailAnchors.click(clickThumbnailAnchor).eq(oCarousel.iCurrPageIndex).addClass('active');
-			oCarousel.$thumbnailAnchors.click(function(){ return false; }).eq(oCarousel.iCurrPageIndex).addClass('active');
+			oCarousel.$thumbnailAnchors.click(clickThumbnailAnchor).eq(oCarousel.iCurrPageIndex).addClass('active');
+			//oCarousel.$thumbnailAnchors.click(function(){ return false; }).eq(oCarousel.iCurrPageIndex).addClass('active');
 			
 			// append the thumbnails to the carousel
 			oCarousel.$thumbnails.appendTo(oCarousel.$carousel);
@@ -663,11 +663,13 @@
 				}
 				
 				// add previous and next buttons
-				oCarousel.$btnPrevious	= $('<a />').attr({'class':'btnPrevious btnPaginate disabled', 'href':'#'}).css('position','absolute').appendTo(oCarousel.$carousel);
-				oCarousel.$btnNext		= $('<a />').attr({'class':'btnNext btnPaginate', 'href':'#'}).css('position','absolute').appendTo(oCarousel.$carousel);
+				if(oCarousel.BtnPaginate != 'none' ){
+					oCarousel.$btnPrevious	= $('<a />').attr({'class':'btnPrevious btnPaginate disabled', 'href':'#'}).css('position','absolute').appendTo(oCarousel.$carousel);
+					oCarousel.$btnNext		= $('<a />').attr({'class':'btnNext btnPaginate', 'href':'#'}).css('position','absolute').appendTo(oCarousel.$carousel);	
+				}
 				
 				// if we are using endless pagination, enable the btnPrevious link on init
-				if (oCarousel.bEndlessPaging) {
+				if (oCarousel.bEndlessPaging && oCarousel.BtnPaginate != 'none') {
 					oCarousel.$btnPrevious.removeClass('disabled');
 				}
 				

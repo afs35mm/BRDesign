@@ -5,16 +5,24 @@ BRD.App = (function(){
         var config = {
         	$window: $(window),
         	$nav: $('nav'),
-        	navTop: $('nav').offset().top,
+        	navTop: 0,
+        };
+
+        var makeStickyHeader = function(){
+            if( !config.$nav.hasClass('fixed') ){
+            config.navTop = $('nav').offset().top;    
+            }
+            //console.log(config.navTop);
+            if( config.$window.scrollTop() >= config.navTop ){
+                config.$nav.addClass('fixed');
+            }else{
+                config.$nav.removeClass('fixed');
+            }
         };
 
         var bindDomEvents = function(){
         	config.$window.scroll(function(){
-				if( config.$window.scrollTop() >= config.navTop ){
-					config.$nav.addClass('fixed');
-				}else{
-					config.$nav.removeClass('fixed');
-				}
+                makeStickyHeader();
 		    });
             $( window ).resize(function() {
                 $('.carousel').rwdCarousel('resize');

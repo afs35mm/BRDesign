@@ -26,6 +26,12 @@
 	background:transparent url(/assets/img/next_btn.png) no-repeat top right;
 	right: 2%;
 }
+.btnPaginate{
+	position:absolute;
+	z-index:11;
+	top:50%;
+	cursor: pointer;
+}
 
 #home{
 	position:relative;
@@ -33,7 +39,6 @@
 		position:absolute;
 		left: 12%;
 		top:30%;
-
 		font-size: 3.75em; 
 		text-transform:uppercase;
 		font-family: $fjalla;
@@ -41,20 +46,18 @@
 		letter-spacing: -1px;
 		z-index:11;
 	}
-	.btnPaginate{
-		position:absolute;
-		z-index:11;
-		top:50%;
-		cursor: pointer;
-	}
 } 
 #home-backgroundSlider{
-	width:110%;
+	width: 109.2%;
+	left: -4.55%;
 	.carousel,
 	.carousel .mask {
-		width: 110%;
+		width: 109.15%;
 		height: auto;
 	}
+}
+#home-foregroundSlider{
+	background:red;
 }
 @media (max-width: $small) {
   .slidesjs-navigation{

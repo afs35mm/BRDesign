@@ -25,7 +25,9 @@ BRD.App = (function(){
                 makeStickyHeader();
 		    });
             $( window ).resize(function() {
-                $('.carousel').rwdCarousel('resize');
+                $('.carousel').each(function(){
+                    $(this).rwdCarousel('resize');
+                });
             });
         };
 

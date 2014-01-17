@@ -3,10 +3,12 @@ var BRD = BRD || {};
 BRD.slider = (function(){
 
 		var sayHay = function(){
-			alert('haaay');
+			var newPageIndex = this.iCurrPageIndex;
+			config.$backgroundCarousel.rwdCarousel('updateToIndex', newPageIndex);
 		};
 
 		var config = {
+			$backgroundCarousel: $('#backgroundSlider'),
 			hero: {
 				iAutoRotate: 2000,
 				bUseThumbnails: false,

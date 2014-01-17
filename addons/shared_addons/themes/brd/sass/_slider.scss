@@ -13,6 +13,9 @@
 	width: 100%;
 	height: 100px; // default height
 	float: left;
+	img{
+		max-width:100%;
+	}
 }
 .btnPrevious {
 	width:50px;
@@ -50,11 +53,11 @@
 #doubleSlider{
 	position:relative;
 	#backgroundSlider{
-		width: 109.2%;
-		left: -4.55%;
+		width: 109%;
+		left: -4.5%;
 		.carousel,
 		.carousel .mask {
-			width: 109.15%;
+			width: 109%;
 			height: auto;
 		}
 	}

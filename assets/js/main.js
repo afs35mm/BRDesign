@@ -16,6 +16,9 @@ BRD.App = (function(){
 					config.$nav.removeClass('fixed');
 				}
 		    });
+            $( window ).resize(function() {
+                $('.carousel').rwdCarousel('resize');
+            });
         };
 
         var findUiModules = function(){

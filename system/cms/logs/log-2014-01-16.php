@@ -16,3 +16,4 @@ ERROR - 2014-01-16 03:50:39 --> Page Missing: assets/js/carousel.js
 ERROR - 2014-01-16 03:50:40 --> Page Missing: assets/js/carousel.js
 ERROR - 2014-01-16 03:50:41 --> Page Missing: assets/js/carousel.js
 ERROR - 2014-01-16 03:50:44 --> Page Missing: assets/js/carousel.js
+ERROR - 2014-01-16 05:59:36 --> Page Missing: js/vendor/jquery-1.10.2.min.js

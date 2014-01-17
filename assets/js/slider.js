@@ -4,25 +4,15 @@ BRD.slider = (function(){
 
 		var config = {
 			hero: {
-				width: 1280,
-	            height: 608,
-	            pagination: {
-	            	active: false,
-	            },
-	            play : {
-                    auto: true,
-                    interval: 3000,
-	            },
-	            navigation: 'largeBRD',
-	            
+				iAutoRotate: 2000
 			},
 		};
 
         var init = function($el, moduleInstance){
         	if( moduleInstance != undefined && config[moduleInstance] != undefined){
-        		$el.slidesjs( config[moduleInstance] );
+        		$el.rwdCarousel( config[moduleInstance] );
         	}else{
-        		$el.slidejs();
+        		$el.rwdCarousel();
         	}
         };
 
@@ -34,3 +24,14 @@ BRD.slider = (function(){
 
 
 
+// $(document).ready(function(){
+	
+// 	var sayHay = function(){
+// 		var $backgroundCarousel = $('.background');
+// 		console.log($backgroundCarousel);
+// 		$backgroundCarousel.rwdCarousel('startAutoRotate', 500);
+// 	};
+
+// 	$('.carousel').rwdCarousel({fnPaginateBegin: sayHay});
+// 	//$('.holder').rwdCarousel();
+// });

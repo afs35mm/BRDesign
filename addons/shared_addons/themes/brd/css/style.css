@@ -392,3 +392,5 @@ footer {
 .contact #main a.roundedButton {
   float: right;
   margin-top: 2em; }
+.contact #main .gm-style-iw > div {
+  overflow: hidden !important; }

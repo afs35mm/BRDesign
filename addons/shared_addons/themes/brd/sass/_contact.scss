@@ -29,4 +29,9 @@
 		margin-top:2em;
 
 	}
+	.gm-style-iw{
+		> div {
+			overflow:hidden !important;
+		}
+	}
 }

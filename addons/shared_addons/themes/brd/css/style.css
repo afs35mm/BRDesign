@@ -165,6 +165,35 @@ footer {
   nav ul#nav li {
     padding-left: .75em;
     padding-right: .75em; } }
+#doubleSlider {
+  position: relative; }
+  #doubleSlider #backgroundSlider {
+    width: 109%;
+    left: -4.5%; }
+    #doubleSlider #backgroundSlider .carousel,
+    #doubleSlider #backgroundSlider .carousel .mask {
+      width: 109%;
+      height: auto; }
+  #doubleSlider #foregroundSlider {
+    margin-top: 6.625em;
+    background: white;
+    background: rgba(255, 255, 255, 0.8);
+    position: absolute !important;
+    top: 0;
+    padding: 2.5em 1.5625em; }
+    #doubleSlider #foregroundSlider .carousel,
+    #doubleSlider #foregroundSlider .carousel .mask {
+      width: 500px; }
+    #doubleSlider #foregroundSlider h4 {
+      font-size: 1.62em;
+      color: #f60112;
+      font-family: "Fjalla One", sans-serif;
+      padding-bottom: .6em; }
+    #doubleSlider #foregroundSlider p {
+      font-size: 1.125em;
+      line-height: 1.25em;
+      padding-bottom: 1em; }
+
 .carousel,
 .carousel .mask {
   width: 100%;
@@ -213,24 +242,6 @@ footer {
     color: #fff;
     letter-spacing: -1px;
     z-index: 11; }
-
-#doubleSlider {
-  position: relative; }
-  #doubleSlider #backgroundSlider {
-    width: 109%;
-    left: -4.5%; }
-    #doubleSlider #backgroundSlider .carousel,
-    #doubleSlider #backgroundSlider .carousel .mask {
-      width: 109%;
-      height: auto; }
-  #doubleSlider #foregroundSlider {
-    background: red;
-    position: absolute !important;
-    top: 0;
-    width: 500px; }
-    #doubleSlider #foregroundSlider .carousel,
-    #doubleSlider #foregroundSlider .carousel .mask {
-      width: 500px; }
 
 .roundedButton {
   text-decoration: none;

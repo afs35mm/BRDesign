@@ -50,28 +50,6 @@
 		z-index:11;
 	}
 } 
-#doubleSlider{
-	position:relative;
-	#backgroundSlider{
-		width: 109%;
-		left: -4.5%;
-		.carousel,
-		.carousel .mask {
-			width: 109%;
-			height: auto;
-		}
-	}
-	#foregroundSlider{
-		background:red;
-		position:absolute !important;
-		top:0;
-		width: 500px;
-		.carousel,
-		.carousel .mask {
-			width: 500px;
-		}
-	}
-}
 
 @media (max-width: $small) {
 

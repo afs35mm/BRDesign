@@ -407,7 +407,11 @@
 			// loop through oCarousel.iNumPages to create the anchors
 			// each anchor has a separate class for easy custom styling
 			for (i=0; i<oCarousel.iNumPages; i++) {
-				$('<a class="tab'+ (i+1) + '" />').attr('href','#').html('<span data-index="'+ i + '">'+(i+1)+'</span>').appendTo(oCarousel.$thumbnails);
+				if(oCarousel.paginateItems == 'circles'){
+					$('<a class="tab'+ (i+1) + '" />').attr('href','#').html('<span data-index="'+ i + '"></span>').appendTo(oCarousel.$thumbnails);	
+				}else{
+					$('<a class="tab'+ (i+1) + '" />').attr('href','#').html('<span data-index="'+ i + '">'+(i+1)+'</span>').appendTo(oCarousel.$thumbnails);	
+				}
 			}
 			
 			// save the anchors in a jQuery object

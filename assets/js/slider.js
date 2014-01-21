@@ -22,7 +22,8 @@ BRD.slider = (function(){
 			homeForeground: {
 				fAspectRatio: 3,
 				BtnPaginate:'none',
-				fnPaginateBegin: slideBgCarousel
+				fnPaginateBegin: slideBgCarousel,
+				paginateItems:'circles',
 			},
 		};
 

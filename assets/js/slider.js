@@ -2,8 +2,8 @@ var BRD = BRD || {};
 
 BRD.slider = (function(){
 
-		var sayHay = function(){
-			var newPageIndex = this.iCurrPageIndex;
+		var slideBgCarousel = function(){
+			var newPageIndex = $(event.target).data('index');
 			config.$backgroundCarousel.rwdCarousel('updateToIndex', newPageIndex);
 		};
 
@@ -16,12 +16,13 @@ BRD.slider = (function(){
 			},
 			homeBackground: {
 				fAspectRatio: 2.24168,
-				BtnPaginate:'none'
+				BtnPaginate:'none',
+				bUseThumbnails: false
 			},
 			homeForeground: {
 				fAspectRatio: 3,
 				BtnPaginate:'none',
-				fnPaginateBegin: sayHay
+				fnPaginateBegin: slideBgCarousel
 			},
 		};
 
@@ -40,15 +41,3 @@ BRD.slider = (function(){
 })();
 
 
-
-// $(document).ready(function(){
-	
-// 	var sayHay = function(){
-// 		var $backgroundCarousel = $('.background');
-// 		console.log($backgroundCarousel);
-// 		$backgroundCarousel.rwdCarousel('startAutoRotate', 500);
-// 	};
-
-// 	$('.carousel').rwdCarousel({fnPaginateBegin: sayHay});
-// 	//$('.holder').rwdCarousel();
-// });

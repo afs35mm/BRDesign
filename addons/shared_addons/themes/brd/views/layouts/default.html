@@ -11,30 +11,9 @@
 		<div id="main">
         
 	        {{ template:body }}
-        <div id="doubleSlider">
-        	<div id="backgroundSlider" class="BRD-ui-module carousel" data-module="slider" data-slider="homeBackground">
-			    <div class="mask">
-			        <ul>
-			            <li>
-							<img src="http://dummyimage.com/1280x571/red/fff" alt="">		
-						</li>
-						<li>
-							<img src="http://dummyimage.com/1280x571/green/fff" alt="">		
-						</li>
-						<li>
-							<img src="http://dummyimage.com/1280x571/htc/fff" alt="">		
-						</li>
-			        </ul>
-			    </div>
-			</div>
-			<div id="foregroundSlider" class="BRD-ui-module carousel" data-module="slider" data-slider="homeForeground">
-	            <div class="mask">
-	                <ul>
-	                    <li>one</li>
-	                    <li>two</li>
-	                    <li>three</li>
-	                </ul>
-	            </div>
-	        </div>
-        </div>
+	        
+	        {{ if page:slug  == 'home' }}
+				{{ theme:partial name="home-page-content" }}
+			{{ endif }}
+
 {{ theme:partial name="footer" }}

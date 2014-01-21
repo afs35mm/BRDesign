@@ -1,0 +1,36 @@
+#doubleSlider{
+	position:relative;
+	#backgroundSlider{
+		width: 109%;
+		left: -4.5%;
+		.carousel,
+		.carousel .mask {
+			width: 109%;
+			height: auto;
+		}
+	}
+	#foregroundSlider{
+		margin-top:6.625em;
+		background: rgb(255, 255, 255);
+		background: rgba(255, 255, 255, 0.8);
+		position:absolute !important;
+		top:0;
+		//width: 500px;
+		padding: 2.5em 1.5625em;
+		.carousel,
+		.carousel .mask {
+			width: 500px;
+		}
+		h4{
+			font-size:1.62em;
+			color:$red;
+			font-family:$fjalla;
+			padding-bottom:.6em;
+		}
+		p{
+			font-size:1.125em;
+			line-height:1.25em;
+			padding-bottom:1em;
+		}
+	}
+}

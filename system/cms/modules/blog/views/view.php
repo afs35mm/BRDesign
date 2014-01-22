@@ -3,7 +3,7 @@
 {{ post }}
 
 <div class="post">
-
+THIS IS THE MAIN THEME
 	<h3>{{ title }}</h3>
 
 	<div class="meta">

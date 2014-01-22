@@ -1,20 +1,17 @@
 {{ theme:partial name="header" }}  
-		
-	
 		{{ theme:partial name="nav" }}
-		
-		<div id="main">
+		<div id="main" class="cf">
 			{{ streams:cycle stream="media_stream" }}
-			 
 			    {{ entries }}
-			 
-			        <h2>{{ media_blurb }}</h2>
-			        <img src="{{ media_image:image }}" alt="">
-			        <h2>{{ media_link }}</h2>
-			 
+			 		<div class="mediaItem">
+				        <div class="imgWrapper">
+				        	<img src="http://s3.amazonaws.com/brdesign_media/{{media_image:filename}}" alt="">
+				        	<div class="imgCover"></div>
+				        	<a target="_blank" class="link roundedButton" href="{{ media_link }}">Direct Link</a>
+				        </div>
+				        <h5 class="blurb">{{ media_blurb }}</h5>
+			 		</div>
 			    {{ /entries }}
-
 			{{ /streams:cycle }}
         </div>     
-        
 {{ theme:partial name="footer" }}

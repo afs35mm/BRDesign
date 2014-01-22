@@ -3,21 +3,13 @@
 	<div class="BRD-ui-module carousel" data-module="slider" data-slider="hero">
 	    <div class="mask">
 	        <ul>
-	            <li>
-					<img src="/assets/img/slide_1.jpg" alt="">		
-				</li>
-				<li>
-					<img src="/assets/img/slide_2.jpg" alt="">		
-				</li>
-				<li>
-					<img src="/assets/img/slide_3.jpg" alt="">		
-				</li>
-				<li>
-					<img src="/assets/img/slide_4.jpg" alt="">		
-				</li>
-				<li>
-					<img src="/assets/img/slide_5.jpg" alt="">			
-				</li>
+	             {{ streams:cycle stream="homepage_hero" }}
+				    {{ entries }}
+				 	<li>
+				 		<img src="http://s3.amazonaws.com/brdesign_homepage_hero/{{homepage_hero_image:filename}}" alt="">
+				 	</li>
+				    {{ /entries }}
+				{{ /streams:cycle }}
 	        </ul>
 	    </div>
 	</div>

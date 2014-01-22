@@ -557,3 +557,70 @@ footer {
     display: inline-block; }
   .blog .tags a:hover {
     text-decoration: underline; }
+.blog #existing-comments h4 {
+  margin: 2em 0 1em 0;
+  text-transform: uppercase;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 1.2em;
+  color: #444444; }
+.blog #existing-comments p {
+  margin-bottom: 1em; }
+.blog #existing-comments .image {
+  display: none; }
+.blog #existing-comments .details {
+  margin-bottom: 2em; }
+  .blog #existing-comments .details .name a {
+    color: #444444;
+    font-size: 1.125em;
+    text-decoration: none; }
+  .blog #existing-comments .details .name a:hover {
+    text-decoration: underline; }
+  .blog #existing-comments .details .date {
+    color: #6b6b6b;
+    font-size: 0.875em;
+    line-height: 2em; }
+  .blog #existing-comments .details .content p {
+    color: #6b6b6b;
+    font-size: 1.125em;
+    line-height: 1.3em; }
+.blog #create-comment {
+  background: gainsboro;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 2em; }
+  .blog #create-comment label {
+    display: block;
+    margin: .5em 0 .15em 0; }
+  .blog #create-comment input[type="text"] {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: .4em;
+    border: none;
+    width: 40%; }
+  .blog #create-comment h4 {
+    padding-bottom: 1em;
+    text-transform: uppercase;
+    color: #444444;
+    font-family: "Fjalla One", sans-serif; }
+  .blog #create-comment .form_textarea, .blog #create-comment #comment {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border: none;
+    margin-top: .3em; }
+  .blog #create-comment input[type="submit"] {
+    margin-top: 2em;
+    text-decoration: none;
+    color: #444444;
+    border: 2px solid #6b6b6b;
+    font-size: .9em;
+    padding: 0 1.3em;
+    line-height: 2.4em;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background: transparent; }
+  .blog #create-comment input[type="submit"]:hover {
+    cursor: pointer; }

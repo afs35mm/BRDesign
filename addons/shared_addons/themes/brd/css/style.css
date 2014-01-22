@@ -189,7 +189,8 @@ footer {
     .home #doubleSlider #foregroundSlider .carousel .mask {
       width: 500px; }
     .home #doubleSlider #foregroundSlider .mask {
-      height: inherit; }
+      height: inherit;
+      padding-bottom: 2em; }
     .home #doubleSlider #foregroundSlider h4 {
       font-size: 1.62em;
       color: #f60112;
@@ -228,6 +229,38 @@ footer {
     color: #444444; }
   .home #bottom .info a {
     font-size: 1.2em; }
+.home #blurb {
+  padding-bottom: 4em; }
+  .home #blurb p {
+    font-size: 1.5em;
+    line-height: 1.2em;
+    color: #6b6b6b; }
+  .home #blurb a {
+    margin-left: 10em;
+    float: right;
+    padding-right: 3em;
+    padding-left: 3em;
+    margin-top: 3%; }
+.home #projects > div {
+  float: left;
+  width: 48%; }
+  .home #projects > div img {
+    width: 100%; }
+  .home #projects > div a {
+    display: block;
+    color: #444444;
+    text-transform: uppercase;
+    font-family: "Fjalla One", sans-serif;
+    font-size: 1.875em;
+    background: url("/assets/img/divider.jpg") center bottom no-repeat;
+    text-decoration: none;
+    line-height: 2em;
+    padding-left: .4em;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+.home #projects div:first-child {
+  margin-right: 4%; }
 
 .carousel,
 .carousel .mask {

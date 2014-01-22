@@ -187,4 +187,11 @@ $sidebar-width: 35%;
 			cursor:pointer;
 		}
 	}
+	.error-box{
+		p{
+			color:red;
+			margin: 1em 0;
+			font-weight:600;
+		}
+	}
 }

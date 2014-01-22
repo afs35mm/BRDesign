@@ -624,3 +624,7 @@ footer {
     background: transparent; }
   .blog #create-comment input[type="submit"]:hover {
     cursor: pointer; }
+.blog .error-box p {
+  color: red;
+  margin: 1em 0;
+  font-weight: 600; }

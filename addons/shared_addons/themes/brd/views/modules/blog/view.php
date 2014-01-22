@@ -1,4 +1,7 @@
 <div class="blog cf">
+    
+    {{ session:messages success="success-box" notice="notice-box" error="error-box" }}
+
     <div id="posts" class="singlePost">
         {{ post }}
             <div class="post">

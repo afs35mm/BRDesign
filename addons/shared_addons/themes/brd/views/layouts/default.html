@@ -1,19 +1,5 @@
 {{ theme:partial name="header" }}  
-		
-		<!-- slider -->
-		{{ if page:slug  == 'home' }}
-			{{ theme:partial name="slider" }}
-		{{ endif }}
-		<!-- /slider -->
-		
 		{{ theme:partial name="nav" }}
-		
 		<div id="main">
-        
 	        {{ template:body }}
-	        
-	        {{ if page:slug  == 'home' }}
-				{{ theme:partial name="home-page-content" }}
-			{{ endif }}
-
 {{ theme:partial name="footer" }}

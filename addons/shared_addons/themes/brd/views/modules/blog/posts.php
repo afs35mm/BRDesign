@@ -17,9 +17,9 @@
                     </div>
                 </div>
             {{ /posts }}
-         <div id="pagination">
-            PAGINATION IS SUPPOSED TO GO HERE!!!: {{ pagination }}    
-        </div>
+             <div id="pagination">
+                PAGINATION IS SUPPOSED TO GO HERE!!!: {{ pagination }}    
+            </div>
         {{ else }}
             {{ helper:lang line="blog:currently_no_posts" }}
         {{ endif }}

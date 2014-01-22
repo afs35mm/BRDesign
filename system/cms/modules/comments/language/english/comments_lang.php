@@ -1,7 +1,7 @@
 <?php
 
 $lang['comments:title'] 					= 'Comments';
-$lang['comments:your_comment'] 				= 'Post a comment';
+$lang['comments:your_comment'] 				= 'Leave A Reply';
 $lang['comments:user_comments'] 			= 'User comments';
 
 $lang['comments:list_comment'] 				= '%s commented on %s saying:';
@@ -21,7 +21,7 @@ $lang['comments:date_label'] 				= 'Date';
 $lang['comments:posted_label'] 				= 'Posted';
 $lang['comments:from_label'] 				= 'From';
 $lang['comments:preview_label'] 			= 'Preview';
-$lang['comments:send_label'] 				= 'Comment';
+$lang['comments:send_label'] 				= 'Post Comment';
 
 $lang['comments:inactive_title'] 			= 'Comments awaiting approval';
 $lang['comments:active_title'] 				= 'Approved comments';

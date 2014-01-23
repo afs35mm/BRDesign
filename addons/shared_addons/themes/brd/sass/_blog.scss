@@ -26,6 +26,56 @@ $sidebar-width: 35%;
 			background: $bg-grey;
 			@include border-box;
 			padding: 2.5em 2em;
+			.heading{
+				color:$drk-grey;
+				text-transform:uppercase;
+				font-size:1.125em;
+				padding-bottom:.3em;
+				font-family:$fjalla;
+				display:block;
+			}
+			.copy{
+				color:$lt-grey;
+				margin-bottom:.5em;
+				display:block;
+			}
+			.textBox{
+				@include border-box;
+				padding:.6em;
+				border:none;
+				width:100%;
+			}
+			button[type="submit"], input[type="submit"]{
+				margin-top:.6em;
+				text-decoration:none;
+				background:transparent;
+				@include cta;
+				margin-bottom:3em;
+			}
+			button[type="submit"]:hover, input[type="submit"]:hover{
+				cursor:pointer;
+				@include cta-hover;
+			}
+		}
+		ul.social{
+			float:left;
+			padding:0;
+			display:block;
+			width:100%;
+			margin-bottom:3em;
+		}
+		ul.archive{
+			li{
+				a{
+					text-decoration:none;
+					font-size:0.875em;
+					color:$lt-grey;
+					line-height: 1.3em;
+				}
+				a:hover{
+					text-decoration: underline;
+				}
+			}
 		}
 	}	
 	.head{
@@ -153,7 +203,7 @@ $sidebar-width: 35%;
 		}
 		input[type="text"]{
 			@include border-box;
-			padding:.4em;
+			padding:.6em;
 			border:none;
 			width:40%;
 		}
@@ -173,18 +223,12 @@ $sidebar-width: 35%;
 		input[type="submit"]{
 			margin-top:2em;
 			text-decoration:none;
-			color: $drk-grey;
-			border:2px solid $lt-grey;
-			font-size:.9em;
-			padding: 0 1.3em;
-			line-height:2.4em;
-			-webkit-border-radius: 20px;
-			-moz-border-radius: 20px;
-			border-radius: 20px;
 			background:transparent;
+			@include cta;
 		}
 		input[type="submit"]:hover{
 			cursor:pointer;
+			@include cta-hover;
 		}
 	}
 	.error-box{
@@ -192,6 +236,26 @@ $sidebar-width: 35%;
 			color:red;
 			margin: 1em 0;
 			font-weight:600;
+		}
+	}
+	#pagination{
+		ul{
+			display:block; 
+			float:right;
+			li{
+				display:block;
+				float:left;
+				a, span{
+					@include cta;
+				}
+				&.active{
+					span{color:$red !important;}
+					font-weight:800;
+				}
+				a:hover{
+					@include cta-hover;
+				}
+			}
 		}
 	}
 }

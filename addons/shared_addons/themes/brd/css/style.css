@@ -129,11 +129,11 @@ nav {
     position: fixed;
     top: 0; }
 
-ul#social {
+ul.social {
   float: right;
   display: block;
   padding: 2em 0 0 2em; }
-  ul#social li {
+  ul.social li {
     float: left;
     display: block;
     margin-right: .5em; }
@@ -150,7 +150,7 @@ footer {
     float: left; }
   footer a:hover {
     text-decoration: underline; }
-  footer ul#social {
+  footer ul.social {
     margin: 0 auto;
     position: absolute;
     width: 121px;
@@ -490,6 +490,57 @@ footer {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 2.5em 2em; }
+    .blog .blogSidebar #inner .heading {
+      color: #444444;
+      text-transform: uppercase;
+      font-size: 1.125em;
+      padding-bottom: .3em;
+      font-family: "Fjalla One", sans-serif;
+      display: block; }
+    .blog .blogSidebar #inner .copy {
+      color: #6b6b6b;
+      margin-bottom: .5em;
+      display: block; }
+    .blog .blogSidebar #inner .textBox {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: .6em;
+      border: none;
+      width: 100%; }
+    .blog .blogSidebar #inner button[type="submit"], .blog .blogSidebar #inner input[type="submit"] {
+      margin-top: .6em;
+      text-decoration: none;
+      background: transparent;
+      text-decoration: none;
+      color: #444444;
+      border: 2px solid #6b6b6b;
+      font-size: .9em;
+      padding: 0 1.3em;
+      line-height: 2.4em;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      border-radius: 20px;
+      margin-bottom: 3em; }
+    .blog .blogSidebar #inner button[type="submit"]:hover, .blog .blogSidebar #inner input[type="submit"]:hover {
+      cursor: pointer;
+      text-decoration: none !important;
+      background: #f60112;
+      color: #fff;
+      border: 2px solid #f60112; }
+  .blog .blogSidebar ul.social {
+    float: left;
+    padding: 0;
+    display: block;
+    width: 100%;
+    margin-bottom: 3em; }
+  .blog .blogSidebar ul.archive li a {
+    text-decoration: none;
+    font-size: 0.875em;
+    color: #6b6b6b;
+    line-height: 1.3em; }
+  .blog .blogSidebar ul.archive li a:hover {
+    text-decoration: underline; }
 .blog .head {
   position: relative;
   margin-bottom: 1.56em; }
@@ -596,7 +647,7 @@ footer {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    padding: .4em;
+    padding: .6em;
     border: none;
     width: 40%; }
   .blog #create-comment h4 {
@@ -613,6 +664,8 @@ footer {
   .blog #create-comment input[type="submit"] {
     margin-top: 2em;
     text-decoration: none;
+    background: transparent;
+    text-decoration: none;
     color: #444444;
     border: 2px solid #6b6b6b;
     font-size: .9em;
@@ -620,11 +673,39 @@ footer {
     line-height: 2.4em;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
-    border-radius: 20px;
-    background: transparent; }
+    border-radius: 20px; }
   .blog #create-comment input[type="submit"]:hover {
-    cursor: pointer; }
+    cursor: pointer;
+    text-decoration: none !important;
+    background: #f60112;
+    color: #fff;
+    border: 2px solid #f60112; }
 .blog .error-box p {
   color: red;
   margin: 1em 0;
   font-weight: 600; }
+.blog #pagination ul {
+  display: block;
+  float: right; }
+  .blog #pagination ul li {
+    display: block;
+    float: left; }
+    .blog #pagination ul li a, .blog #pagination ul li span {
+      text-decoration: none;
+      color: #444444;
+      border: 2px solid #6b6b6b;
+      font-size: .9em;
+      padding: 0 1.3em;
+      line-height: 2.4em;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      border-radius: 20px; }
+    .blog #pagination ul li.active {
+      font-weight: 800; }
+      .blog #pagination ul li.active span {
+        color: #f60112 !important; }
+    .blog #pagination ul li a:hover {
+      text-decoration: none !important;
+      background: #f60112;
+      color: #fff;
+      border: 2px solid #f60112; }

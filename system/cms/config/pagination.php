@@ -25,7 +25,7 @@ $config['first_link'] = '&lt;&lt;';
 $config['first_tag_open'] = '<li class="first">';
 $config['first_tag_close'] = '</li>';
 
-$config['prev_link'] = '&larr;';
+$config['prev_link'] = '< Newer';
 $config['prev_tag_open'] = '<li class="prev">';
 $config['prev_tag_close'] = '</li>';
 
@@ -35,7 +35,7 @@ $config['cur_tag_close'] = '</span></li>';
 $config['num_tag_open'] = '<li>';
 $config['num_tag_close'] = '</li>';
 
-$config['next_link'] = '&rarr;';
+$config['next_link'] = 'Older >';
 $config['next_tag_open'] = '<li class="next">';
 $config['next_tag_close'] = '</li>';
 

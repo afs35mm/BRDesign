@@ -41,6 +41,11 @@
 		</ul>
 		<h4 class="heading">Archive</h4>
 		<ul class="archive">
+		{{ widgets:area slug="blog_archive_widget" }}
+		</ul>
+
+		<h4 class="heading">Blog Tags</h4>
+		<ul class="archive">
 		{{ blog:tags }}
 		    <li><a href="{{ url }}">{{ title }}</a></li>
 		{{ /blog:tags }}

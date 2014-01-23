@@ -1,14 +1,49 @@
 <div class="blogSidebar">
 	<div id="inner">
-		<h4>BLOG SIDEBAR!</h4>	
+		<h4 class="heading">Subscribe</h4>	
 		<form action="http://afs35mm.createsend.com/t/d/s/ukyhd/" method="post">
 		    <p>
-		        <label for="fieldEmail">Email</label><br />
-		        <input id="fieldEmail" name="cm-ukyhd-ukyhd" type="email" required />
+		        <label class="copy" for="fieldEmail">Stay up to date with all BR News & Events.</label>
+		        <input id="fieldEmail" class="textBox" name="cm-ukyhd-ukyhd" type="email" required />
 		    </p>
 		    <p>
 		        <button type="submit">Subscribe</button>
 		    </p>
 		</form>
+		
+		<h4 class="heading">Search</h4>	
+		{{ search:form class="search-form" }} 
+			<input name="q" class="textBox" placeholder="" /> 
+			<input class="search_button" type="submit" value="Search"> 
+		{{ /search:form}}
+		<h4 class="heading">Connect</h4>
+		<ul class="social" class="cf">
+			<li>
+				<a href="#">
+					<img src="/assets/img/social_sidebar_fb.png" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="/assets/img/social_sidebar_in.png" alt="">
+				</a>
+			</li>
+			<li> 
+				<a href="#">
+					<img src="/assets/img/social_sidebar_pn.png" alt="">
+				</a>
+			</li>
+			<li> 
+				<a href="#">
+					<img src="/assets/img/social_sidebar_tw.png" alt="">
+				</a>
+			</li>
+		</ul>
+		<h4 class="heading">Archive</h4>
+		<ul class="archive">
+		{{ blog:tags }}
+		    <li><a href="{{ url }}">{{ title }}</a></li>
+		{{ /blog:tags }}
+		</ul>
 	</div>
 </div>

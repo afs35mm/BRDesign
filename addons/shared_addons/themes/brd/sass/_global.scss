@@ -1,17 +1,6 @@
 .roundedButton{
-	text-decoration:none;
-	color: $drk-grey;
-	border:2px solid $lt-grey;
-	font-size:.9em;
-	padding: 0 1.3em;
-	line-height:2.4em;
-	-webkit-border-radius: 20px;
-	-moz-border-radius: 20px;
-	border-radius: 20px;
+	@include cta; 
 }
 .roundedButton:hover{
-	text-decoration: none !important;
-	background: $red;
-	color:#fff;
-	border:2px solid $red;
+	@include cta-hover;
 }

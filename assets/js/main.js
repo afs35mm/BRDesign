@@ -37,6 +37,7 @@ BRD.App = (function(){
 				$el = $(this);
 				moduleType = $el.data('module');
 				moduleInstance = $el.data(moduleType);
+                //console.log(moduleInstance, moduleType);
                 BRD[moduleType].init($el, moduleInstance);
 			});
 		};

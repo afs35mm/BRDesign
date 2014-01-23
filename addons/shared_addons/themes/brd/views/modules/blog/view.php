@@ -1,8 +1,16 @@
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <div class="blog cf">
     
     {{ session:messages success="success-box" notice="notice-box" error="error-box" }}
 
-    <div id="posts" class="singlePost">
+    <div id="posts" class="singlePost BRD-ui-module" data-module="social" data-social="singlepost">
         {{ post }}
             <div class="post">
                 <div class="head">
@@ -12,7 +20,10 @@
                         <span class="day">{{ helper:date format="d" timestamp=created_on }}</span>
                     </div> 
                 </div>
-                <h3><a class="title" href="{{ url }}">{{ title }}</a></h3>
+                <div class="titleHolder">
+                    <h3><span class="title">{{ title }}</span></h3>
+                    <div class="fb-like" data-href="http://brdesignassociates.com/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+                </div>
                 <!-- <p class="author"><strong>- by {{ user:display_name user_id=created_by }}</strong></p> -->
                 <div class="body">
                     {{ body }}

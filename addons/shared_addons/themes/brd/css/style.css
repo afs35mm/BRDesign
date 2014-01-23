@@ -476,6 +476,17 @@ footer {
     padding-bottom: 2em;
     margin-bottom: 3em;
     border-bottom: 1px solid #444444; }
+.blog .archiveTitle {
+  font-family: "Fjalla One", sans-serif;
+  text-transform: uppercase;
+  color: #444444;
+  margin-bottom: .8em;
+  font-size: 2em; }
+.blog .monthTitle {
+  font-family: "Fjalla One", sans-serif;
+  color: #444444;
+  margin-bottom: 1em;
+  font-size: 1.5em; }
 .blog .blogSidebar {
   width: 35%;
   float: left;
@@ -534,13 +545,15 @@ footer {
     display: block;
     width: 100%;
     margin-bottom: 3em; }
-  .blog .blogSidebar ul.archive li a {
+  .blog .blogSidebar ul.archive li a, .blog .blogSidebar ul.archive li a {
     text-decoration: none;
     font-size: 0.875em;
     color: #6b6b6b;
     line-height: 1.3em; }
-  .blog .blogSidebar ul.archive li a:hover {
+  .blog .blogSidebar ul.archive li a:hover, .blog .blogSidebar ul.archive li a:hover {
     text-decoration: underline; }
+  .blog .blogSidebar .archive {
+    margin-bottom: 3em; }
 .blog .head {
   position: relative;
   margin-bottom: 1.56em; }
@@ -562,12 +575,18 @@ footer {
       display: block; }
     .blog .head .date .month {
       display: block; }
-.blog .title {
-  text-transform: uppercase;
-  font-family: "Fjalla One", sans-serif;
-  color: #444444;
-  font-size: 1.875em;
-  text-decoration: none; }
+.blog .titleHolder {
+  position: relative; }
+  .blog .titleHolder .title {
+    text-transform: uppercase;
+    font-family: "Fjalla One", sans-serif;
+    color: #444444;
+    font-size: 1.875em;
+    text-decoration: none; }
+  .blog .titleHolder .fb-like {
+    position: absolute;
+    right: 0;
+    top: 0; }
 .blog .title:hover {
   text-decoration: underline; }
 .blog .body {

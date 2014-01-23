@@ -7,7 +7,7 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 <div class="blog cf">
-    <div id="posts" class="postList">
+    <div id="posts" class="postList BRD-ui-module" data-module="social" data-social="posts">
         {{ if posts }}
             {{ posts }}
                 <div class="post">
@@ -19,8 +19,10 @@
                             <span class="day">{{ helper:date format="d" timestamp=created_on }}</span>
                         </div> 
                     </div>
-                    <h3><a class="title" href="{{ url }}">{{ title }}</a></h3>
-                    <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+                    <div class="titleHolder">
+                        <h3><a class="title" href="{{ url }}">{{ title }}</a></h3>
+                        <div class="fb-like" data-href="http://brdesignassociates.com/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+                    </div>
                     <div class="body preview">
                         {{ preview }}
                         <p class="readMore" ><a class="more" href="{{ url }}">Read More...</a></p>

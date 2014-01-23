@@ -6,6 +6,7 @@ BRD.App = (function(){
         	$window: $(window),
         	$nav: $('nav'),
         	navTop: 0,
+            $outerWrap: $('#outerWrap'),
         };
 
         var makeStickyHeader = function(){
@@ -20,6 +21,11 @@ BRD.App = (function(){
             }
         };
 
+        var showMobileMenu = function(){
+            config.$outerWrap.toggleClass('mobileOpen');
+            //alert('hi');
+        };
+
         var bindDomEvents = function(){
         	config.$window.scroll(function(){
                 makeStickyHeader();
@@ -29,6 +35,7 @@ BRD.App = (function(){
                     $(this).rwdCarousel('resize');
                 });
             });
+            $('.navMenuBtn').on('click', showMobileMenu);
         };
 
         var findUiModules = function(){

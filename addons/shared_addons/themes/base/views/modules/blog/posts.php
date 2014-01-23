@@ -1,8 +1,8 @@
 {{ theme:partial name="aside" }}
 
 {{ if posts }}
-	{{ posts }}
-	
+	{{ blog:posts limit="2" }}
+		limit = 2!
 		<article class="post">
 			<h5>{{ theme:image file="link.png" }} <a href="{{ url }}">{{ title }}</a></h5>
 			
@@ -31,9 +31,13 @@
 			</div>
 		</article>
 
-	{{ /posts }}
-
+	{{ /blog:posts }}
+	<div style="color:red;"> 
 	{{ pagination }}
+	</div>
+	
+	<!-- blog pagination: {{ blog_pagination:page_number post_id="6" }} -->
+	
 
 {{ else }}
 	

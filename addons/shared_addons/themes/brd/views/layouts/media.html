@@ -1,7 +1,7 @@
 {{ theme:partial name="header" }}  
 		{{ theme:partial name="nav" }}
 		<div id="main" class="cf">
-			{{ streams:cycle stream="media_stream" paginate="yes" pag_segment="2" limit="2"  }}
+			{{ streams:cycle stream="media_stream" }}
 			    {{ entries }}
 			 		<div class="mediaItem">
 				        <div class="imgWrapper">
@@ -12,7 +12,6 @@
 				        <h5 class="blurb">{{ media_blurb }}</h5>
 			 		</div>
 			    {{ /entries }}
-			    pag: {{ pagination }}
 			{{ /streams:cycle }}
         </div>     
 {{ theme:partial name="footer" }}

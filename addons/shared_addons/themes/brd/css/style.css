@@ -72,7 +72,23 @@ body {
 
 #outerWrap {
   max-width: 1280px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  width: 100%;
+  overflow: hidden; }
+  #outerWrap.mobileOpen #outer-content {
+    left: -45%; }
+  #outerWrap.mobileOpen nav ul#nav {
+    left: 55%; }
+    #outerWrap.mobileOpen nav ul#nav li {
+      padding: 0; }
+      #outerWrap.mobileOpen nav ul#nav li a {
+        display: block;
+        padding: 2.5em 2.75em;
+        border-bottom: 1px solid #6b6b6b;
+        color: #444444; }
+
+#outer-content {
+  position: relative; }
 
 #main {
   padding: 12em 4.2% 5em;
@@ -82,8 +98,11 @@ body {
   #outerWrap {
     font-size: .8em; } }
 @media only screen and (max-width: 721px) {
-  #outerWrap {
-    background: yellow; } }
+  #outerWrap #outer-content, #outerWrap nav ul#nav {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; } }
 nav {
   font-family: "Fjalla One", sans-serif;
   background: #fff;
@@ -97,7 +116,10 @@ nav {
   box-sizing: border-box; }
   nav #inner {
     background: url("/assets/img/divider.jpg") center bottom no-repeat;
-    margin: 0 4.2%; }
+    margin: 0 4.2%;
+    position: relative; }
+  nav .navMenuBtn {
+    display: none; }
   nav a {
     text-decoration: none;
     text-transform: uppercase; }
@@ -165,6 +187,41 @@ footer {
   nav ul#nav li {
     padding-left: .75em;
     padding-right: .75em; } }
+@media (max-width: 721px) {
+  nav {
+    height: 7em; }
+    nav #inner {
+      height: inherit; }
+    nav ul#nav {
+      position: fixed;
+      top: 0;
+      height: 100%;
+      margin-top: 8px;
+      -webkit-box-shadow: inset 4px -6px 13px -2px #3d3d3d;
+      -moz-box-shadow: inset 4px -6px 13px -2px #3d3d3d;
+      -o-box-shadow: inset 4px -6px 13px -2px #3d3d3d;
+      -ms-box-shadow: inset 4px -6px 13px -2px #3d3d3d;
+      box-shadow: inset 4px -6px 13px -2px #3d3d3d;
+      width: 45%;
+      left: 100%; }
+      nav ul#nav li {
+        float: none; }
+    nav ul.social {
+      display: none; }
+    nav .navMenuBtn {
+      display: block;
+      position: absolute;
+      top: 44%;
+      right: 0;
+      margin-top: -1.875em; }
+    nav .navMenuBtn span {
+      display: block;
+      width: 2.6em;
+      height: 0.375em;
+      margin: 0.4375em auto;
+      background: #444444; }
+    nav .navMenuBtn span:first-child {
+      margin-top: 0.875em; } }
 .home #doubleSlider {
   position: relative;
   margin: 3.75em 0 4.6875em 0; }

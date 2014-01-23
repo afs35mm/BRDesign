@@ -11,6 +11,10 @@ nav{
 	#inner{
 		background: url('/assets/img/divider.jpg') center bottom no-repeat;	
 		margin: 0 $side-padding;
+		position:relative;
+	}
+	.navMenuBtn{
+		display:none;
 	}
 	a{
 		text-decoration:none;
@@ -102,3 +106,53 @@ footer{
   		padding-right: .75em;
   	}
 }
+
+@media (max-width: $small) {
+	nav{
+		
+		height:7em;
+		
+		#inner{
+			height:inherit
+		}
+		ul#nav{
+			position:fixed;
+			top:0;
+			height:100%;
+			margin-top: 8px;
+			-webkit-box-shadow: inset 4px -6px 13px -2px #3d3d3d;
+			-moz-box-shadow: inset 4px -6px 13px -2px #3d3d3d;
+			-o-box-shadow: inset 4px -6px 13px -2px #3d3d3d;
+			-ms-box-shadow: inset 4px -6px 13px -2px #3d3d3d;
+			box-shadow: inset 4px -6px 13px -2px #3d3d3d;
+			width:45%;
+			left:100%;
+			li{
+				float:none;
+			}
+		}
+		ul.social{
+			display:none;
+		}
+		.navMenuBtn {
+			display: block;
+			position: absolute;
+			top: 44%;
+			right:0;
+			//left: $layout-padding;
+			margin-top: (-3.75em / 2);
+		}
+		.navMenuBtn span { 
+			display: block;
+			width: 2.6em;;
+			height: 0.375em;
+			margin: 0.4375em auto;
+			background: $drk-grey;
+			//@include vendor-prefix(border-radius, 3px);
+		}
+		.navMenuBtn span:first-child { 
+			margin-top: 0.875em;
+		}	
+	}
+}
+

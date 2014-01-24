@@ -63,6 +63,7 @@ $sidebar-width: 35%;
 				text-decoration:none;
 				background:transparent;
 				@include cta;
+				float:none;
 				margin-bottom:3em;
 			}
 			button[type="submit"]:hover, input[type="submit"]:hover{

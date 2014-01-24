@@ -34,8 +34,8 @@ BRD.App = (function(){
                 $('.carousel').each(function(){
                     $(this).rwdCarousel('resize');
                 });
-                if( $(window).width() > 721 && $('#outerWrap').hasClass('mobileOpen') ){
-                    $('#outerWrap').removeClass('mobileOpen'));
+                if( $(window).width() >= 721 && $('#outerWrap').hasClass('mobileOpen') ){
+                    $('#outerWrap').removeClass('mobileOpen');
                 }
             });
             $('.navMenuBtn').on('click', showMobileMenu);

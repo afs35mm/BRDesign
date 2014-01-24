@@ -7,13 +7,14 @@ BRD.App = (function(){
         	$nav: $('nav'),
         	navTop: 0,
             $outerWrap: $('#outerWrap'),
+            layout: null,
+            smBreakpoint: 721
         };
 
         var makeStickyHeader = function(){
             if( !config.$nav.hasClass('fixed') ){
             config.navTop = $('nav').offset().top;    
             }
-            //console.log(config.navTop);
             if( config.$window.scrollTop() >= config.navTop ){
                 config.$nav.addClass('fixed');
             }else{
@@ -21,9 +22,16 @@ BRD.App = (function(){
             }
         };
 
+        var getLayout = function(){
+            if($(window).width() >= config.smBreakpoint ){
+                config.layout = 'large'
+            }else{
+                config.layout = 'small'
+            }
+        }
+
         var showMobileMenu = function(){
             config.$outerWrap.toggleClass('mobileOpen');
-            //alert('hi');
         };
 
         var bindDomEvents = function(){
@@ -31,15 +39,32 @@ BRD.App = (function(){
                 makeStickyHeader();
 		    });
             $( window ).resize(function() {
+                
+                getLayout();
+                
                 $('.carousel').each(function(){
                     $(this).rwdCarousel('resize');
                 });
-                if( $(window).width() >= 721 && $('#outerWrap').hasClass('mobileOpen') ){
+                if( $(window).width() >= config.smBreakpoint && $('#outerWrap').hasClass('mobileOpen') ){
                     $('#outerWrap').removeClass('mobileOpen');
                 }
             });
             $('.navMenuBtn').on('click', showMobileMenu);
         };
+
+        /**
+        NOT IN USE!
+        var resizeMediaImages = function(){
+            if( config.layout == 'large' ){
+                $('#mediaItems').height( $('#bottom').width() * .2 );    
+            }
+            var containerHeight = $('#mediaItems').height();
+            $('#mediaItems img').each(function(key, val){                
+                $this = $(this);
+                $this.css({ "max-height": containerHeight + 'px' });
+            });
+        };
+        **/
 
         var findUiModules = function(){
 			$('.BRD-ui-module').each(function(index){
@@ -47,7 +72,6 @@ BRD.App = (function(){
 				$el = $(this);
 				moduleType = $el.data('module');
 				moduleInstance = $el.data(moduleType);
-                //console.log(moduleInstance, moduleType);
                 BRD[moduleType].init($el, moduleInstance);
 			});
 		};
@@ -55,6 +79,7 @@ BRD.App = (function(){
         var init = function(){
             bindDomEvents();
             findUiModules();
+            getLayout();
         };
 
         return {

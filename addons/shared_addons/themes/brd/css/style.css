@@ -49,6 +49,15 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
 /* For modern browsers */
 .cf:before,
 .cf:after {
@@ -86,6 +95,8 @@ body {
         padding: 2.5em 2.75em;
         border-bottom: 1px solid #6b6b6b;
         color: #444444; }
+  #outerWrap.mobileOpen footer {
+    left: -45%; }
 
 #outer-content {
   position: relative; }
@@ -98,11 +109,16 @@ body {
   #outerWrap {
     font-size: .8em; } }
 @media only screen and (max-width: 721px) {
-  #outerWrap #outer-content, #outerWrap nav ul#nav {
+  #outerWrap #outer-content, #outerWrap nav ul#nav, #outerWrap footer {
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -o-transition: all 0.3s;
-    transition: all 0.3s; } }
+    transition: all 0.3s; }
+  #outerWrap #outer-content {
+    left: 0; }
+  #outerWrap footer {
+    position: relative;
+    left: 0; } }
 nav {
   font-family: "Fjalla One", sans-serif;
   background: #fff;
@@ -206,6 +222,8 @@ footer {
       left: 100%; }
       nav ul#nav li {
         float: none; }
+        nav ul#nav li.current a {
+          color: #fff !important; }
     nav ul.social {
       display: none; }
     nav .navMenuBtn {
@@ -526,6 +544,12 @@ footer {
 .contact #main .gm-style-iw > div {
   overflow: hidden !important; }
 
+@media only screen and (max-width: 721px) {
+  .roundedButton {
+    margin-bottom: 2em; }
+
+  .contact footer {
+    margin-top: 3em; } }
 .blog #posts {
   width: 65%;
   float: left; }
@@ -785,3 +809,10 @@ footer {
       background: #f60112;
       color: #fff;
       border: 2px solid #f60112; }
+
+@media only screen and (max-width: 721px) {
+  .blogSidebar {
+    display: none; }
+
+  .blog #posts {
+    width: 100%; } }

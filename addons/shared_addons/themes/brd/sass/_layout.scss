@@ -29,6 +29,9 @@ body{
 				}
 			}
 		}
+		footer{
+			left: - $mobile-nav-width;	
+		}
 	}
 }
 #outer-content{
@@ -48,11 +51,18 @@ body{
 
 @media only screen and (max-width: $small) {
 	#outerWrap{
-		#outer-content, nav ul#nav{
+		#outer-content, nav ul#nav, footer{
 			 -webkit-transition: all 0.3s;
 		    -moz-transition: all 0.3s;
 		    -o-transition: all 0.3s;
 		    transition: all 0.3s; 
+		}
+		#outer-content{
+			left:0;
+		}
+		footer{
+			position:relative;
+			left:0;
 		}
 	}
 }

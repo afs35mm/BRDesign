@@ -8,12 +8,13 @@
  	text-decoration:none;
 	color: $drk-grey;
 	border:2px solid $lt-grey;
-	font-size:.9em;
+	font-size:1.1em;
 	padding: 0 1.3em;
 	line-height:2.4em;
-	-webkit-border-radius: 20px;
-	-moz-border-radius: 20px;
-	border-radius: 20px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+	float:left;
 } 
 @mixin cta-hover {
 	text-decoration: none !important;

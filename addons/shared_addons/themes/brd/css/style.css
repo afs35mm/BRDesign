@@ -312,8 +312,6 @@ footer {
     font-size: 1.5em;
     line-height: 1.15em;
     color: #444444; }
-  .home #bottom .info a {
-    font-size: 1.2em; }
 .home #blurb {
   padding-bottom: 4em; }
   .home #blurb p {
@@ -323,8 +321,6 @@ footer {
   .home #blurb a {
     margin-left: 10em;
     float: right;
-    padding-right: 3em;
-    padding-left: 3em;
     margin-top: 3%; }
 .home #projects > div {
   float: left;
@@ -365,7 +361,34 @@ footer {
     .home #bottom .info a {
       font-size: 1.2em; }
   .home #doubleSlider #foregroundSlider {
-    position: relative !important; } }
+    position: relative !important;
+    width: auto;
+    margin-top: 0;
+    padding: 2.5em 0; }
+    .home #doubleSlider #foregroundSlider ul {
+      width: 100% !important; } }
+@media only screen and (max-width: 420px) {
+  .home #bottom #mediaItems {
+    float: left;
+    width: 100%;
+    height: auto !important; }
+    .home #bottom #mediaItems img {
+      width: 48%;
+      margin-right: 4%; }
+    .home #bottom #mediaItems img:nth-child(2n+0) {
+      margin-right: 0; }
+    .home #bottom #mediaItems img:last-child {
+      display: none; }
+  .home #doubleSlider {
+    margin-bottom: 0; }
+  .home #projects > div a {
+    font-size: 1em;
+    line-height: 4em; }
+  .home #blurb {
+    padding-bottom: 0; }
+    .home #blurb a {
+      float: left;
+      margin-left: 0; } }
 .carousel,
 .carousel .mask {
   width: 100%;
@@ -419,12 +442,13 @@ footer {
   text-decoration: none;
   color: #444444;
   border: 2px solid #6b6b6b;
-  font-size: .9em;
+  font-size: 1.1em;
   padding: 0 1.3em;
   line-height: 2.4em;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px; }
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  float: left; }
 
 .roundedButton:hover {
   text-decoration: none !important;
@@ -636,12 +660,14 @@ footer {
       text-decoration: none;
       color: #444444;
       border: 2px solid #6b6b6b;
-      font-size: .9em;
+      font-size: 1.1em;
       padding: 0 1.3em;
       line-height: 2.4em;
-      -webkit-border-radius: 20px;
-      -moz-border-radius: 20px;
-      border-radius: 20px;
+      -webkit-border-radius: 25px;
+      -moz-border-radius: 25px;
+      border-radius: 25px;
+      float: left;
+      float: none;
       margin-bottom: 3em; }
     .blog .blogSidebar #inner button[type="submit"]:hover, .blog .blogSidebar #inner input[type="submit"]:hover {
       cursor: pointer;
@@ -797,12 +823,13 @@ footer {
     text-decoration: none;
     color: #444444;
     border: 2px solid #6b6b6b;
-    font-size: .9em;
+    font-size: 1.1em;
     padding: 0 1.3em;
     line-height: 2.4em;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    border-radius: 20px; }
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    float: left; }
   .blog #create-comment input[type="submit"]:hover {
     cursor: pointer;
     text-decoration: none !important;
@@ -823,12 +850,13 @@ footer {
       text-decoration: none;
       color: #444444;
       border: 2px solid #6b6b6b;
-      font-size: .9em;
+      font-size: 1.1em;
       padding: 0 1.3em;
       line-height: 2.4em;
-      -webkit-border-radius: 20px;
-      -moz-border-radius: 20px;
-      border-radius: 20px; }
+      -webkit-border-radius: 25px;
+      -moz-border-radius: 25px;
+      border-radius: 25px;
+      float: left; }
     .blog #pagination ul li.active {
       font-weight: 800; }
       .blog #pagination ul li.active span {

@@ -60,18 +60,28 @@
 		}
 	}
 	#bottom{
-		.mediaItems{
-			width:70%;
+		#mediaItems{
+			display:block;
 			float:right;
+			width:70%;
+			text-align: right;
 			img{
-				border:1px solid $lt-grey;
-				margin-left:1.125em;
-				float:right;
+				//border:1px solid $lt-grey;
+				margin-right:1.125em;
+   				width:30%;
+   				margin-right:4%;
+   				display:block;
+				float:left;
 			}	
+			img:last-child{
+				margin-right:0;
+			}
 		}
 		.info{
 			width:30%;
 			float:left;
+			padding-right:8%;
+			@include border-box;
 			p{
 				padding: 1em 0 1.3em 0;
 				font-size:1.5em;
@@ -120,6 +130,41 @@
 		}
 		div:first-child{
 			margin-right:4%
+		}
+	}
+}
+
+@media only screen and (max-width: $small) {
+	.home {
+		#bottom{
+			#mediaItems{
+				float:left;
+				width:100%; 
+				// text-align: right; 
+				height:auto !important;
+				img{
+					width:30.5%;
+				}	
+				
+			}
+			.info{
+				width:100%;
+				float:left;
+				p{
+					padding: 1em 0 1.3em 0;
+					font-size:1.5em;
+					line-height:1.15em;
+					color:$drk-grey;
+				}
+				a{
+					font-size:1.2em;
+				}
+			}
+		}
+		#doubleSlider {
+			#foregroundSlider{
+				position:relative !important;
+			}
 		}
 	}
 }

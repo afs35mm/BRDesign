@@ -129,6 +129,12 @@ footer{
 			left:100%;
 			li{
 				float:none;
+				&.current{
+					a{
+						color: #fff !important;
+					}
+				}
+
 			}
 		}
 		ul.social{

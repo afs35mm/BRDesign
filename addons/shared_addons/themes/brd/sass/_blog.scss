@@ -283,3 +283,12 @@ $sidebar-width: 35%;
 		}
 	}
 }
+
+@media only screen and (max-width: $small) {
+	.blogSidebar{
+		display:none;
+	}
+	.blog #posts{
+		width:100%;
+	}
+}

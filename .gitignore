@@ -1,4 +1,5 @@
 system/cms/cache/
 system/cms/logs/
 uploads/
+addons/shared_addons/themes/brd/.sass-cache/
 .htaccess

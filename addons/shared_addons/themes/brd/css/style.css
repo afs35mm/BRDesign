@@ -856,7 +856,8 @@ footer {
       -webkit-border-radius: 25px;
       -moz-border-radius: 25px;
       border-radius: 25px;
-      float: left; }
+      float: left;
+      margin-left: 0.6em; }
     .blog #pagination ul li.active {
       font-weight: 800; }
       .blog #pagination ul li.active span {

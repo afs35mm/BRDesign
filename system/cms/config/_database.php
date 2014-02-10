@@ -33,9 +33,9 @@
 
 // Development
 $db[PYRO_DEVELOPMENT] = array(
-	'hostname'		=> 	'localhost',
-	'username'		=> 	'root',
-	'password'		=> 	'root',
+	'hostname'		=> 	'brd.cwupkd4rm5uf.us-west-2.rds.amazonaws.com',
+	'username'		=> 	'BRDesign',
+	'password'		=> 	'233SpringSt',
 	'database'		=> 	'brd',
 	'dbdriver' 		=> 	'mysqli',
 	'dbprefix' 		=>	'',
@@ -70,9 +70,9 @@ $db[PYRO_STAGING] = array(
 
 // Production
 $db[PYRO_PRODUCTION] = array(
-	'hostname'		=> 	'localhost',
-	'username'		=> 	'root',
-	'password'		=> 	'root',
+	'hostname'		=> 	'brd.cwupkd4rm5uf.us-west-2.rds.amazonaws.com',
+	'username'		=> 	'BRDesign',
+	'password'		=> 	'233SpringSt',
 	'database'		=> 	'brd',
 	'dbdriver' 		=> 	'mysqli',
 	'pconnect' 		=>	FALSE,

@@ -1,0 +1,80 @@
+{{ theme:partial name="header" }}  
+		<!-- <div id="home">  
+		<h3>People that Listen.<br> Interiors that work.</h3>	
+			<div class="BRD-ui-module carousel" data-module="slider" data-slider="hero">
+			    <div class="mask">
+			        <ul>
+			             {{ streams:cycle stream="homepage_hero" }}
+						    {{ entries }}
+						 	<li>
+						 		<img src="http://s3.amazonaws.com/brdesign_homepage_hero/{{homepage_hero_image:filename}}" alt="">
+						 	</li>
+						    {{ /entries }}
+						{{ /streams:cycle }}
+			        </ul>
+			    </div>
+			</div>
+		</div>
+		{{ theme:partial name="nav" }}
+		<div id="main">  
+        	<div id="blurb" class="cf">
+	        	<p>{{ home_blurb }}</p>	
+	        	<a class="roundedButton" href="{{ home_blurb_link }}">Learn More</a>
+        	</div>
+	        <div id="projects" class="cf">
+	        	<div id="left">
+	        		<img src="http://s3.amazonaws.com/brdesign_homepage_projects/{{home_workplace_image:filename}}" alt="">
+	        		<a href="{{home_workplace_link}}">Workplace</a>
+	        	</div>
+	        	<div id="right">
+	        		<img src="http://s3.amazonaws.com/brdesign_homepage_projects/{{home_owners_image:filename}}" alt="">
+	        		<a href="{{home_owners_link}}">Owners &amp Developers</a>
+	        	</div>
+	        </div>
+			<div id="doubleSlider">
+				<div id="backgroundSlider" class="BRD-ui-module carousel" data-module="slider" data-slider="homeBackground">
+				    <div class="mask">
+				        <ul>
+				            {{ streams:cycle stream="homepage_bottom" }}
+							    {{ entries }}
+							 	<li>
+							 		<img src="http://s3.amazonaws.com/brdesign_home_bottom-slider/{{homepage_bottom_image:filename}}" alt="">
+							 	</li>
+							    {{ /entries }}
+							{{ /streams:cycle }}
+				        </ul>
+				    </div>
+				</div>
+				<div id="foregroundSlider" class="BRD-ui-module carousel" data-module="slider" data-slider="homeForeground">
+			        <div class="mask">
+			            <ul>
+			                 {{ streams:cycle stream="homepage_bottom" }}
+							    {{ entries }}
+							 	<li>
+							 		<h4>{{ homepage_bottom_title }}</h4>
+							 		<p>{{ homepage_bottom_text }}</p>
+							 		<a class="roundedButton" href="{{homepage_bottom_link}}">View Project</a>
+							 	</li>
+							    {{ /entries }}
+							{{ /streams:cycle }}
+			            </ul>
+			        </div>
+			    </div>
+			</div>
+			<div id="bottom" class="cf">
+				<div id="mediaItems" class="cf">
+					<!-- <img src="/assets/img/home_media_1.jpg" alt="">	
+					<img src="/assets/img/home_media_2.jpg" alt="">	
+					<img src="/assets/img/home_media_3.jpg" alt="">	 -->
+					{{ streams:cycle stream="media_stream" limit="3" }}
+					    {{ entries }}
+						    <img src="http://s3.amazonaws.com/brdesign_media/{{media_image:filename}}" alt="">
+					    {{ /entries }}
+					{{ /streams:cycle }}
+				</div>
+				<div class="info">
+					<p>BR Design has been featured in many prominent publications.</p>
+					<a class="roundedButton" href="/in-the-media">View All</a>
+				</div>
+			</div> -->
+{{ theme:partial name="footer" }}

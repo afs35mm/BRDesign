@@ -4,7 +4,7 @@
 			<div class="BRD-ui-module carousel" data-module="slider" data-slider="hero">
 			    <div class="mask">
 			        <ul>
-			             {{ streams:cycle stream="homepage_hero" }}
+			             {{ streams:cycle stream="homepage_hero" order_by="ordering_count" }}
 						    {{ entries }}
 						 	<li>
 						 		<img src="http://s3.amazonaws.com/brdesign_homepage_hero/{{homepage_hero_image:filename}}" alt="">
@@ -35,7 +35,7 @@
 				<div id="backgroundSlider" class="BRD-ui-module carousel" data-module="slider" data-slider="homeBackground">
 				    <div class="mask">
 				        <ul>
-				            {{ streams:cycle stream="homepage_bottom" }}
+				            {{ streams:cycle stream="homepage_bottom" order_by="ordering_count" }}
 							    {{ entries }}
 							 	<li>
 							 		<img src="http://s3.amazonaws.com/brdesign_home_bottom-slider/{{homepage_bottom_image:filename}}" alt="">
@@ -48,7 +48,7 @@
 				<div id="foregroundSlider" class="BRD-ui-module carousel" data-module="slider" data-slider="homeForeground">
 			        <div class="mask">
 			            <ul>
-			                 {{ streams:cycle stream="homepage_bottom" }}
+			                 {{ streams:cycle stream="homepage_bottom" order_by="ordering_count" }}
 							    {{ entries }}
 							 	<li>
 							 		<h4>{{ homepage_bottom_title }}</h4>

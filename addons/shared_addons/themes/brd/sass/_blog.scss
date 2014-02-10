@@ -272,6 +272,7 @@ $sidebar-width: 35%;
 				float:left;
 				a, span{
 					@include cta;
+					margin-left:0.6em;
 				}
 				&.active{
 					span{color:$red !important;}

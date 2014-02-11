@@ -15,7 +15,85 @@
 	}
 	.grid{
 		.box{
+			position:relative;
+			.cover{
+				position:absolute;
+				top:0;left:0;right:0;bottom:0;
+				background:#3e3e3e;
+				opacity:0;
+				transition: opacity .25s ease-in-out;
+			   	-moz-transition: opacity .25s ease-in-out;
+			   	-webkit-transition: opacity .25s ease-in-out;
+			}
+			h5{
+				position:absolute;
+				top:1em;
+				left:1em;
+				text-transform: uppercase;
+				font-family: $fjalla;
+				color: #fff;
+				font-size: 1.2em;
+				display:none;
+			}
+			a{
+				position:absolute;
+				bottom:3%;
+				right:5%;
+				display:none;
+				border-color:#fff ;
+				color:#fff;
+			}
 			display:block;
+			float:left;
+			@include border-box;
+			img{
+				width:100%;
+			}
+			&.item1{
+				width:49%;
+				margin-right:2%;
+				h5{
+					font-size:2.3em;
+				}
+			}
+			&.item2{
+				width:23.5%;
+				margin-right:2%;
+				margin-bottom:2%;
+				a{
+					//right:12%;
+				}
+			}
+			&.item3{
+				width:23.5%;
+				margin-bottom:2%;
+			}
+			&.item4{
+				width:23.5%;
+				margin-right:2%;
+				a{
+					//right:12%;
+				}
+			}
+			&.item5{
+				width:23.5%;
+			}
+		}
+		.box:hover{
+			h5, a{
+				display:block;
+			}
+			.cover{
+				opacity:0.9;	
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: $small) {
+	.projectsHome{
+		.roundedButton{
+			margin-bottom:0;
 		}
 	}
 }

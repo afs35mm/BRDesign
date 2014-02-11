@@ -1,0 +1,23 @@
+{{ theme:partial name="header" }}  
+	
+		{{ theme:partial name="nav" }}
+		<div id="main" class="projectsHome">
+			<p>{{projects_home_blurb}}</p>        
+			
+			<h4>Workplace</h4>
+			<div class="grid">
+				
+			</div>
+
+			<h4>Owners &amp; Developers</h4>
+			<div class="grid">
+				{{ streams:cycle stream="project_grid-owners" order_by="ordering_count" }}
+				    {{ entries }}
+				 		<div class="box count{{count}}">
+				 			<img src="http://s3.amazonaws.com/brdesign_project-gird/{{project_grid_image:filename}}" alt="">
+				 		</div>
+				    {{ /entries }}
+				{{ /streams:cycle }}
+			</div>
+		</div>
+{{ theme:partial name="footer" }}

@@ -874,3 +874,34 @@ footer {
 
   .blog #posts {
     width: 100%; } }
+.project h4 {
+  text-transform: uppercase;
+  font-family: "Fjalla One", sans-serif;
+  color: #444444;
+  font-size: 1.875em;
+  padding-bottom: 1em; }
+.project p {
+  color: #6b6b6b;
+  font-size: 1.5em;
+  line-height: 1em;
+  line-height: 1.25em;
+  padding-bottom: 1.3em; }
+.project img {
+  display: block;
+  float: left;
+  margin-bottom: 2%; }
+
+.projectsHome p {
+  color: #6b6b6b;
+  font-size: 1.5em;
+  line-height: 1em;
+  line-height: 1.25em;
+  padding-bottom: 3.5em; }
+.projectsHome h4 {
+  text-transform: uppercase;
+  font-family: "Fjalla One", sans-serif;
+  color: #444444;
+  font-size: 1.875em;
+  padding-bottom: 2em; }
+.projectsHome .grid .box {
+  display: block; }

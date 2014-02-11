@@ -5,16 +5,18 @@ BRD.mosaic = (function(){
 			
 		};
 		var init = function () {
-			$('.project img').each(function(key, value){
-				$this = $(value);
-				if( $this.width() > 571 ){
-					$this.css('width', '100%');
-				}else{
-					$this.css('width', '49%');
-					if( key % 2 == 1 ){
-						$this.css('margin-right', '2%');
+			$(window).load(function(){
+				$('.project img').each(function(key, value){
+					$this = $(value);
+					if( $this.width() < 571 ){
+						$this.css('width', '49%');
+						if( key % 2 == 1 ){
+							$this.css('margin-right', '2%');
+						}
+					}else{
+						$this.css('width', '100%');
 					}
-				}
+				});	
 			});
 		}
         return {

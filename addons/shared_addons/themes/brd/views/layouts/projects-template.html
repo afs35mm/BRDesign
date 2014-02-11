@@ -43,6 +43,13 @@
 			{{ if image10:filename != "" }}
 				<img src="http://s3.amazonaws.com/brdesign-project/{{image10:filename}}" alt="">
 			{{ endif }}
+
+			{{ if project_choice:value ===  "owners-developers" }}
+				<p>this is a owners and developers page</p>
+			{{ elseif project_choice:value ===  "workplace" }}
+				<p>this is a workplace page</p>
+			{{ endif}}
+
 		</div>
 {{ theme:partial name="footer" }}
 

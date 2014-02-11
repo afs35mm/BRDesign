@@ -25,6 +25,9 @@ BRD.slider = (function(){
 				fnPaginateBegin: slideBgCarousel,
 				paginateItems:'circles',
 			},
+			projectHome: {
+				bUseThumbnails: false,
+			}
 		};
 
         var init = function($el, moduleInstance){

@@ -212,6 +212,9 @@ footer {
     padding-left: .68em;
     padding-right: .68em; } }
 @media (max-width: 721px) {
+  footer ul.social {
+    padding: 4.5em 0 0 4em; }
+
   nav {
     height: 7em; }
     nav #inner {
@@ -352,6 +355,9 @@ footer {
   margin-right: 4%; }
 
 @media only screen and (max-width: 721px) {
+  .home #projects #left, .home #projects #right {
+    width: 100%;
+    margin-right: 0; }
   .home #bottom #mediaItems {
     float: left;
     width: 100%;
@@ -376,6 +382,10 @@ footer {
     .home #doubleSlider #foregroundSlider ul {
       width: 100% !important; } }
 @media only screen and (max-width: 420px) {
+  .home .btnPaginate {
+    display: none; }
+  .home #home h3 {
+    font-size: 2.4em; }
   .home #bottom #mediaItems {
     float: left;
     width: 100%;
@@ -910,12 +920,17 @@ footer {
   display: block;
   float: left;
   margin-bottom: 2%; }
+.project .mosaic {
+  padding-bottom: 4em; }
 .project .filmstrip .item {
-  width: 20%;
+  width: 18%;
   display: block;
-  float: left; }
+  float: left;
+  margin-right: 2.5%; }
   .project .filmstrip .item img {
     width: 100%; }
+.project .filmstrip .item:last-child {
+  margin-right: 0; }
 
 .projectsHome p {
   color: #6b6b6b;
@@ -929,6 +944,15 @@ footer {
   color: #444444;
   font-size: 1.875em;
   padding-bottom: 2em; }
+.projectsHome .btnPaginate {
+  width: 35px;
+  height: 35px; }
+.projectsHome .btnPaginate:hover {
+  background-position: 0px -35px; }
+.projectsHome .btnPrevious {
+  background: url(/assets/img/small_arrows-left.png); }
+.projectsHome .btnNext {
+  background: url(/assets/img/small_arrows-right.png); }
 .projectsHome .grid .box {
   position: relative;
   display: block;

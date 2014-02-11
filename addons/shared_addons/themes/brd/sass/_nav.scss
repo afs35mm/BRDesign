@@ -115,6 +115,9 @@ footer{
 }
 
 @media (max-width: $small) {
+	footer ul.social{
+		padding:4.5em 0 0 4em;
+	}
 	nav{
 		// &.fixed{
 		// 	-webkit-transition: none !important;

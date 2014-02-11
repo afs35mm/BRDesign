@@ -515,6 +515,18 @@ footer {
       .about #bottomRow #right ul:first-child {
         margin-right: 6%; }
 
+@media only screen and (max-width: 721px) {
+  .about .col-4 {
+    width: 100%;
+    padding-bottom: 3em; }
+    .about .col-4 p {
+      line-height: 1em; }
+  .about .col-4:last-child {
+    padding-bottom: 0; }
+  .about #bottomRow #left, .about #bottomRow #right {
+    width: 100%; }
+  .about #bottomRow #left {
+    margin-bottom: 3em; } }
 .clients #main img {
   border: 1px solid #6b6b6b;
   -moz-box-sizing: border-box;
@@ -904,4 +916,63 @@ footer {
   font-size: 1.875em;
   padding-bottom: 2em; }
 .projectsHome .grid .box {
+  position: relative;
+  display: block;
+  float: left;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  .projectsHome .grid .box .cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #3e3e3e;
+    opacity: 0;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out; }
+  .projectsHome .grid .box h5 {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    text-transform: uppercase;
+    font-family: "Fjalla One", sans-serif;
+    color: #fff;
+    font-size: 1.2em;
+    display: none; }
+  .projectsHome .grid .box a {
+    position: absolute;
+    bottom: 3%;
+    right: 5%;
+    display: none;
+    border-color: white;
+    color: #fff; }
+  .projectsHome .grid .box img {
+    width: 100%; }
+  .projectsHome .grid .box.item1 {
+    width: 49%;
+    margin-right: 2%; }
+    .projectsHome .grid .box.item1 h5 {
+      font-size: 2.3em; }
+  .projectsHome .grid .box.item2 {
+    width: 23.5%;
+    margin-right: 2%;
+    margin-bottom: 2%; }
+  .projectsHome .grid .box.item3 {
+    width: 23.5%;
+    margin-bottom: 2%; }
+  .projectsHome .grid .box.item4 {
+    width: 23.5%;
+    margin-right: 2%; }
+  .projectsHome .grid .box.item5 {
+    width: 23.5%; }
+.projectsHome .grid .box:hover h5, .projectsHome .grid .box:hover a {
   display: block; }
+.projectsHome .grid .box:hover .cover {
+  opacity: 0.9; }
+
+@media only screen and (max-width: 721px) {
+  .projectsHome .roundedButton {
+    margin-bottom: 0; } }

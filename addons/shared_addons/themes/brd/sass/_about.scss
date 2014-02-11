@@ -66,3 +66,26 @@
 		}
 	}
 }
+
+@media only screen and (max-width: $small) {
+	.about{
+		.col-4{
+			width:100%;
+			padding-bottom:3em;
+			p{
+				line-height:1em;
+			}
+		}
+		.col-4:last-child{
+			padding-bottom:0;
+		}
+		#bottomRow{
+			#left, #right{
+				width:100%;
+			}
+			#left{
+				margin-bottom:3em;
+			}
+		}
+	}
+}

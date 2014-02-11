@@ -6,7 +6,7 @@ BRD.mosaic = (function(){
 		};
 		var init = function () {
 			$(window).load(function(){
-				$('.project img').each(function(key, value){
+				$('.mosaic img').each(function(key, value){
 					$this = $(value);
 					if( $this.width() < 571 ){
 						$this.css('width', '49%');

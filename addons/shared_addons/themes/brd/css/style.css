@@ -910,6 +910,12 @@ footer {
   display: block;
   float: left;
   margin-bottom: 2%; }
+.project .filmstrip .item {
+  width: 20%;
+  display: block;
+  float: left; }
+  .project .filmstrip .item img {
+    width: 100%; }
 
 .projectsHome p {
   color: #6b6b6b;

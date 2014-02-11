@@ -4,48 +4,60 @@
 		<div id="main" class="project BRD-ui-module cf" data-module="mosaic">
 			<h4>{{project_name}}</h4>
 			<p>{{project_description}}</p>
-			{{ if image1:filename != "" }}
-				<img src="http://s3.amazonaws.com/brdesign-project/{{image1:filename}}" alt="">
-			{{ endif }}
+			<div class="mosaic">
+				{{ if image1:filename != "" }}
+					<img src="http://s3.amazonaws.com/brdesign-project/{{image1:filename}}" alt="">
+				{{ endif }}
 
-			{{ if image2:filename != "" }}
-				<img src="http://s3.amazonaws.com/brdesign-project/{{image2:filename}}" alt="">
-			{{ endif }}
+				{{ if image2:filename != "" }}
+					<img src="http://s3.amazonaws.com/brdesign-project/{{image2:filename}}" alt="">
+				{{ endif }}
 
-			{{ if image3:filename != "" }}
-				<img src="http://s3.amazonaws.com/brdesign-project/{{image3:filename}}" alt="">
-			{{ endif }}
+				{{ if image3:filename != "" }}
+					<img src="http://s3.amazonaws.com/brdesign-project/{{image3:filename}}" alt="">
+				{{ endif }}
 
-			{{ if image4:filename != "" }}
-				<img src="http://s3.amazonaws.com/brdesign-project/{{image4:filename}}" alt="">
-			{{ endif }}
+				{{ if image4:filename != "" }}
+					<img src="http://s3.amazonaws.com/brdesign-project/{{image4:filename}}" alt="">
+				{{ endif }}
 
-			{{ if image5:filename != "" }}
-				<img src="http://s3.amazonaws.com/brdesign-project/{{image5:filename}}" alt="">
-			{{ endif }}
+				{{ if image5:filename != "" }}
+					<img src="http://s3.amazonaws.com/brdesign-project/{{image5:filename}}" alt="">
+				{{ endif }}
 
-			{{ if image6:filename != "" }}
-				<img src="http://s3.amazonaws.com/brdesign-project/{{image6:filename}}" alt="">
-			{{ endif }}
+				{{ if image6:filename != "" }}
+					<img src="http://s3.amazonaws.com/brdesign-project/{{image6:filename}}" alt="">
+				{{ endif }}
 
-			{{ if image7:filename != "" }}
-				<img src="http://s3.amazonaws.com/brdesign-project/{{image7:filename}}" alt="">
-			{{ endif }}
+				{{ if image7:filename != "" }}
+					<img src="http://s3.amazonaws.com/brdesign-project/{{image7:filename}}" alt="">
+				{{ endif }}
 
-			{{ if image8:filename != "" }}
-				<img src="http://s3.amazonaws.com/brdesign-project/{{image8:filename}}" alt="">
-			{{ endif }}
+				{{ if image8:filename != "" }}
+					<img src="http://s3.amazonaws.com/brdesign-project/{{image8:filename}}" alt="">
+				{{ endif }}
 
-			{{ if image9:filename != "" }}
-				<img src="http://s3.amazonaws.com/brdesign-project/{{image9:filename}}" alt="">
-			{{ endif }}
+				{{ if image9:filename != "" }}
+					<img src="http://s3.amazonaws.com/brdesign-project/{{image9:filename}}" alt="">
+				{{ endif }}
 
-			{{ if image10:filename != "" }}
-				<img src="http://s3.amazonaws.com/brdesign-project/{{image10:filename}}" alt="">
-			{{ endif }}
-
+				{{ if image10:filename != "" }}
+					<img src="http://s3.amazonaws.com/brdesign-project/{{image10:filename}}" alt="">
+				{{ endif }}
+			</div>
 			{{ if project_choice:value ===  "owners-developers" }}
-				<p>this is a owners and developers page</p>
+				<div class="filmstrip">
+				{{ streams:cycle stream="project_grid-owners" order_by="ordering_count" }}
+				    {{ entries }}
+			 			<div class="item">
+				 			<img src="http://s3.amazonaws.com/brdesign_project-gird/{{project_grid_image:filename}}" alt="">
+				 			<!-- <div class="cover"></div>
+				 			<h5>{{project_grid_text}}</h5>
+				 			<a class="link roundedButton" href="{{ project_grid_relative_link }}">Direct Link</a> -->
+				 		</div>
+				    {{ /entries }}
+				{{ /streams:cycle }}
+				</div>
 			{{ elseif project_choice:value ===  "workplace" }}
 				<p>this is a workplace page</p>
 			{{ endif}}

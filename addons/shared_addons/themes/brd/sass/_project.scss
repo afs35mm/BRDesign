@@ -1,5 +1,6 @@
 .project{
 	$gutter: 3%;
+
 	h4{
 		text-transform: uppercase;
 		font-family: $fjalla;
@@ -20,14 +21,21 @@
 		float:left;
 		margin-bottom:2%;
 	}
+	.mosaic{
+		padding-bottom:4em;
+	}
 	.filmstrip{
 		.item{
-			width:20%;
+			width:18%;
 			display:block;
 			float:left;
+			margin-right:2.5%;
 			img{
 				width:100%;
 			}
+		}
+		.item:last-child{
+			margin-right:0;
 		}
 	}
 } 

@@ -1,0 +1,21 @@
+.projectsHome{
+	p{
+		color:$lt-grey;
+		font-size:1.5em;
+		line-height:1em;
+		line-height:1.25em;
+		padding-bottom:3.5em;
+	}
+	h4{
+		text-transform: uppercase;
+		font-family: $fjalla;
+		color: $drk-grey;
+		font-size: 1.875em;
+		padding-bottom:2em;
+	}
+	.grid{
+		.box{
+			display:block;
+		}
+	}
+}

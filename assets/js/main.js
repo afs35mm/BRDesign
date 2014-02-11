@@ -52,25 +52,12 @@ BRD.App = (function(){
             $('.navMenuBtn').on('click', showMobileMenu);
         };
 
-        /**
-        NOT IN USE!
-        var resizeMediaImages = function(){
-            if( config.layout == 'large' ){
-                $('#mediaItems').height( $('#bottom').width() * .2 );    
-            }
-            var containerHeight = $('#mediaItems').height();
-            $('#mediaItems img').each(function(key, val){                
-                $this = $(this);
-                $this.css({ "max-height": containerHeight + 'px' });
-            });
-        };
-        **/
-
         var findUiModules = function(){
 			$('.BRD-ui-module').each(function(index){
 				var $el, moduleType, moduleInstance;
 				$el = $(this);
 				moduleType = $el.data('module');
+                console.log(moduleType);
 				moduleInstance = $el.data(moduleType);
                 BRD[moduleType].init($el, moduleInstance);
 			});

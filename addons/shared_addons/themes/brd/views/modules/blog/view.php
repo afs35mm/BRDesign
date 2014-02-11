@@ -14,7 +14,7 @@
         {{ post }}
             <div class="post">
                 <div class="head">
-                    <img class="headerImg" src="http://s3.amazonaws.com/brd_blog_images/{{blog_post_image:filename}}" alt="">
+                    <img class="headerImg" src="http://s3.amazonaws.com/brdesign_blog-images/{{blog_post_image:filename}}" alt="">
                     <div class="date">
                         <span class="month">{{ helper:date format="M" timestamp=created_on }}</span>
                         <span class="day">{{ helper:date format="d" timestamp=created_on }}</span>

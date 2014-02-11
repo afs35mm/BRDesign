@@ -6,7 +6,9 @@ nav{
 	margin: 0 auto;
 	z-index:30;
 	position:absolute;
+	//margin-right:0;
 	//padding: 0 $side-padding;
+	//left:0;
 	@include border-box;
 	#inner{
 		background: url('/assets/img/divider.jpg') center bottom no-repeat;	
@@ -30,7 +32,7 @@ nav{
 		display:block;
 		margin-bottom: 2em;
 		li{
-			padding: 2.5em 1.5em;
+			padding: 2.5em 1.4em;
 			display:block;
 			float:left;
 			a{
@@ -54,6 +56,11 @@ nav{
 	&.fixed{
 		position:fixed;
 		top:0;
+		right:0;
+		margin-right:0;
+		.mobileOpen &{
+			margin-right: 45%;
+		}
 	}
 }
 
@@ -102,14 +109,19 @@ footer{
 
 @media (max-width: 860px) {
   nav ul#nav li {
-  		padding-left: .75em;
-  		padding-right: .75em;
+  		padding-left: .68em;
+  		padding-right: .68em;
   	}
 }
 
 @media (max-width: $small) {
 	nav{
-		
+		// &.fixed{
+		// 	-webkit-transition: none !important;
+		// 	-moz-transition: none;
+		// 	-o-transition: none;
+		// 	transition: none; 
+		// }
 		height:7em;
 		
 		#inner{
@@ -119,7 +131,8 @@ footer{
 			position:fixed;
 			top:0;
 			height:100%; 
-			margin-top: 8px;
+			padding-top: 8px;
+			//border-top: 8px solid $red;
 			-webkit-box-shadow: inset 4px -6px 13px -2px #3d3d3d;
 			-moz-box-shadow: inset 4px -6px 13px -2px #3d3d3d;
 			-o-box-shadow: inset 4px -6px 13px -2px #3d3d3d;

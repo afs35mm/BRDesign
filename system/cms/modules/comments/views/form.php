@@ -30,7 +30,7 @@
 		<textarea name="comment" id="comment" rows="5" cols="30" class="width-full"><?php echo $comment['comment'] ?></textarea>
 	</div>
 
-	<div class="form_submit">
+	<div class="form_submit cf">
 		<?php echo form_submit('submit', lang('comments:send_label')) ?>
 	</div>
 

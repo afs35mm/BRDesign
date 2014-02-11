@@ -95,5 +95,30 @@
 		.roundedButton{
 			margin-bottom:0;
 		}
+		.grid{
+			.box{
+				&.item1{
+					width:100%;
+					margin-right:0;
+					margin-bottom:4%;
+				}
+				&.item2{
+					width:48%;
+					margin-right:4%;
+				}
+				&.item3{
+					width:48%;	
+					margin-bottom:4%;
+				}
+				&.item4{
+					width:48%;
+					margin-right:4%;
+				}
+				&.item5{
+					width:48%;
+					margin-bottom:4%;
+				}
+			}
+		}
 	}
 }

@@ -20,4 +20,14 @@
 		float:left;
 		margin-bottom:2%;
 	}
+	.filmstrip{
+		.item{
+			width:20%;
+			display:block;
+			float:left;
+			img{
+				width:100%;
+			}
+		}
+	}
 } 

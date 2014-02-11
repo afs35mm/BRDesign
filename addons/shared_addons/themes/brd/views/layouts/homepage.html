@@ -7,7 +7,7 @@
 			             {{ streams:cycle stream="homepage_hero" order_by="ordering_count" }}
 						    {{ entries }}
 						 	<li>
-						 		<img src="http://s3.amazonaws.com/brdesign_homepage_hero/{{homepage_hero_image:filename}}" alt="">
+						 		<img src="http://s3.amazonaws.com/brdesign_homepage-hero/{{homepage_hero_image:filename}}" alt="">
 						 	</li>
 						    {{ /entries }}
 						{{ /streams:cycle }}
@@ -23,11 +23,11 @@
         	</div>
 	        <div id="projects" class="cf">
 	        	<div id="left">
-	        		<img src="http://s3.amazonaws.com/brdesign_homepage_projects/{{home_workplace_image:filename}}" alt="">
+	        		<img src="http://s3.amazonaws.com/brdesign_home-projects/{{home_workplace_image:filename}}" alt="">
 	        		<a href="{{home_workplace_link}}">Workplace</a>
 	        	</div>
 	        	<div id="right">
-	        		<img src="http://s3.amazonaws.com/brdesign_homepage_projects/{{home_owners_image:filename}}" alt="">
+	        		<img src="http://s3.amazonaws.com/brdesign_home-projects/{{home_owners_image:filename}}" alt="">
 	        		<a href="{{home_owners_link}}">Owners &amp Developers</a>
 	        	</div>
 	        </div>
@@ -38,7 +38,7 @@
 				            {{ streams:cycle stream="homepage_bottom" order_by="ordering_count" }}
 							    {{ entries }}
 							 	<li>
-							 		<img src="http://s3.amazonaws.com/brdesign_home_bottom-slider/{{homepage_bottom_image:filename}}" alt="">
+							 		<img src="http://s3.amazonaws.com/brdesign_home-bottom/{{homepage_bottom_image:filename}}" alt="">
 							 	</li>
 							    {{ /entries }}
 							{{ /streams:cycle }}
@@ -65,7 +65,7 @@
 				<div id="mediaItems" class="cf">
 					{{ streams:cycle stream="media_stream" limit="3" }}
 					    {{ entries }}
-						    <img src="http://s3.amazonaws.com/brdesign_media/{{media_image:filename}}" alt="">
+						    <img src="http://s3.amazonaws.com/brdesign-media/{{media_image:filename}}" alt="">
 					    {{ /entries }}
 					{{ /streams:cycle }}
 				</div>

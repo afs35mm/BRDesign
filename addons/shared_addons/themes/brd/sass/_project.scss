@@ -1,0 +1,23 @@
+.project{
+	$gutter: 3%;
+	h4{
+		text-transform: uppercase;
+		font-family: $fjalla;
+		color: $drk-grey;
+		font-size: 1.875em;
+		padding-bottom:1em;
+	}
+	p{
+		color:$lt-grey;
+		font-size:1.5em;
+		line-height:1em;
+		line-height:1.25em;
+		padding-bottom:1.3em;
+	}
+	img{
+		//margin-bottom:$gutter;
+		display:block;
+		float:left;
+		margin-bottom:2%;
+	}
+} 

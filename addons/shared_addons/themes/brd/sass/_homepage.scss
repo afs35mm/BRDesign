@@ -134,6 +134,12 @@
 
 @media only screen and (max-width: $small) {
 	.home {
+		#projects{
+			#left, #right{
+				width:100%;
+				margin-right:0;
+			}	
+		}
 		#bottom{
 			#mediaItems{
 				float:left;
@@ -179,6 +185,12 @@
 
 @media only screen and (max-width: $extrasmall) {
 	.home {
+		.btnPaginate{display:none;}
+		.carousel .mask > ul > li {
+			// width: 200% !important;
+			// height: 130% !important;
+		}
+		#home h3 {font-size:2.4em;}
 		#bottom{
 			#mediaItems{
 				float:left;

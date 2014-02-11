@@ -13,6 +13,19 @@
 		font-size: 1.875em;
 		padding-bottom:2em;
 	}
+	.btnPaginate{
+		width: 35px;
+		height: 35px;
+	}
+	.btnPaginate:hover{
+		background-position: 0px -35px;
+	}
+	.btnPrevious{
+		background: url(/assets/img/small_arrows-left.png);
+	}
+	.btnNext{
+		background: url(/assets/img/small_arrows-right.png);
+	}
 	.grid{
 		.box{
 			position:relative;

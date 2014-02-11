@@ -114,6 +114,11 @@ body {
     -moz-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s; }
+  #outerWrap nav {
+    -webkit-transition: margin 0.3s;
+    -moz-transition: margin 0.3s;
+    -o-transition: margin 0.3s;
+    transition: margin 0.3s; }
   #outerWrap #outer-content {
     left: 0; }
   #outerWrap footer {
@@ -148,7 +153,7 @@ nav {
     display: block;
     margin-bottom: 2em; }
     nav ul#nav li {
-      padding: 2.5em 1.5em;
+      padding: 2.5em 1.4em;
       display: block;
       float: left; }
       nav ul#nav li a {
@@ -165,7 +170,11 @@ nav {
     background: blue; }
   nav.fixed {
     position: fixed;
-    top: 0; }
+    top: 0;
+    right: 0;
+    margin-right: 0; }
+    .mobileOpen nav.fixed {
+      margin-right: 45%; }
 
 ul.social {
   float: right;
@@ -201,8 +210,8 @@ footer {
 
 @media (max-width: 860px) {
   nav ul#nav li {
-    padding-left: .75em;
-    padding-right: .75em; } }
+    padding-left: .68em;
+    padding-right: .68em; } }
 @media (max-width: 721px) {
   nav {
     height: 7em; }
@@ -212,7 +221,7 @@ footer {
       position: fixed;
       top: 0;
       height: 100%;
-      margin-top: 8px;
+      padding-top: 8px;
       -webkit-box-shadow: inset 4px -6px 13px -2px #3d3d3d;
       -moz-box-shadow: inset 4px -6px 13px -2px #3d3d3d;
       -o-box-shadow: inset 4px -6px 13px -2px #3d3d3d;
@@ -975,4 +984,20 @@ footer {
 
 @media only screen and (max-width: 721px) {
   .projectsHome .roundedButton {
-    margin-bottom: 0; } }
+    margin-bottom: 0; }
+  .projectsHome .grid .box.item1 {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 4%; }
+  .projectsHome .grid .box.item2 {
+    width: 48%;
+    margin-right: 4%; }
+  .projectsHome .grid .box.item3 {
+    width: 48%;
+    margin-bottom: 4%; }
+  .projectsHome .grid .box.item4 {
+    width: 48%;
+    margin-right: 4%; }
+  .projectsHome .grid .box.item5 {
+    width: 48%;
+    margin-bottom: 4%; } }

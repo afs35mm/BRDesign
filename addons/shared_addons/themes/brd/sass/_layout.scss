@@ -57,6 +57,12 @@ body{
 		    -o-transition: all 0.3s;
 		    transition: all 0.3s; 
 		}
+		nav{
+			 -webkit-transition: margin 0.3s;
+		    -moz-transition: margin 0.3s;
+		    -o-transition: margin 0.3s;
+		    transition: margin 0.3s; 
+		}
 		#outer-content{
 			left:0;
 		}

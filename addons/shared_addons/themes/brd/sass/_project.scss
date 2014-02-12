@@ -23,6 +23,9 @@
 	}
 	.mosaic{
 		padding-bottom:4em;
+		img{
+			display:none;
+		}
 	}
 	.filmstrip{
 		.item{
@@ -30,8 +33,45 @@
 			display:block;
 			float:left;
 			margin-right:2.5%;
+			position:relative;;
 			img{
 				width:100%;
+			}
+			.cover{
+				position:absolute;
+				top:0;left:0;right:0;bottom:0;
+				background:#3e3e3e;
+				opacity:0;
+				transition: opacity .25s ease-in-out;
+			   	-moz-transition: opacity .25s ease-in-out;
+			   	-webkit-transition: opacity .25s ease-in-out;
+			}
+			h5{
+				position:absolute;
+				top:1em;
+				left:1em;
+				text-transform: uppercase;
+				font-family: $fjalla;
+				color: #fff;
+				font-size: 1.2em;
+				display:none;
+				padding-right: 20px;
+			}
+			a{
+				position:absolute;
+				bottom:3%;
+				right:5%;
+				display:none;
+				border-color:#fff ;
+				color:#fff;
+			}
+		}
+		.item:hover{
+			h5, a{
+				display:block;
+			}
+			.cover{
+				opacity:0.9;	
 			}
 		}
 		.item:last-child{

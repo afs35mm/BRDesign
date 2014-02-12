@@ -16,6 +16,7 @@ BRD.mosaic = (function(){
 					}else{
 						$this.css('width', '100%');
 					}
+					$this.fadeIn();
 				});	
 			});
 		}

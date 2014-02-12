@@ -841,7 +841,8 @@ class CI_Upload {
 
 			$memory_limit = number_format(ceil(filesize($file) + $memory_limit), 0, '.', '');
 
-			ini_set('memory_limit', $memory_limit); // When an integer is used, the value is measured in bytes. - PHP.net
+			//ini_set('memory_limit', $memory_limit); // When an integer is used, the value is measured in bytes. - PHP.net
+			ini_set('memory_limit', '-1');
 		}
 
 		// If the file being uploaded is an image, then we should have no problem with XSS attacks (in theory), but

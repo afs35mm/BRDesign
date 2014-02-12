@@ -47,7 +47,7 @@ $config['pages:default_page_content'] = array(
 		),
 		'fourohfour' => array(
 			'created' => date('Y-m-d H:i:s'),
-			'body' => '<p>We cannot find the page you are looking for, please click <a title="Home" href="{{ pages:url id=\'1\' }}">here</a> to go to the homepage.</p>',
+			'body' => '<p class="fourohfour">We cannot find the page you are looking for, please click <a title="Home" href="{{ pages:url id=\'1\' }}">here</a> to go to the homepage.</p>',
 			'created_by' => 1
 		)
 );

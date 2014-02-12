@@ -158,7 +158,13 @@ nav {
       float: left; }
       nav ul#nav li a {
         font-size: 1em;
-        color: #6b6b6b; }
+        color: #6b6b6b;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s; }
+      nav ul#nav li a:hover {
+        color: #f60112; }
       nav ul#nav li.current {
         background: #f60112; }
         nav ul#nav li.current a {
@@ -965,6 +971,11 @@ footer {
   opacity: 0.9; }
 .project .filmstrip .item:last-child {
   margin-right: 0; }
+.project .workplaceFilmStrip {
+  background: red; }
+  .project .workplaceFilmStrip .carousel .mask > ul > li {
+    width: 32%;
+    background: green; }
 
 .projectsHome p {
   color: #6b6b6b;
@@ -977,13 +988,19 @@ footer {
   font-family: "Fjalla One", sans-serif;
   color: #444444;
   font-size: 1.875em;
-  padding-bottom: 2em; }
+  padding-bottom: 0.8em; }
+.projectsHome h4.owners {
+  padding-top: 2em; }
 .projectsHome .btnPaginate {
   width: 35px;
-  height: 35px; }
+  height: 35px;
+  top: -3.7em;
+  right: 1em; }
 .projectsHome .btnPaginate:hover {
   background-position: 0px -35px; }
 .projectsHome .btnPrevious {
+  right: 4em !important;
+  left: auto;
   background: url(/assets/img/small_arrows-left.png); }
 .projectsHome .btnNext {
   background: url(/assets/img/small_arrows-right.png); }
@@ -1025,26 +1042,83 @@ footer {
   .projectsHome .grid .box img {
     width: 100%; }
   .projectsHome .grid .box.item1 {
-    width: 49%;
+    width: 48%;
     margin-right: 2%; }
     .projectsHome .grid .box.item1 h5 {
       font-size: 2.3em; }
   .projectsHome .grid .box.item2 {
-    width: 23.5%;
+    width: 23%;
     margin-right: 2%;
     margin-bottom: 2%; }
   .projectsHome .grid .box.item3 {
-    width: 23.5%;
-    margin-bottom: 2%; }
+    width: 23%;
+    margin-bottom: 2%;
+    margin-right: 2%; }
   .projectsHome .grid .box.item4 {
-    width: 23.5%;
+    width: 23%;
     margin-right: 2%; }
   .projectsHome .grid .box.item5 {
-    width: 23.5%; }
+    width: 23%;
+    margin-right: 2%; }
 .projectsHome .grid .box:hover h5, .projectsHome .grid .box:hover a {
   display: block; }
 .projectsHome .grid .box:hover .cover {
   opacity: 0.9; }
+.projectsHome .projectHome {
+  /*
+  Large Pics
+  */
+  /*
+  Fist Mini Grid of 4
+  */
+  /*
+  Second Mini Grid of 4
+  */
+  /*
+  Third Mini Grid of 4
+  */
+  /*
+  Fourth(?) Mini Grid of 4 - DOESNT EXIST YET
+  */ }
+  .projectsHome .projectHome.carousel .mask > ul > li {
+    display: block;
+    width: 50%;
+    color: red; }
+  .projectsHome .projectHome .box {
+    display: block;
+    float: left; }
+    .projectsHome .projectHome .box img {
+      width: 100%; }
+  .projectsHome .projectHome .item1, .projectsHome .projectHome .item6, .projectsHome .projectHome .item11, .projectsHome .projectHome .item16, .projectsHome .projectHome .item21 {
+    width: 96%; }
+  .projectsHome .projectHome .item2, .projectsHome .projectHome .item3, .projectsHome .projectHome .item4, .projectsHome .projectHome .item5 {
+    width: 46%;
+    float: left; }
+  .projectsHome .projectHome .item2, .projectsHome .projectHome .item4 {
+    padding: 0 4% 0 0%; }
+  .projectsHome .projectHome .item2, .projectsHome .projectHome .item3 {
+    padding-bottom: 4%; }
+  .projectsHome .projectHome .item7, .projectsHome .projectHome .item8, .projectsHome .projectHome .item9, .projectsHome .projectHome .item10 {
+    width: 46%;
+    float: left; }
+  .projectsHome .projectHome .item7, .projectsHome .projectHome .item9 {
+    padding: 0 4% 0 0%; }
+  .projectsHome .projectHome .item7, .projectsHome .projectHome .item8 {
+    padding-bottom: 4%; }
+  .projectsHome .projectHome .item12, .projectsHome .projectHome .item13, .projectsHome .projectHome .item14, .projectsHome .projectHome .item15 {
+    width: 46%;
+    float: left; }
+  .projectsHome .projectHome .item17, .projectsHome .projectHome .item19 {
+    padding: 0 4% 0 0%; }
+  .projectsHome .projectHome .item17, .projectsHome .projectHome .item18 {
+    padding-bottom: 4%; }
+  .projectsHome .projectHome .item17, .projectsHome .projectHome .item18, .projectsHome .projectHome .item19, .projectsHome .projectHome .item20 {
+    width: 46%;
+    float: left; }
+  .projectsHome .projectHome .item12, .projectsHome .projectHome .item14 {
+    padding: 0 4% 0 0%; }
+  .projectsHome .projectHome .item12, .projectsHome .projectHome .item13 {
+    padding-bottom: 4%; }
 
 @media only screen and (max-width: 721px) {
   .projectsHome .roundedButton {
@@ -1058,10 +1132,14 @@ footer {
     margin-right: 4%; }
   .projectsHome .grid .box.item3 {
     width: 48%;
-    margin-bottom: 4%; }
+    margin-bottom: 4%;
+    margin-right: 0; }
   .projectsHome .grid .box.item4 {
     width: 48%;
     margin-right: 4%; }
   .projectsHome .grid .box.item5 {
     width: 48%;
-    margin-bottom: 4%; } }
+    margin-bottom: 4%;
+    margin-right: 0; }
+  .projectsHome .btnPaginate {
+    top: -4em; } }

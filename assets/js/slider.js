@@ -27,6 +27,13 @@ BRD.slider = (function(){
 			},
 			projectHome: {
 				bUseThumbnails: false,
+				fAspectRatio: 1,
+				iPerPage: 2,
+			},
+			workplaceFilmStrip: {
+				bUseThumbnails: false,
+				iPerPage: 3,
+				iNumToPaginate: 2
 			}
 		};
 

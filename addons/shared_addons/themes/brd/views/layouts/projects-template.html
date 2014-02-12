@@ -59,29 +59,22 @@
 				    {{ /entries }}
 				{{ /streams:cycle }}
 				</div>
+			
 			{{ elseif project_choice:value ===  "workplace" }}
+				<h4>Related Projects</h4>
 				<div class="BRD-ui-module carousel workplaceFilmStrip" data-module="slider" data-slider="workplaceFilmStrip">
 				    <div class="mask">
 				        <ul>
-						 	<li>
-						 		<h3>one</h3>
-						 	</li>
-						 	<li>
-						 		<h3>two</h3>
-						 	</li>
-						 	<li>
-						 		<h3>trhee</h3>
-						 	</li>
-						 	<li>
-						 		<h3>four</h3>
-						 	</li>
-						 	<li>
-						 		<h3>five</h3>
-						 	</li>
-						 	<li>
-						 		<h3>six</h3>
-						 	</li>
-				        </ul>
+						 	{{ streams:cycle stream="project_grid_workplace" order_by="ordering_count" }}
+							<li>
+								<div class="box item{{count}}">
+									<img src="http://s3.amazonaws.com/brdesign_project-gird/{{project_grid_image:filename}}" alt="">
+									<div class="cover"></div>
+									<h5>{{project_grid_text}}</h5>
+				 					<a class="link roundedButton" href="{{ project_grid_relative_link }}">Direct Link</a>
+								</div>
+							</li>
+						{{ /streams:cycle }}
 				    </div>
 				</div>
 			{{ endif}}

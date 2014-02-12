@@ -70,10 +70,10 @@ $db[PYRO_STAGING] = array(
 
 // Production
 $db[PYRO_PRODUCTION] = array(
-	'hostname'		=> 	'localhost',
-	'username'		=> 	'root',
-	'password'		=> 	'root',
-	'database'		=> 	'brd',
+	'hostname'		=> 	'internal-db.s131847.gridserver.com',
+	'username'		=> 	'db131847_afs35mm',
+	'password'		=> 	'Agway123',
+	'database'		=> 	'db131847_brd',
 	'dbdriver' 		=> 	'mysqli',
 	'pconnect' 		=>	FALSE,
 	'db_debug' 		=>	FALSE,

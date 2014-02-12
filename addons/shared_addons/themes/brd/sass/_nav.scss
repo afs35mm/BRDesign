@@ -38,6 +38,13 @@ nav{
 			a{
 				font-size:1em;
 				color:$lt-grey; 
+				 -webkit-transition: all 0.3s;
+			    -moz-transition: all 0.3s;
+			    -o-transition: all 0.3s;
+			    transition: all 0.3s; 
+			}
+			a:hover{
+				color:$red;
 			}
 			&.current{
 				background: $red;  

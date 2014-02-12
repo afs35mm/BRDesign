@@ -7,43 +7,42 @@
 			<h4>{{variables:workplace}}</h4>
 			<a name="workplace"></a>
 			
-			<div style="background:red">
-			{{ streams:cycle stream="project_grid_workplace" partial="1of3" order_by="ordering_count" }}
-				<h5>{{project_grid_text}} + {{count}}</h5>
-			{{ /streams:cycle }}
-			</div>
-			<div style="background:blue">
-			{{ streams:cycle stream="project_grid_workplace" partial="2of3" order_by="ordering_count" }}
-				<h5>{{project_grid_text}} + {{count}}</h5>
-			{{ /streams:cycle }}
-			</div>
-			<div style="background:green">
-			{{ streams:cycle stream="project_grid_workplace" partial="3of3" order_by="ordering_count" }}
-				<h5>{{project_grid_text}} + {{count}}</h5>
-			{{ /streams:cycle }}
-			</div>
-			
-
-			<!-- <div class="grid">
-				
-			</div> -->
-			<!-- <div class="BRD-ui-module carousel" data-module="slider" data-slider="projectHome">
+			<div class="BRD-ui-module carousel projectHome" data-module="slider" data-slider="projectHome">
 			    <div class="mask">
 			        <ul>
-					 	<li>
-					 		<h3>one</h3>
-					 	</li>
-					 	<li>
-					 		<h3>two</h3>
-					 	</li>
-					 	<li>
-					 		<h3>trhee</h3>
-					 	</li>
+					 	{{ streams:cycle stream="project_grid_workplace" order_by="ordering_count" }}
+							
+							{{if count == 1 || 
+								 count == 2 || 
+								 count == 6 || 
+								 count == 7 || 
+								 count == 11 || 
+								 count == 12 || 
+								 count == 16 
+							}} 
+								<li>
+							{{endif}}
+								<div class="box item{{count}}">
+									<!-- {{project_grid_text}}   -->
+									<img src="http://s3.amazonaws.com/brdesign_project-gird/{{project_grid_image:filename}}" alt="">
+								</div>
+							{{if count == 1 || 
+								 count == 5 || 
+								 count == 6 || 
+								 count == 10 || 
+								 count == 11 || 
+								 count == 15 || 
+								 count == 16
+							}}
+								</li>
+							{{endif}}
+							
+						{{ /streams:cycle }}
 			        </ul>
 			    </div>
-			</div> -->
+			</div> 
 
-			<h4>{{variables:owners}}</h4>
+			<h4 class="owners">{{variables:owners}}</h4>
 			<a name="owners"></a>
 			<div class="grid cf">
 				{{ streams:cycle stream="project_grid-owners" order_by="ordering_count" }}

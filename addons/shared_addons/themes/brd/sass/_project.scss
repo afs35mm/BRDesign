@@ -78,4 +78,11 @@
 			margin-right:0;
 		}
 	}
+	.workplaceFilmStrip{
+		background:red;
+		.carousel .mask > ul > li{
+			width:32%;
+			background: green;
+		}
+	}
 } 

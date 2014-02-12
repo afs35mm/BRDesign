@@ -11,22 +11,30 @@
 		font-family: $fjalla;
 		color: $drk-grey;
 		font-size: 1.875em;
-		padding-bottom:2em;
+		padding-bottom:0.8em;
+	}
+	h4.owners{
+		padding-top: 2em;
 	}
 	.btnPaginate{
 		width: 35px;
 		height: 35px;
+		top: -3.7em;
+		right: 1em;
 	}
 	.btnPaginate:hover{
 		background-position: 0px -35px;
 	}
 	.btnPrevious{
+		right:4em !important;
+		left:auto;
 		background: url(/assets/img/small_arrows-left.png);
 	}
 	.btnNext{
 		background: url(/assets/img/small_arrows-right.png);
 	}
 	.grid{
+		//background:yellow;
 		.box{
 			position:relative;
 			.cover{
@@ -64,14 +72,14 @@
 				width:100%;
 			}
 			&.item1{
-				width:49%;
+				width:48%;
 				margin-right:2%;
 				h5{
 					font-size:2.3em;
 				}
 			}
 			&.item2{
-				width:23.5%;
+				width:23%;
 				margin-right:2%;
 				margin-bottom:2%;
 				a{
@@ -79,18 +87,20 @@
 				}
 			}
 			&.item3{
-				width:23.5%;
+				width:23%;
 				margin-bottom:2%;
+				margin-right:2%;
 			}
 			&.item4{
-				width:23.5%;
+				width:23%;
 				margin-right:2%;
 				a{
 					//right:12%;
 				}
 			}
 			&.item5{
-				width:23.5%;
+				width:23%;
+				margin-right:2%;
 			}
 		}
 		.box:hover{
@@ -100,6 +110,85 @@
 			.cover{
 				opacity:0.9;	
 			}
+		}
+	}
+	.projectHome{
+		//background:yellow;
+		&.carousel .mask > ul > li{
+			display:block;
+			width:50%;
+			color:red;
+			//background:blue;
+		}
+		.box{
+			//background:yellow;
+			display:block;
+			float:left;
+			img{
+				width:100%;
+			}
+		}
+		/*
+		Large Pics
+		*/
+		.item1, .item6, .item11, .item16, .item21{
+			width: 96%;
+		}
+
+		/*
+		Fist Mini Grid of 4
+		*/
+		.item2, .item3, .item4, .item5{
+			width: 46%;
+			float: left;
+		}
+		.item2, .item4{
+			padding: 0 4% 0 0%;
+		}
+		.item2, .item3{
+			padding-bottom:4%;
+		}
+
+		/*
+		Second Mini Grid of 4
+		*/
+		.item7, .item8, .item9, .item10{
+			width: 46%;
+			float: left;
+		}
+		.item7, .item9{
+			padding: 0 4% 0 0%;
+		}
+		.item7, .item8{
+			padding-bottom:4%;
+		}
+
+		/*
+		Third Mini Grid of 4
+		*/
+		.item12, .item13, .item14, .item15{
+			width: 46%;
+			float: left;
+		}
+		.item17, .item19{
+			padding: 0 4% 0 0%;
+		}
+		.item17, .item18{
+			padding-bottom:4%;
+		}
+
+		/*
+		Fourth(?) Mini Grid of 4 - DOESNT EXIST YET
+		*/
+		.item17, .item18, .item19, .item20{
+			width: 46%;
+			float: left;
+		}
+		.item12, .item14{
+			padding: 0 4% 0 0%;
+		}
+		.item12, .item13{
+			padding-bottom:4%;
 		}
 	}
 }
@@ -123,6 +212,7 @@
 				&.item3{
 					width:48%;	
 					margin-bottom:4%;
+					margin-right:0;
 				}
 				&.item4{
 					width:48%;
@@ -131,8 +221,12 @@
 				&.item5{
 					width:48%;
 					margin-bottom:4%;
+					margin-right:0;
 				}
 			}
+		}
+		.btnPaginate{
+			top: -4em;
 		}
 	}
 }

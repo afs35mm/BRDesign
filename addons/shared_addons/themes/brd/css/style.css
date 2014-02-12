@@ -479,6 +479,14 @@ footer {
   color: #fff;
   border: 2px solid #f60112; }
 
+.fourohfour {
+  color: #6b6b6b;
+  font-size: 1.5em;
+  line-height: 1.25em;
+  padding-bottom: 1.3em; }
+  .fourohfour a {
+    color: #000; }
+
 .about {
   color: #444444; }
   .about .hero {
@@ -971,11 +979,60 @@ footer {
   opacity: 0.9; }
 .project .filmstrip .item:last-child {
   margin-right: 0; }
-.project .workplaceFilmStrip {
-  background: red; }
-  .project .workplaceFilmStrip .carousel .mask > ul > li {
-    width: 32%;
-    background: green; }
+.project .workplaceFilmStrip .carousel .mask > ul > li {
+  width: 25%; }
+.project .workplaceFilmStrip .box {
+  position: relative;
+  margin-right: 8.5%;
+  display: block;
+  float: left; }
+  .project .workplaceFilmStrip .box .cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #3e3e3e;
+    opacity: 0;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out; }
+  .project .workplaceFilmStrip .box img {
+    margin-bottom: 0; }
+  .project .workplaceFilmStrip .box h5 {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    text-transform: uppercase;
+    font-family: "Fjalla One", sans-serif;
+    color: #fff;
+    font-size: 1.2em;
+    display: none;
+    padding-right: 20px; }
+  .project .workplaceFilmStrip .box a {
+    position: absolute;
+    bottom: 3%;
+    right: 5%;
+    display: none;
+    border-color: white;
+    color: #fff; }
+.project .workplaceFilmStrip .box:hover h5, .project .workplaceFilmStrip .box:hover a {
+  display: block; }
+.project .workplaceFilmStrip .box:hover .cover {
+  opacity: 0.9; }
+.project .workplaceFilmStrip .btnPaginate {
+  width: 35px;
+  height: 35px;
+  top: -3.7em;
+  right: 1em; }
+.project .workplaceFilmStrip .btnPaginate:hover {
+  background-position: 0px -35px; }
+.project .workplaceFilmStrip .btnPrevious {
+  right: 4em !important;
+  left: auto;
+  background: url(/assets/img/small_arrows-left.png); }
+.project .workplaceFilmStrip .btnNext {
+  background: url(/assets/img/small_arrows-right.png); }
 
 .projectsHome p {
   color: #6b6b6b;
@@ -1085,40 +1142,75 @@ footer {
     width: 50%;
     color: red; }
   .projectsHome .projectHome .box {
+    position: relative;
     display: block;
     float: left; }
     .projectsHome .projectHome .box img {
       width: 100%; }
+    .projectsHome .projectHome .box .cover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #3e3e3e;
+      opacity: 0;
+      transition: opacity .25s ease-in-out;
+      -moz-transition: opacity .25s ease-in-out;
+      -webkit-transition: opacity .25s ease-in-out; }
+    .projectsHome .projectHome .box h5 {
+      position: absolute;
+      top: 1em;
+      left: 1em;
+      text-transform: uppercase;
+      font-family: "Fjalla One", sans-serif;
+      color: #fff;
+      font-size: 1.2em;
+      display: none;
+      padding-right: 20px; }
+    .projectsHome .projectHome .box a {
+      position: absolute;
+      bottom: 3%;
+      right: 5%;
+      display: none;
+      border-color: white;
+      color: #fff; }
+  .projectsHome .projectHome .box:hover h5, .projectsHome .projectHome .box:hover a {
+    display: block; }
+  .projectsHome .projectHome .box:hover .cover {
+    opacity: 0.9; }
   .projectsHome .projectHome .item1, .projectsHome .projectHome .item6, .projectsHome .projectHome .item11, .projectsHome .projectHome .item16, .projectsHome .projectHome .item21 {
     width: 96%; }
+    .projectsHome .projectHome .item1 h5, .projectsHome .projectHome .item6 h5, .projectsHome .projectHome .item11 h5, .projectsHome .projectHome .item16 h5, .projectsHome .projectHome .item21 h5 {
+      font-size: 2.3em; }
   .projectsHome .projectHome .item2, .projectsHome .projectHome .item3, .projectsHome .projectHome .item4, .projectsHome .projectHome .item5 {
     width: 46%;
     float: left; }
   .projectsHome .projectHome .item2, .projectsHome .projectHome .item4 {
-    padding: 0 4% 0 0%; }
+    margin: 0 4% 0 0%; }
   .projectsHome .projectHome .item2, .projectsHome .projectHome .item3 {
-    padding-bottom: 4%; }
+    margin-bottom: 4%; }
   .projectsHome .projectHome .item7, .projectsHome .projectHome .item8, .projectsHome .projectHome .item9, .projectsHome .projectHome .item10 {
     width: 46%;
     float: left; }
   .projectsHome .projectHome .item7, .projectsHome .projectHome .item9 {
-    padding: 0 4% 0 0%; }
+    margin: 0 4% 0 0%; }
   .projectsHome .projectHome .item7, .projectsHome .projectHome .item8 {
-    padding-bottom: 4%; }
+    margin-bottom: 4%; }
   .projectsHome .projectHome .item12, .projectsHome .projectHome .item13, .projectsHome .projectHome .item14, .projectsHome .projectHome .item15 {
     width: 46%;
     float: left; }
   .projectsHome .projectHome .item17, .projectsHome .projectHome .item19 {
-    padding: 0 4% 0 0%; }
+    margin: 0 4% 0 0%; }
   .projectsHome .projectHome .item17, .projectsHome .projectHome .item18 {
-    padding-bottom: 4%; }
+    margin-bottom: 4%; }
   .projectsHome .projectHome .item17, .projectsHome .projectHome .item18, .projectsHome .projectHome .item19, .projectsHome .projectHome .item20 {
     width: 46%;
     float: left; }
   .projectsHome .projectHome .item12, .projectsHome .projectHome .item14 {
-    padding: 0 4% 0 0%; }
+    margin: 0 4% 0 0%; }
   .projectsHome .projectHome .item12, .projectsHome .projectHome .item13 {
-    padding-bottom: 4%; }
+    margin-bottom: 4%; }
 
 @media only screen and (max-width: 721px) {
   .projectsHome .roundedButton {

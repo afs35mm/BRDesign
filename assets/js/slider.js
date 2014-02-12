@@ -32,8 +32,8 @@ BRD.slider = (function(){
 			},
 			workplaceFilmStrip: {
 				bUseThumbnails: false,
-				iPerPage: 3,
-				iNumToPaginate: 2
+				iPerPage: 4,
+				iNumToPaginate: 1
 			}
 		};
 

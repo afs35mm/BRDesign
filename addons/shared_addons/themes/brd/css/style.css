@@ -223,7 +223,6 @@ footer {
       position: fixed;
       top: 0;
       height: 100%;
-      padding-top: 8px;
       -webkit-box-shadow: inset 4px -6px 13px -2px #3d3d3d;
       -moz-box-shadow: inset 4px -6px 13px -2px #3d3d3d;
       -o-box-shadow: inset 4px -6px 13px -2px #3d3d3d;
@@ -922,13 +921,48 @@ footer {
   margin-bottom: 2%; }
 .project .mosaic {
   padding-bottom: 4em; }
+  .project .mosaic img {
+    display: none; }
 .project .filmstrip .item {
   width: 18%;
   display: block;
   float: left;
-  margin-right: 2.5%; }
+  margin-right: 2.5%;
+  position: relative; }
   .project .filmstrip .item img {
     width: 100%; }
+  .project .filmstrip .item .cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #3e3e3e;
+    opacity: 0;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out; }
+  .project .filmstrip .item h5 {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    text-transform: uppercase;
+    font-family: "Fjalla One", sans-serif;
+    color: #fff;
+    font-size: 1.2em;
+    display: none;
+    padding-right: 20px; }
+  .project .filmstrip .item a {
+    position: absolute;
+    bottom: 3%;
+    right: 5%;
+    display: none;
+    border-color: white;
+    color: #fff; }
+.project .filmstrip .item:hover h5, .project .filmstrip .item:hover a {
+  display: block; }
+.project .filmstrip .item:hover .cover {
+  opacity: 0.9; }
 .project .filmstrip .item:last-child {
   margin-right: 0; }
 
@@ -979,7 +1013,8 @@ footer {
     font-family: "Fjalla One", sans-serif;
     color: #fff;
     font-size: 1.2em;
-    display: none; }
+    display: none;
+    padding-right: 20px; }
   .projectsHome .grid .box a {
     position: absolute;
     bottom: 3%;

@@ -5,10 +5,29 @@
 			<p>{{projects_home_blurb}}</p>        
 			
 			<h4>{{variables:workplace}}</h4>
+			<a name="workplace"></a>
+			
+			<div style="background:red">
+			{{ streams:cycle stream="project_grid_workplace" partial="1of3" order_by="ordering_count" }}
+				<h5>{{project_grid_text}} + {{count}}</h5>
+			{{ /streams:cycle }}
+			</div>
+			<div style="background:blue">
+			{{ streams:cycle stream="project_grid_workplace" partial="2of3" order_by="ordering_count" }}
+				<h5>{{project_grid_text}} + {{count}}</h5>
+			{{ /streams:cycle }}
+			</div>
+			<div style="background:green">
+			{{ streams:cycle stream="project_grid_workplace" partial="3of3" order_by="ordering_count" }}
+				<h5>{{project_grid_text}} + {{count}}</h5>
+			{{ /streams:cycle }}
+			</div>
+			
+
 			<!-- <div class="grid">
 				
 			</div> -->
-			<div class="BRD-ui-module carousel" data-module="slider" data-slider="projectHome">
+			<!-- <div class="BRD-ui-module carousel" data-module="slider" data-slider="projectHome">
 			    <div class="mask">
 			        <ul>
 					 	<li>
@@ -22,9 +41,10 @@
 					 	</li>
 			        </ul>
 			    </div>
-			</div>
+			</div> -->
 
-			<h4>Owners &amp; Developers</h4>
+			<h4>{{variables:owners}}</h4>
+			<a name="owners"></a>
 			<div class="grid cf">
 				{{ streams:cycle stream="project_grid-owners" order_by="ordering_count" }}
 				    {{ entries }}

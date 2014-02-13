@@ -7,7 +7,7 @@
 			<h4>{{variables:workplace}}</h4>
 			<a name="workplace"></a>
 			
-			<div class="BRD-ui-module carousel projectHome" data-module="slider" data-slider="projectHome">
+			<div id="desktopSlider" class="BRD-ui-module carousel projectDesktopSlider" data-module="slider" data-slider="projectDesktopSlider">
 			    <div class="mask">
 			        <ul>
 					 	{{ streams:cycle stream="project_grid_workplace" order_by="ordering_count" }}
@@ -38,6 +38,29 @@
 							}}
 								</li>
 							{{endif}}
+							
+						{{ /streams:cycle }}
+			        </ul>
+			    </div>
+			</div> 
+
+			<div id="mobileSlider" class="BRD-ui-module carousel projectMobileSlider" data-module="slider" data-slider="projectMobileSlider">
+			    <div class="mask">
+			        <ul>
+						{{ streams:cycle stream="project_grid_workplace" order_by="ordering_count" }}							
+							
+							{{if count % 5 == 1}}
+								<li class="gridMobile cf">
+							{{endif}} 	
+								<div class="box item{{count}}">
+									<img src="http://s3.amazonaws.com/brdesign_project-gird/{{project_grid_image:filename}}" alt="">
+									<div class="cover"></div>
+									<h5>{{project_grid_text}}</h5>
+				 					<a class="link roundedButton" href="{{ project_grid_relative_link }}">Direct Link</a>
+								</div>
+							{{if count % 5 == 0}}
+								</li>
+							{{endif}} 	
 							
 						{{ /streams:cycle }}
 			        </ul>

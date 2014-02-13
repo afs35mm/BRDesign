@@ -51,6 +51,11 @@ BRD.App = (function(){
             });
             $('.navMenuBtn').on('click', showMobileMenu);
         };
+        
+        // var duplicateCarouselForMobile = function(){
+        //     var projectHomeContents = $('.projectHome').html();
+        //     $('.projectHomeMobile').html(projectHomeContents);
+        // };
 
         var findUiModules = function(){
 			$('.BRD-ui-module').each(function(index){
@@ -59,6 +64,9 @@ BRD.App = (function(){
 				moduleType = $el.data('module');
                 console.log(moduleType);
 				moduleInstance = $el.data(moduleType);
+                // if(moduleInstance == 'projectHome'){
+                //     duplicateCarouselForMobile();
+                // }
                 BRD[moduleType].init($el, moduleInstance);
 			});
 		};

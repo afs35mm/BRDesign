@@ -112,16 +112,12 @@
 			}
 		}
 	}
-	.projectHome{
-		//background:yellow;
+	.projectDesktopSlider {
 		&.carousel .mask > ul > li{
 			display:block;
 			width:50%;
-			color:red;
-			//background:blue;
 		}
 		.box{
-			//background:yellow;
 			position:relative;
 			display:block;
 			float:left;
@@ -232,10 +228,98 @@
 			margin-bottom:4%;
 		}
 	}
+
+	/**
+	PROJECT HOME MOBILE
+	**/
+	.projectMobileSlider {
+		display:none;
+		// .btnPaginate{
+		// 	display:none;
+		// }
+		&.carousel .mask > ul > li{
+			width:100%;
+		}
+		.gridMobile{
+			.item1, .item6, .item11, .item16, .item21{
+				h5{
+					font-size:2.3em !important;
+				}
+			}
+			.box{
+				float:left;
+				display:block;
+				position:relative;
+				&.item1, &.item6, &.item11, &.item16{
+					width:100%;
+					margin-right:0;
+					margin-bottom:4%;
+				}
+				&.item2, &.item7, &.item12, &.item17{
+					width:48%;
+					margin-right:4%;
+				}
+				&.item3, &.item8, &.item13, &.item18{
+					width:48%;	
+					margin-bottom:4%;
+					margin-right:0;
+				}
+				&.item4, &.item9, &.item14, &.item19{
+					width:48%;
+					margin-right:4%;
+				}
+				&.item5, &.item10, &.item15, &.item20{
+					width:48%;
+					margin-bottom:4%;
+					margin-right:0;
+				}
+				img{
+					width:100%;
+				}
+				.cover{
+					position:absolute;
+					top:0;left:0;right:0;bottom:0;
+					background:#3e3e3e;
+					opacity:0;
+					transition: opacity .25s ease-in-out;
+				   	-moz-transition: opacity .25s ease-in-out;
+				   	-webkit-transition: opacity .25s ease-in-out;
+				}
+				h5{
+					position:absolute;
+					top:1em;
+					left:1em;
+					text-transform: uppercase;
+					font-family: $fjalla;
+					color: #fff;
+					font-size: 1.2em;
+					display:none;
+					padding-right: 20px;
+				}
+				a{
+					position:absolute;
+					bottom:3%;
+					right:5%;
+					display:none;
+					border-color:#fff ;
+					color:#fff;
+				}
+			}
+			.box:hover{
+				h5, a{
+					display:block;
+				}
+				.cover{
+					opacity:0.9;	
+				}
+			}
+		}
+	}
 }
 
 @media only screen and (max-width: $small) {
 	.projectsHome{
+		//display:none;
 		.roundedButton{
 			margin-bottom:0;
 		}
@@ -269,5 +353,7 @@
 		.btnPaginate{
 			top: -4em;
 		}
+		.projectDesktopSlider{display:none;}
+		.projectMobileSlider{display:block;}
 	}
 }

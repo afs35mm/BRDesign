@@ -4,13 +4,22 @@
 		{{ theme:partial name="nav" }}
 		
 		<div id="main">
+			
+			<h4>{{title}}</h4>
+
+			<p>{{clients_blurb}}</p>
 
 		    <div class="cf">
-		    {{ files:listing folder="brdesign-clients" }}
-				
-			    <img src="http://s3.amazonaws.com/brdesign-clients/{{filename}}" data-folder="clients" alt="" />
-				
-			{{ /files:listing }}
+				<div class="BRD-ui-module clientsList" data-module="clients">	
+					{{ streams:cycle stream="clients_logos" order_by="ordering_count" }}
+					    {{ entries }}
+					    <div class="imgWrap">
+					    	<img src="http://s3.amazonaws.com/brdesign-clients/{{client_logo_bw:filename}}" class="{{id}}" alt="" />
+					 		<img class="color" src="http://s3.amazonaws.com/brdesign-clients/{{clients_logo_color:filename}}" class="{{id}}" alt="" />
+					 	</div>
+					    {{ /entries }}
+					{{ /streams:cycle }}
+				</div>
 		    </div>
         
         </div>     

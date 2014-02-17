@@ -558,8 +558,8 @@ footer {
     width: 100%; }
   .about #bottomRow #left {
     margin-bottom: 3em; } }
-.clients #main img {
-  border: 1px solid #6b6b6b;
+.clients #main .imgWrap {
+  border: 1px solid #d9d9d9;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -567,11 +567,25 @@ footer {
   float: left;
   width: 15%;
   margin: 0 2% 2% 0;
-  opacity: 0.6; }
-.clients #main img:nth-child(6n+0) {
-  margin-right: 0; }
-.clients #main img:hover {
-  opacity: 1.0; }
+  position: relative; }
+  .clients #main .imgWrap img {
+    width: 100%; }
+  .clients #main .imgWrap img.color {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; }
+.clients #main h4 {
+  color: #444444;
+  text-transform: uppercase;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 1.875em;
+  padding-bottom: .75em; }
+.clients #main p {
+  font-size: 1.5em;
+  line-height: 1.2em;
+  color: #6b6b6b;
+  padding-bottom: 2.25em; }
 
 .in-the-media .mediaItem {
   float: left;

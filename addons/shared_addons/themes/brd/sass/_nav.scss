@@ -80,7 +80,25 @@ ul.social{
 		display:block;
 		margin-right:.5em;
 		a{
-
+			display:block;
+			width:26px;
+			height:26px;
+			background:red;
+		}
+		a:hover{
+			background-position: 0 -26px;
+		}
+		.fb{
+			background: url('/assets/img/fb.png') no-repeat;	
+			background-position: 0 0;
+		}
+		.li{
+			background: url('/assets/img/li.png') no-repeat;	
+			background-position: 0 0;
+		}
+		.pi{
+			background: url('/assets/img/pi.png') no-repeat;	
+			background-position: 0 0;
 		}
 	}
 }

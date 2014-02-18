@@ -15,7 +15,8 @@ BRD.slider = (function(){
 			hero: {
 				iAutoRotate: 2000,
 				bUseThumbnails: false,
-				fAspectRatio: 2.105263
+				fAspectRatio: 2.105263,
+				iAutoRotate: 3000
 			},
 			homeBackground: {
 				fAspectRatio: 2.24168,

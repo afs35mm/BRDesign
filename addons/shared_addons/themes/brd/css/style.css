@@ -256,6 +256,8 @@ footer {
       background: #444444; }
     nav .navMenuBtn span:first-child {
       margin-top: 0.875em; } }
+.home .heroSlider .btnPaginate {
+  top: 43%; }
 .home #doubleSlider {
   position: relative;
   margin: 3.75em 0 4.6875em 0; }
@@ -453,7 +455,7 @@ footer {
   #home h3 {
     position: absolute;
     left: 12%;
-    top: 30%;
+    top: 38%;
     font-size: 3.75em;
     text-transform: uppercase;
     font-family: "Fjalla One", sans-serif;

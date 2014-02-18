@@ -272,6 +272,11 @@ footer {
       background: #444444; }
     nav .navMenuBtn span:first-child {
       margin-top: 0.875em; } }
+.home .roundedButton {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
 .home .heroSlider .btnPaginate {
   top: 43%; }
 .home #doubleSlider {
@@ -420,9 +425,7 @@ footer {
     position: relative !important;
     width: auto;
     margin-top: 0;
-    padding: 2.5em 0; }
-    .home #doubleSlider #foregroundSlider ul {
-      width: 100% !important; } }
+    padding: 2.5em 0; } }
 @media only screen and (max-width: 420px) {
   .home .btnPaginate {
     display: none; }

@@ -317,14 +317,14 @@ footer {
     .home #doubleSlider #foregroundSlider .thumbnails {
       bottom: 2.5em;
       right: 1.5625em; }
-      .home #doubleSlider #foregroundSlider .thumbnails a span {
+      .home #doubleSlider #foregroundSlider .thumbnails a {
         display: inline-block;
         width: 13px;
         height: 13px;
         margin-right: 6px;
         background: url(/assets/img/btn_paginate.png);
         background-position: -16px -13px; }
-      .home #doubleSlider #foregroundSlider .thumbnails a.active span {
+      .home #doubleSlider #foregroundSlider .thumbnails a.active {
         background-position: -31px -13px; }
 .home #bottom #mediaItems {
   display: block;

@@ -50,7 +50,7 @@
 			            <ul>
 			                 {{ streams:cycle stream="homepage_bottom" order_by="ordering_count" }}
 							    {{ entries }}
-							 	<li>
+							 	<li data-index="{{count}}">
 							 		<h4>{{ homepage_bottom_title }}</h4>
 							 		<p>{{ homepage_bottom_text }}</p>
 							 		<a class="roundedButton" href="{{homepage_bottom_link}}">View Project</a>

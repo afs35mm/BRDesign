@@ -408,7 +408,7 @@
 			// each anchor has a separate class for easy custom styling
 			for (i=0; i<oCarousel.iNumPages; i++) {
 				if(oCarousel.paginateItems == 'circles'){
-					$('<a class="tab'+ (i+1) + '" />').attr('href','#').html('<span data-index="'+ i + '"></span>').appendTo(oCarousel.$thumbnails);	
+					$('<a data-index="'+ i + '" class="circlePaginate tab'+ (i+1) + '" />').attr('href','#').appendTo(oCarousel.$thumbnails);	
 				}else{
 					$('<a class="tab'+ (i+1) + '" />').attr('href','#').html('<span data-index="'+ i + '">'+(i+1)+'</span>').appendTo(oCarousel.$thumbnails);	
 				}

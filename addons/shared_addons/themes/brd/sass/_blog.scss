@@ -135,6 +135,8 @@ $sidebar-width: 35%;
 			position:absolute;
 			right:0;
 			top:0;
+			width:200px;
+			text-align:right;
 		}
 	}
 	.title:hover{
@@ -149,7 +151,7 @@ $sidebar-width: 35%;
 	.more{
 		display:inline-block; 
 		color:$red;
-		font-weight:600;
+		//font-weight:600;
 		text-decoration: none;
 	}
 	.readMore{

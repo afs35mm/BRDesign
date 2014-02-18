@@ -22,6 +22,9 @@
 		top: -3.7em;
 		right: 1em;
 	}
+	a.roundedButton:hover{
+		border-color:$red !important;
+	}
 	.btnPaginate:hover{
 		background-position: 0px -35px;
 	}
@@ -50,7 +53,7 @@
 				position:absolute;
 				top:1em;
 				left:1em;
-				text-transform: uppercase;
+				//text-transform: uppercase;
 				font-family: $fjalla;
 				color: #fff;
 				font-size: 1.2em;
@@ -137,7 +140,7 @@
 				position:absolute;
 				top:1em;
 				left:1em;
-				text-transform: uppercase;
+				//text-transform: uppercase;
 				font-family: $fjalla;
 				color: #fff;
 				font-size: 1.2em;
@@ -289,7 +292,7 @@
 					position:absolute;
 					top:1em;
 					left:1em;
-					text-transform: uppercase;
+					//text-transform: uppercase;
 					font-family: $fjalla;
 					color: #fff;
 					font-size: 1.2em;

@@ -331,15 +331,20 @@ footer {
     line-height: 1.15em;
     color: #444444; }
 .home #blurb {
-  padding-bottom: 4em; }
+  margin-bottom: 4em;
+  position: relative; }
   .home #blurb p {
     font-size: 1.5em;
     line-height: 1.2em;
-    color: #6b6b6b; }
+    color: #6b6b6b;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-right: 7.5em; }
   .home #blurb a {
-    margin-left: 10em;
-    float: right;
-    margin-top: 3%; }
+    position: absolute;
+    bottom: 0;
+    right: 0; }
 .home #projects > div {
   float: left;
   width: 48%; }
@@ -357,7 +362,13 @@ footer {
     padding-left: .4em;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
+  .home #projects > div a:hover {
+    color: #f60112; }
 .home #projects div:first-child {
   margin-right: 4%; }
 
@@ -365,6 +376,14 @@ footer {
   .home #projects #left, .home #projects #right {
     width: 100%;
     margin-right: 0; }
+  .home #blurb p {
+    width: 100%;
+    padding-right: 0; }
+  .home #blurb a {
+    position: relative;
+    margin: 2em 0 0 0;
+    bottom: 0;
+    right: 0; }
   .home #bottom #mediaItems {
     float: left;
     width: 100%;
@@ -636,6 +655,8 @@ footer {
     color: #fff;
     width: 4.6em;
     text-align: center; }
+  .in-the-media .mediaItem .link:hover {
+    border-color: #f60112; }
   .in-the-media .mediaItem .blurb {
     min-height: 1.5em;
     padding: .5em 0 2.875em 0; }
@@ -1097,6 +1118,8 @@ footer {
     height: 35px;
     top: -3.7em;
     right: 1em; }
+  .projectsHome a.roundedButton:hover {
+    border-color: #f60112 !important; }
   .projectsHome .btnPaginate:hover {
     background-position: 0px -35px; }
   .projectsHome .btnPrevious {
@@ -1127,7 +1150,6 @@ footer {
       position: absolute;
       top: 1em;
       left: 1em;
-      text-transform: uppercase;
       font-family: "Fjalla One", sans-serif;
       color: #fff;
       font-size: 1.2em;
@@ -1205,7 +1227,6 @@ footer {
         position: absolute;
         top: 1em;
         left: 1em;
-        text-transform: uppercase;
         font-family: "Fjalla One", sans-serif;
         color: #fff;
         font-size: 1.2em;
@@ -1299,7 +1320,6 @@ footer {
         position: absolute;
         top: 1em;
         left: 1em;
-        text-transform: uppercase;
         font-family: "Fjalla One", sans-serif;
         color: #fff;
         font-size: 1.2em;

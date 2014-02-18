@@ -797,7 +797,9 @@ footer {
   .blog .titleHolder .fb-like {
     position: absolute;
     right: 0;
-    top: 0; }
+    top: 0;
+    width: 200px;
+    text-align: right; }
 .blog .title:hover {
   text-decoration: underline; }
 .blog .body {
@@ -808,7 +810,6 @@ footer {
 .blog .more {
   display: inline-block;
   color: #f60112;
-  font-weight: 600;
   text-decoration: none; }
 .blog .readMore {
   display: inline-block; }

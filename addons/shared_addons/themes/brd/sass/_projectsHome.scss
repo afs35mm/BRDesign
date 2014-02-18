@@ -59,14 +59,19 @@
 				font-size: 1.2em;
 				display:none;
 				padding-right: 20px;
+				@include transition-all
 			}
-			a{
+			h5:hover{
+				color:$red;
+			}
+			a.link{
 				position:absolute;
 				bottom:3%;
 				right:5%;
 				display:none;
 				border-color:#fff ;
 				color:#fff;
+				@include transition-all
 			}
 			display:block;
 			float:left;
@@ -145,15 +150,20 @@
 				color: #fff;
 				font-size: 1.2em;
 				display:none;
-				padding-right: 20px;
+				margin-right: 20px;
+				@include transition-all
 			}
-			a{
+			h5:hover{
+				color:$red;
+			}
+			a.link{
 				position:absolute;
 				bottom:3%;
 				right:5%;
 				display:none;
 				border-color:#fff ;
 				color:#fff;
+				@include transition-all
 			}
 		}
 		.box:hover{
@@ -240,6 +250,7 @@
 		// .btnPaginate{
 		// 	display:none;
 		// }
+
 		&.carousel .mask > ul > li{
 			width:100%;
 		}
@@ -298,14 +309,19 @@
 					font-size: 1.2em;
 					display:none;
 					padding-right: 20px;
+					@include transition-all
 				}
-				a{
+				h5:hover{
+					color:$red;
+				}
+				a.link{
 					position:absolute;
 					bottom:3%;
 					right:5%;
 					display:none;
 					border-color:#fff ;
 					color:#fff;
+					@include transition-all
 				}
 			}
 			.box:hover{

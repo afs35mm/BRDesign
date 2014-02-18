@@ -1,4 +1,7 @@
 .home{
+	.roundedButton{
+		@include transition-all;
+	}
 	.heroSlider{
 		.btnPaginate{
 			top:43%;
@@ -199,9 +202,9 @@
 				width:auto;
 				margin-top:0;
 				padding: 2.5em 0;
-				ul{
-					width:100% !important;
-				}
+				// ul{
+				// 	width:100% !important;
+				// }
 				.roundedButton{
 					//font-size:1.2em;
 				}

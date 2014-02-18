@@ -52,7 +52,7 @@
 			.thumbnails{
 				bottom: 2.5em;
 				right: 1.5625em;
-				a span{
+				a{
 					display:inline-block;
 					width:13px;
 					height:13px;
@@ -61,7 +61,7 @@
 					background-position: -16px -13px;
 					
 				}
-				a.active span{
+				a.active{
 					background-position: -31px -13px;
 				}
 			}

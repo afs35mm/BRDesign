@@ -2,9 +2,7 @@ var BRD = BRD || {};
 
 BRD.slider = (function(){
 
-		var slideBgCarousel = function(){
-			console.log( $(event.target).data('index') );
-			var newPageIndex = $(event.target).data('index');
+		var slideBgCarousel = function(newPageIndex){
 			config.$backgroundCarousel.rwdCarousel('updateToIndex', newPageIndex);
 		};
 
@@ -26,26 +24,17 @@ BRD.slider = (function(){
 			homeForeground: {
 				fAspectRatio: 3,
 				BtnPaginate:'none',
-				fnPaginateBegin: slideBgCarousel,
 				paginateItems:'circles',
 			},
 			projectDesktopSlider: {
 				bUseThumbnails: false,
 				fAspectRatio: 1,
 				iPerPage: 2,
-				// fnPaginateBegin: function(){
-				// 	config.$mobileSlider.rwdCarousel('updateToIndex', 1);
-				// 	console.log(config.$desktopSlider);
-				// },
 			},
 			projectMobileSlider: {
 				bUseThumbnails: false,
 				fAspectRatio: .488872,
 				iPerPage: 1,
-				// fnPaginateBegin: function(){
-				// 	config.$desktopSlider.rwdCarousel('updateToIndex', 1);
-				// 	console.log('helllo2');
-				// },
 			},
 			workplaceFilmStrip: {
 				bUseThumbnails: false,
@@ -56,10 +45,18 @@ BRD.slider = (function(){
 		};
 
         var init = function($el, moduleInstance){
+        	
         	if( moduleInstance != undefined && config[moduleInstance] != undefined){
         		$el.rwdCarousel( config[moduleInstance] );
         	}else{
         		$el.rwdCarousel();
+        	}
+        	
+        	if(moduleInstance == 'homeForeground'){
+        		$('.circlePaginate').on('click',function(e){
+	        		//console.log($(this).data('index'));
+	        		slideBgCarousel($(this).data('index'));
+	        	});	
         	}
         };
 

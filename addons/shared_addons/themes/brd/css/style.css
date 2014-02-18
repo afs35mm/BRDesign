@@ -575,6 +575,8 @@ footer {
     top: 0;
     left: 0;
     opacity: 0; }
+.clients #main .imgWrap:nth-child(6n+0) {
+  margin-right: 0; }
 .clients #main h4 {
   color: #444444;
   text-transform: uppercase;
@@ -587,6 +589,20 @@ footer {
   color: #6b6b6b;
   padding-bottom: 2.25em; }
 
+@media only screen and (max-width: 721px) {
+  .clients #main .imgWrap {
+    width: 23%;
+    margin: 0 2.66% 2.66% 0; }
+  .clients #main .imgWrap:nth-child(4n+0) {
+    margin-right: 0; }
+  .clients #main .imgWrap:nth-child(6n+0) {
+    margin-right: 2.66%; } }
+@media only screen and (max-width: 420px) {
+  .clients #main .imgWrap {
+    width: 48%;
+    margin: 0 4% 4% 0; }
+  .clients #main .imgWrap:nth-child(2n+0) {
+    margin-right: 0; } }
 .in-the-media .mediaItem {
   float: left;
   display: inline-block;

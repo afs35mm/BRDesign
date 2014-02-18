@@ -57,6 +57,13 @@ $sidebar-width: 35%;
 				padding:.6em;
 				border:none;
 				width:100%;
+				line-height: 2.25em;
+				font-size: 0.7em;
+				&.searchBox{
+					padding-left: 4em;
+					background: url(/assets/img/search-icon.jpg) no-repeat #fff;
+					background-position: 3% 50%;
+				}
 			}
 			button[type="submit"], input[type="submit"]{
 				margin-top:.6em;
@@ -65,6 +72,7 @@ $sidebar-width: 35%;
 				@include cta;
 				float:none;
 				margin-bottom:3em;
+				font-family: 'News Cycle', sans-serif;
 			}
 			button[type="submit"]:hover, input[type="submit"]:hover{
 				cursor:pointer;

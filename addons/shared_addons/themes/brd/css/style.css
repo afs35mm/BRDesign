@@ -727,7 +727,13 @@ footer {
       box-sizing: border-box;
       padding: .6em;
       border: none;
-      width: 100%; }
+      width: 100%;
+      line-height: 2.25em;
+      font-size: 0.7em; }
+      .blog .blogSidebar #inner .textBox.searchBox {
+        padding-left: 4em;
+        background: url(/assets/img/search-icon.jpg) no-repeat white;
+        background-position: 3% 50%; }
     .blog .blogSidebar #inner button[type="submit"], .blog .blogSidebar #inner input[type="submit"] {
       margin-top: .6em;
       text-decoration: none;
@@ -743,7 +749,8 @@ footer {
       border-radius: 25px;
       float: left;
       float: none;
-      margin-bottom: 3em; }
+      margin-bottom: 3em;
+      font-family: 'News Cycle', sans-serif; }
     .blog .blogSidebar #inner button[type="submit"]:hover, .blog .blogSidebar #inner input[type="submit"]:hover {
       cursor: pointer;
       text-decoration: none !important;

@@ -37,6 +37,9 @@
 			width:4.6em;
 			text-align: center
 		}
+		.link:hover{
+			border-color:$red;
+		}
 		.blurb{
 			min-height:1.5em;
 			padding:.5em 0 2.875em 0;

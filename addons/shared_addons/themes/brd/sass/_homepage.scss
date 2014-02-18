@@ -99,16 +99,19 @@
 		}
 	}
 	#blurb{
-		padding-bottom:4em;
+		margin-bottom:4em;
+		position:relative;
 		p{
 			font-size:1.5em;
 			line-height:1.2em;
 			color: $lt-grey;
+			@include border-box;
+			padding-right:7.5em;
 		}
 		a{
-			margin-left:10em;
-    		float: right;
-    		margin-top:3%;
+    		position:absolute;
+    		bottom:0;
+    		right:0;
 		}
 	}
 	#projects{
@@ -129,6 +132,13 @@
 				line-height:2em;
 				padding-left:.4em;
 				@include border-box;
+				-webkit-transition: all 0.3s;
+			    -moz-transition: all 0.3s;
+			    -o-transition: all 0.3s;
+			    transition: all 0.3s; 
+			}
+			a:hover{
+				color:$red;
 			}
 		}
 		div:first-child{
@@ -144,6 +154,19 @@
 				width:100%;
 				margin-right:0;
 			}	
+		}
+		#blurb{
+			p{
+				width:100%;
+				padding-right:0;
+			}
+			a{
+				
+	    		position:relative;
+	    		margin: 2em 0 0 0 ;
+	    		bottom:0;
+	    		right:0;
+			}
 		}
 		#bottom{
 			#mediaItems{

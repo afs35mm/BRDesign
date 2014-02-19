@@ -19,24 +19,35 @@
                     <h3 class="title singlePost">{{ title }}</h3>
                     
                     <div class="share">
-                        <!--TWITTER SHARE BUTTON-->    
-                        <!-- <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a> -->
-                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                         <!--FACEBOOK SHARE BUTTON-->
                         <div class="fb-like" data-href="http://brdesignassociates.com/" data-layout="button" data-action="like" data-show-faces="false" data-share="true"></div>
-                        <!-- <a href="#" class="roundedButton">Share</a> -->
                         <ul class="socialParent">
                             <li>
                                 <a href="#" class="roundedButton socialBtn">Share</a> 
                                 <ul class="socialList">
                                     <li>
-                                        <a href="">Twitter</a>
+                                        <!-- Place this tag where you want the share button to render. -->
+                                        <div style="width:100px;" class="g-plus" data-action="share" data-annotation="none"></div>
+
+                                        <!-- Place this tag after the last share tag. -->
+                                        <script type="text/javascript">
+                                          (function() {
+                                            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                                            po.src = 'https://apis.google.com/js/platform.js';
+                                            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                                          })();
+                                        </script>
                                     </li>
                                     <li>
-                                        <a href="">Linkedin</a>
+                                        <!--TWITTER SHARE BUTTON-->    
+                                        <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a> 
+                                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                                     </li>
                                     <li>
-                                        <a href="">Google+</a>
+                                        <script src="//platform.linkedin.com/in.js" type="text/javascript">
+                                         lang: en_US
+                                        </script>
+                                        <script type="IN/Share"></script>
                                     </li>
                                 </ul>    
                             </li>

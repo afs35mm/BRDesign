@@ -132,13 +132,77 @@ $sidebar-width: 35%;
 	}
 	.titleHolder{
 		position:relative;
+		//background:yellow;
+		> div, h3 {
+			float:left;
+		}
 		.title{
 			text-transform: uppercase;
 			font-family:$fjalla;
 			color:$drk-grey;
 			font-size:1.875em;
 			text-decoration: none;
+			//background:green;
+			line-height:1.4em;
+			&.singlePost{
+				@include border-box;
+				margin-right: 7.5em;
+				//background:blue;
+			}
+			a{
+				color:$drk-grey;
+			}
+			a:hover{
+				color: $red; 
+				-webkit-transition: all 0.3s;
+			    -moz-transition: all 0.3s;
+			    -o-transition: all 0.3s;
+			    transition: all 0.3s; 
+			}
 		}	
+		.roundedButton{
+			line-height:2em; margin:0;
+			position:absolute;
+			left:0;
+		}
+		.share{
+			//background:pink;
+			width: 13.5em;
+			position:absolute;
+			top:0;
+			right:0;
+			min-height:4em;
+			.socialList{
+				display:none;
+				background:#fff;
+				position:absolute;
+				width:100%;
+				top:2.6em;
+				border:1px solid $lt-grey;
+				padding: .4em;
+				-moz-box-shadow:    3px 3px 5px 6px #ccc;
+				-webkit-box-shadow: 3px 3px 5px 6px #ccc;
+				box-shadow:         3px 3px 5px 6px #ccc;
+				-webkit-border-radius: 5px;
+				-moz-border-radius: 5px;
+				border-radius: 5px;
+				li{
+					padding:.4em;
+					a{
+						color: $drk-grey;
+						font-size:1.2em;
+						padding:.6em;
+						-webkit-transition: all 0.3s;
+					    -moz-transition: all 0.3s;
+					    -o-transition: all 0.3s;
+					    transition: all 0.3s; 
+					}
+					a:hover{
+						color: $red;
+					}
+				}
+			}
+		}
 		.fb-like{
 			position:absolute;
 			right:0;
@@ -147,9 +211,9 @@ $sidebar-width: 35%;
 			text-align:right;
 		}
 	}
-	.title:hover{
-		text-decoration: underline;
-	}
+	// .title:hover{
+	// 	text-decoration: underline;
+	// }
 	.body{
 		padding-top:.8em;
 		font-size: 1.125em;
@@ -302,5 +366,24 @@ $sidebar-width: 35%;
 	}
 	.blog #posts{
 		width:100%;
+	}
+}
+@media only screen and (max-width: $extrasmall) {
+
+	.blog .titleHolder .title.singlePost{
+		width:100%;
+		margin:0;
+		position:relative;
+		display:block;
+		float:left;
+		padding-bottom:0.3em;
+	}
+	.blog .titleHolder .share{
+		width:100%;
+		margin:0;
+		position:relative;
+		display:block;
+		float:left;
+		min-height: 1.6em;
 	}
 }

@@ -1,14 +1,9 @@
 <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 <div class="blog cf">
     
     {{ session:messages success="success-box" notice="notice-box" error="error-box" }}
+    
+  <p>{{ page:slug }}</p>
 
     <div id="posts" class="singlePost BRD-ui-module" data-module="social" data-social="singlepost">
         {{ post }}
@@ -20,9 +15,34 @@
                         <span class="day">{{ helper:date format="d" timestamp=created_on }}</span>
                     </div> 
                 </div>
-                <div class="titleHolder">
-                    <h3><span class="title">{{ title }}</span></h3>
-                    <div class="fb-like" data-href="http://brdesignassociates.com/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+                <div class="titleHolder cf">
+                    <h3 class="title singlePost">{{ title }}</h3>
+                    
+                    <div class="share">
+                        <!--TWITTER SHARE BUTTON-->    
+                        <!-- <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a> -->
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                        <!--FACEBOOK SHARE BUTTON-->
+                        <div class="fb-like" data-href="http://brdesignassociates.com/" data-layout="button" data-action="like" data-show-faces="false" data-share="true"></div>
+                        <!-- <a href="#" class="roundedButton">Share</a> -->
+                        <ul class="socialParent">
+                            <li>
+                                <a href="#" class="roundedButton socialBtn">Share</a> 
+                                <ul class="socialList">
+                                    <li>
+                                        <a href="">Twitter</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Linkedin</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Google+</a>
+                                    </li>
+                                </ul>    
+                            </li>
+                        </ul>
+                    </div>
+                    
                 </div>
                 <!-- <p class="author"><strong>- by {{ user:display_name user_id=created_by }}</strong></p> -->
                 <div class="body">

@@ -51,22 +51,22 @@ $db[PYRO_DEVELOPMENT] = array(
 );
 
 // Staging
-/*
+
 $db[PYRO_STAGING] = array(
-	'hostname'		=> 	'',
-	'username'		=> 	'',
-	'password'		=> 	'',
-	'database'		=> 	'pyrocms',
-	'dbdriver' 		=> 	'mysql',
-	'active_r' 		=>	TRUE,
+	'hostname'		=> 	'external-db.s131847.gridserver.com',
+	'username'		=> 	'db131847_afs35mm',
+	'password'		=> 	'Agway123',
+	'database'		=> 	'db131847_brd',
+	'dbdriver' 		=> 	'mysqli',
+	'dbprefix' 		=>	'', 
 	'pconnect' 		=>	FALSE,
-	'db_debug' 		=>	FALSE,
+	'db_debug' 		=>	TRUE,
 	'cache_on' 		=>	FALSE,
 	'char_set' 		=>	'utf8',
 	'dbcollat' 		=>	'utf8_unicode_ci',
-	'port' 	 		=>	3306,
+	'port' 	 		=>	'3306',
 );
-*/
+
 
 // Production
 $db[PYRO_PRODUCTION] = array(

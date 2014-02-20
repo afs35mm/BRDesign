@@ -46,7 +46,7 @@ if( $_SERVER['SERVER_NAME'] == 'brd.dev' ){
 
 	define('ENVIRONMENT', PYRO_STAGING);
 
-}elseif( $_SERVER['SERVER_NAME'] == 'brdesignassociates.com' ){
+}elseif( $_SERVER['SERVER_NAME'] == 'brdesignassociates.com' || $_SERVER['SERVER_NAME'] == 'beta.brdesignassociates.com' ){
 
 	define('ENVIRONMENT', PYRO_PRODUCTION);
 

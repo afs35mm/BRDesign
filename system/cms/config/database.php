@@ -33,12 +33,12 @@
 
 // Development
 $db[PYRO_DEVELOPMENT] = array(
-	'hostname'		=> 	'mysql',
-	'username'		=> 	'BRDesign',
-	'password'		=> 	'233SpringSt',
-	'database'		=> 	'brd',
+	'hostname'		=> 	'external-db.s131847.gridserver.com',
+	'username'		=> 	'db131847_afs35mm',
+	'password'		=> 	'Agway123',
+	'database'		=> 	'db131847_brd',
 	'dbdriver' 		=> 	'mysqli',
-	'dbprefix' 		=>	'',
+	'dbprefix' 		=>	'', 
 	'pconnect' 		=>	FALSE,
 	'db_debug' 		=>	TRUE,
 	'cache_on' 		=>	FALSE,

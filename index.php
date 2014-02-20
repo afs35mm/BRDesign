@@ -38,12 +38,23 @@ define('PYRO_DEVELOPMENT', 'development');
 define('PYRO_STAGING', 'staging');
 define('PYRO_PRODUCTION', 'production');
 
-if( print_r($_SERVER['SERVER_NAME']) == 'brd.dev' ){
-	define('ENVIRONMENT', 'PYRO_DEVELOPMENT');
-}elseif( print_r($_SERVER['SERVER_NAME']) == 'brd.afs35mm.com' ){
-	define('ENVIRONMENT', 'PYRO_STAGING');
-}else{
-	define('ENVIRONMENT', 'PYRO_PRODUCTION');
+if( $_SERVER['SERVER_NAME'] == 'brd.dev' ){
+
+	define('ENVIRONMENT', PYRO_DEVELOPMENT);
+
+}elseif( $_SERVER['SERVER_NAME'] == 'brd.afs35mm.com' ){
+
+	define('ENVIRONMENT', PYRO_STAGING);
+
+}elseif( $_SERVER['SERVER_NAME'] == 'brdesignassociates.com' ){
+
+	define('ENVIRONMENT', PYRO_PRODUCTION);
+
+}
+else{
+
+	define('ENVIRONMENT', PYRO_DEVELOPMENT);
+
 }
 
 //define('ENVIRONMENT', (isset($_SERVER['PYRO_ENV']) ? $_SERVER['PYRO_ENV'] : PYRO_DEVELOPMENT));
@@ -279,6 +290,3 @@ if( print_r($_SERVER['SERVER_NAME']) == 'brd.dev' ){
 require_once BASEPATH.'core/CodeIgniter'.EXT;
 
 /* End of file index.php */
-
-
-print_r(ENVIRONMENT . ' + ' . $_SERVER['SERVER_NAME']);

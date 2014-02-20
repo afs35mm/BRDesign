@@ -70,12 +70,12 @@ $db[PYRO_STAGING] = array(
 
 // Production
 $db[PYRO_PRODUCTION] = array(
-	'hostname'		=> 	'external-db.s131847.gridserver.com',
-	'username'		=> 	'db131847_afs35mm',
-	'password'		=> 	'Agway123',
-	'database'		=> 	'db131847_brd',
-	'dbdriver' 		=> 	'mysqli',
-	'pconnect' 		=>	FALSE,
+	'hostname'		=> 	'mysql',
+	'username'		=> 	'BRDesign',
+	'password'		=> 	'233SpringSt',
+	'database'		=> 	'brd',
+	'dbdriver' 		=> 	'mysqli', 
+	'pconnect' 		=>	FALSE, 
 	'db_debug' 		=>	FALSE,
 	'cache_on' 		=>	FALSE,
 	'char_set' 		=>	'utf8',

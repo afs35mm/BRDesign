@@ -26,7 +26,7 @@ $config['base_url']	= '';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = '';
+$config['index_page'] = 'index.php';
 
 /*
 |--------------------------------------------------------------------------
@@ -337,7 +337,7 @@ $config['compress_output'] = false;
 | code less readable.
 |
 */
-$config['minify_output'] = (ENVIRONMENT !== PYRO_DEVELOPMENT); // only do this on
+$config['minify_output'] = true; // only do this on
 
 /*
 |--------------------------------------------------------------------------

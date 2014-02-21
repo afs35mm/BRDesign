@@ -10,7 +10,7 @@ BRD.mosaic = (function(){
 					$this = $(value);
 					if( $this.width() < 571 ){
 						$this.css('width', '49%');
-						if( key % 2 == 1 ){
+						if( (key % 2 == 1 && key != 1)|| key == 0){
 							$this.css('margin-right', '2%');
 						}
 					}else{

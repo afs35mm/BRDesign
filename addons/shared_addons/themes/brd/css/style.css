@@ -1132,7 +1132,8 @@ footer {
   position: relative;
   margin-right: 8.5%;
   display: block;
-  float: left; }
+  float: left;
+  width: 92.5%; }
   .project .workplaceFilmStrip .box .cover {
     position: absolute;
     top: 0;

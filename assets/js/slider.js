@@ -25,6 +25,7 @@ BRD.slider = (function(){
 				fAspectRatio: 3,
 				BtnPaginate:'none',
 				paginateItems:'circles',
+				//fAspectRatio: 1.8,
 			},
 			projectDesktopSlider: {
 				bUseThumbnails: false,

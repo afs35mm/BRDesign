@@ -19,7 +19,7 @@
 		<div id="main">  
         	<div id="blurb" class="cf">
 	        	<p>{{ home_blurb }}</p>	
-	        	<a class="roundedButton" href="{{ home_blurb_link }}">Learn More</a>
+	        	<a class="roundedButton" href="index.php/{{ home_blurb_link }}">Learn More</a>
         	</div>
 	        <div id="projects" class="cf">
 	        	<div id="left">
@@ -53,7 +53,7 @@
 							 	<li data-index="{{count}}">
 							 		<h4>{{ homepage_bottom_title }}</h4>
 							 		<p>{{ homepage_bottom_text }}</p>
-							 		<a class="roundedButton" href="{{homepage_bottom_link}}">View Project</a>
+							 		<a class="roundedButton" href="index.php/projects/{{homepage_bottom_link}}">View Project</a>
 							 	</li>
 							    {{ /entries }}
 							{{ /streams:cycle }}
@@ -71,7 +71,7 @@
 				</div>
 				<div class="info">
 					<p>BR Design has been featured in many prominent publications.</p>
-					<a class="roundedButton" href="/in-the-media">View All</a>
+					<a class="roundedButton" href="index.php/in-the-media">View All</a>
 				</div>
 			</div> 
 {{ theme:partial name="footer" }}

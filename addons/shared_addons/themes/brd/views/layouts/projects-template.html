@@ -2,7 +2,7 @@
 	
 		{{ theme:partial name="nav" }}
 		<div id="main" class="project BRD-ui-module cf" data-module="mosaic">
-			<h4>{{project_name}}</h4>
+			<h4>{{ page:title }}</h4>
 			<p>{{project_description}}</p>
 			<div class="mosaic cf">
 				{{ if image1:filename != "" }}
@@ -43,6 +43,10 @@
 
 				{{ if image10:filename != "" }}
 					<img src="http://s3.amazonaws.com/brdesign-project/{{image10:filename}}" alt="">
+				{{ endif }}
+
+				{{ if image11:filename != "" }}
+					<img src="http://s3.amazonaws.com/brdesign-project/{{image11:filename}}" alt="">
 				{{ endif }}
 			</div>
 			{{ if project_choice:value ===  "owners-developers" }}

@@ -105,20 +105,27 @@
 				position:absolute;
 				top:1em;
 				left:1em;
-				text-transform: uppercase;
+				//text-transform: uppercase;
 				font-family: $fjalla;
 				color: #fff;
 				font-size: 1.2em;
 				display:none;
 				padding-right: 20px;
 			}
+			.link:hover{
+				//border: 1px solid $red;
+			}
 			a{
 				position:absolute;
 				bottom:3%;
 				right:5%;
 				display:none;
-				border-color:#fff ;
+				border-color:#fff;
 				color:#fff;
+				@include transition-all; 
+			}
+			a:hover{
+				border-color:$red;
 			}
 		}
 		.box:hover{

@@ -295,7 +295,7 @@ footer {
     position: absolute !important;
     top: 0;
     width: 40%;
-    height: 15em;
+    height: 16em;
     width: 26em;
     right: 0;
     padding: 2.5em 1.5625em; }
@@ -668,6 +668,10 @@ footer {
   .in-the-media .mediaItem .link {
     position: absolute;
     visibility: hidden;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
     bottom: 1.5em;
     right: 1.5em;
     border-color: white;
@@ -1151,7 +1155,6 @@ footer {
     position: absolute;
     top: 1em;
     left: 1em;
-    text-transform: uppercase;
     font-family: "Fjalla One", sans-serif;
     color: #fff;
     font-size: 1.2em;
@@ -1162,8 +1165,14 @@ footer {
     bottom: 3%;
     right: 5%;
     display: none;
-    border-color: white;
-    color: #fff; }
+    border-color: #fff;
+    color: #fff;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
+  .project .workplaceFilmStrip .box a:hover {
+    border-color: #f60112; }
 .project .workplaceFilmStrip .box:hover h5, .project .workplaceFilmStrip .box:hover a {
   display: block; }
 .project .workplaceFilmStrip .box:hover .cover {

@@ -1,6 +1,9 @@
 /** 
 1. cd /Applications/MAMP/htdocs/brdesign/addons/shared_addons/themes/brd 
 2. sass --watch sass:css  
+
+to push to brd.afs35mm.com:
+git ftp push -vv -u afs35mm.com -p - ftp://afs35mm.com/domains/brd.afs35mm.com/html
 **/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126

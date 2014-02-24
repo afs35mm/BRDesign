@@ -118,10 +118,10 @@ body {
     -o-transition: all 0.3s;
     transition: all 0.3s; }
   #outerWrap nav {
-    -webkit-transition: margin 0.3s;
-    -moz-transition: margin 0.3s;
-    -o-transition: margin 0.3s;
-    transition: margin 0.3s; }
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
   #outerWrap #outer-content {
     left: 0; }
   #outerWrap footer {
@@ -180,9 +180,11 @@ nav {
   nav.fixed {
     position: fixed;
     top: 0;
+    right: 0;
     margin-right: 0; }
     .mobileOpen nav.fixed {
-      margin-right: 45%; }
+      right: 45% !important;
+      background: red; }
 
 ul.social {
   float: right;

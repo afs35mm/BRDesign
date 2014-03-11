@@ -45,9 +45,7 @@
 				top:0;left:0;right:0;bottom:0;
 				background:#3e3e3e;
 				opacity:0;
-				transition: opacity .25s ease-in-out;
-			   	-moz-transition: opacity .25s ease-in-out;
-			   	-webkit-transition: opacity .25s ease-in-out;
+				@include transition-all
 			}
 			h5{
 				position:absolute;
@@ -111,7 +109,7 @@
 				margin-right:2%;
 			}
 		}
-		.box:hover{
+		.box a:hover{
 			h5, a{
 				display:block;
 			}
@@ -166,7 +164,7 @@
 				@include transition-all
 			}
 		}
-		.box:hover{
+		.box a:hover{
 			h5, a{
 				display:block;
 			}
@@ -324,7 +322,7 @@
 					@include transition-all
 				}
 			}
-			.box:hover{
+			.box a:hover{
 				h5, a{
 					display:block;
 				}

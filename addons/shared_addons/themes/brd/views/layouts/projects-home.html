@@ -22,12 +22,14 @@
 								<li data-sliderIndex="{{count}}">
 							{{endif}}
 								<div class="box item{{count}}">
-									<img src="http://s3.amazonaws.com/brdesign_project-gird/{{project_grid_image:filename}}" alt="">
-									<div class="cover"></div>
 									<a href="projects/{{ project_grid_relative_link }}">
+										<img src="http://s3.amazonaws.com/brdesign_project-gird/{{project_grid_image:filename}}" alt="">
+										<div class="cover"></div>
 										<h5>{{project_grid_text}}</h5>
-				 					</a>
-				 					<a class="link roundedButton" href="projects/{{ project_grid_relative_link }}">Direct Link</a>
+									</a>
+									<!-- <a href="projects/{{ project_grid_relative_link }}"> -->
+				 					<!-- </a> -->
+				 					<!-- <a class="link roundedButton" href="projects/{{ project_grid_relative_link }}">Direct Link</a> -->
 								</div>
 							{{if count == 1 || 
 								 count == 5 || 
@@ -54,12 +56,18 @@
 								<li class="gridMobile cf">
 							{{endif}} 	
 								<div class="box item{{count}}">
-									<img src="http://s3.amazonaws.com/brdesign_project-gird/{{project_grid_image:filename}}" alt="">
-									<div class="cover"></div>
-									<a href="projects/{{ project_grid_relative_link }}">
+									
+									<a href="projects/{{ project_grid_relative_link }}">	
+
+										<img src="http://s3.amazonaws.com/brdesign_project-gird/{{project_grid_image:filename}}" alt="">
+										<div class="cover"></div>
 										<h5>{{project_grid_text}}</h5>
-				 					</a>
-				 					<a class="link roundedButton" href="projects/{{ project_grid_relative_link }}">Direct Link</a>
+
+									</a>
+									<!-- <a href="projects/{{ project_grid_relative_link }}"> -->
+										
+				 					<!-- </a> -->
+				 					<!-- <a class="link roundedButton" href="projects/{{ project_grid_relative_link }}">Direct Link</a> -->
 								</div>
 							{{if count % 5 == 0}}
 								</li>
@@ -76,12 +84,14 @@
 				{{ streams:cycle stream="project_grid-owners" order_by="ordering_count" }}
 				    {{ entries }}
 				 		<div class="box item{{count}}">
-				 			<img src="http://s3.amazonaws.com/brdesign_project-gird/{{project_grid_image:filename}}" alt="">
-				 			<div class="cover"></div>
-				 			<a href="projects/{{ project_grid_relative_link }}">
-				 				<h5>{{project_grid_text}}</h5>
+							<a href="projects/{{ project_grid_relative_link }}">
+					 			<img src="http://s3.amazonaws.com/brdesign_project-gird/{{project_grid_image:filename}}" alt="">
+					 			<div class="cover"></div>
+					 			<h5>{{project_grid_text}}</h5>
 				 			</a>
-				 			<a class="link roundedButton" href="projects/{{ project_grid_relative_link }}">Direct Link</a>
+				 			<!-- <a href="projects/{{ project_grid_relative_link }}"> -->
+				 			<!-- </a> -->
+				 			<!-- <a class="link roundedButton" href="projects/{{ project_grid_relative_link }}">Direct Link</a> -->
 				 		</div>
 				    {{ /entries }}
 				{{ /streams:cycle }}

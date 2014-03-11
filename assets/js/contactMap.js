@@ -27,7 +27,7 @@ BRD.contactMap = (function(){
 		var map = new google.maps.Map(map_canvas, map_options)
 
 		google.maps.event.addDomListener(window, 'load', init);
-		var contentString = '<span style="font-size: 18px; padding-bottom:15px; font-weight:800;">BRDesign</span><br><br>233 Spring St<br>New York, NY 10013';
+		var contentString = '<span style="font-size: 18px; padding-bottom:15px; padding-right: 400px; font-weight:800;">BRDesign</span><br><br>233 Spring St<br>New York, NY 10013';
 
 		var infowindow = new google.maps.InfoWindow({
 			content: contentString

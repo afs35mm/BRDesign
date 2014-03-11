@@ -16,7 +16,7 @@
                     </div>
                     <div class="body preview">
                         {{ preview }}
-                        <p class="readMore" ><a class="more" href="{{ url }}">Read More...</a></p>
+                        <p class="readMore" ><a class="more" href="{{ url }}">&nbsp;Read More...</a></p>
                     </div>
                 </div>
             {{ /posts }}

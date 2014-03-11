@@ -375,7 +375,7 @@ footer {
   width: 48%; }
   .home #projects > div img {
     width: 100%; }
-  .home #projects > div a {
+  .home #projects > div a.copy {
     display: block;
     color: #444444;
     text-transform: uppercase;
@@ -1244,9 +1244,10 @@ footer {
       bottom: 0;
       background: #3e3e3e;
       opacity: 0;
-      transition: opacity .25s ease-in-out;
-      -moz-transition: opacity .25s ease-in-out;
-      -webkit-transition: opacity .25s ease-in-out; }
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
     .projectsHome .grid .box h5 {
       position: absolute;
       top: 1em;
@@ -1294,9 +1295,9 @@ footer {
     .projectsHome .grid .box.item5 {
       width: 23%;
       margin-right: 2%; }
-  .projectsHome .grid .box:hover h5, .projectsHome .grid .box:hover a {
+  .projectsHome .grid .box a:hover h5, .projectsHome .grid .box a:hover a {
     display: block; }
-  .projectsHome .grid .box:hover .cover {
+  .projectsHome .grid .box a:hover .cover {
     opacity: 0.9; }
   .projectsHome .projectDesktopSlider {
     /*
@@ -1360,9 +1361,9 @@ footer {
         -moz-transition: all 0.3s;
         -o-transition: all 0.3s;
         transition: all 0.3s; }
-    .projectsHome .projectDesktopSlider .box:hover h5, .projectsHome .projectDesktopSlider .box:hover a {
+    .projectsHome .projectDesktopSlider .box a:hover h5, .projectsHome .projectDesktopSlider .box a:hover a {
       display: block; }
-    .projectsHome .projectDesktopSlider .box:hover .cover {
+    .projectsHome .projectDesktopSlider .box a:hover .cover {
       opacity: 0.9; }
     .projectsHome .projectDesktopSlider .item1, .projectsHome .projectDesktopSlider .item6, .projectsHome .projectDesktopSlider .item11, .projectsHome .projectDesktopSlider .item16, .projectsHome .projectDesktopSlider .item21 {
       width: 96%; }
@@ -1463,9 +1464,9 @@ footer {
         -moz-transition: all 0.3s;
         -o-transition: all 0.3s;
         transition: all 0.3s; }
-    .projectsHome .projectMobileSlider .gridMobile .box:hover h5, .projectsHome .projectMobileSlider .gridMobile .box:hover a {
+    .projectsHome .projectMobileSlider .gridMobile .box a:hover h5, .projectsHome .projectMobileSlider .gridMobile .box a:hover a {
       display: block; }
-    .projectsHome .projectMobileSlider .gridMobile .box:hover .cover {
+    .projectsHome .projectMobileSlider .gridMobile .box a:hover .cover {
       opacity: 0.9; }
 
 @media only screen and (max-width: 721px) {

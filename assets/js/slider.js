@@ -11,7 +11,6 @@ BRD.slider = (function(){
 			$desktopSlider: $('#desktopSlider'),
 			$mobileSlider: $('#mobileSlider'),
 			hero: {
-				iAutoRotate: 2000,
 				bUseThumbnails: false,
 				fAspectRatio: 2.105263,
 				iAutoRotate: 3000
@@ -19,12 +18,14 @@ BRD.slider = (function(){
 			homeBackground: {
 				fAspectRatio: 2.24168,
 				BtnPaginate:'none',
-				bUseThumbnails: false
+				bUseThumbnails: false,
+				iAutoRotate: 3000
 			},
 			homeForeground: {
 				fAspectRatio: 3,
 				BtnPaginate:'none',
-				paginateItems:'circles',
+				paginateItems:'circles', 
+				iAutoRotate: 3000
 				//fAspectRatio: 1.8,
 			},
 			projectDesktopSlider: {

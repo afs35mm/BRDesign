@@ -63,7 +63,7 @@ nav{
 	&.fixed{
 		position:fixed;
 		top:0;
-		right:0;
+		//right:0;
 		margin-right:0;
 		.mobileOpen &{
 			right: 45% !important;

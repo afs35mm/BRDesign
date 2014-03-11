@@ -69,7 +69,7 @@
 			</div>
 			<div id="bottom" class="cf">
 				<div id="mediaItems" class="cf">
-					{{ streams:cycle stream="media_stream" limit="3" }}
+					{{ streams:cycle stream="homepage_featured_media" limit="3" order_by="ordering_count" }}
 					    {{ entries }}
 						    <img src="http://s3.amazonaws.com/brdesign-media/{{media_image:filename}}" alt="">
 					    {{ /entries }}

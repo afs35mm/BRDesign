@@ -1,13 +1,15 @@
 {{ theme:partial name="header" }}  
 		<div id="home">  
-		<h3>People that Listen.<br> Interiors that work.</h3>	
+		<h3>People who Listen.<br> Interiors that work.</h3>	
 			<div class="BRD-ui-module carousel heroSlider" data-module="slider" data-slider="hero">
 			    <div class="mask">
 			        <ul>
 			             {{ streams:cycle stream="homepage_hero" order_by="ordering_count" }}
 						    {{ entries }}
 						 	<li>
-						 		<img src="http://s3.amazonaws.com/brdesign_homepage-hero/{{homepage_hero_image:filename}}" alt="">
+						 		<a href="{{homepage_hero_link}}">
+						 			<img src="http://s3.amazonaws.com/brdesign_homepage-hero/{{homepage_hero_image:filename}}" alt="">
+						 		</a>
 						 	</li>
 						    {{ /entries }}
 						{{ /streams:cycle }}

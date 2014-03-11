@@ -154,7 +154,7 @@ nav {
   nav ul#nav {
     float: right;
     display: block;
-    margin-bottom: 2em; }
+    margin-bottom: 0.75em; }
     nav ul#nav li {
       padding: 2.5em 1.4em;
       display: block;
@@ -653,7 +653,8 @@ footer {
   display: inline-block;
   margin-right: 2.2%;
   width: 23%;
-  position: relative; }
+  position: relative;
+  padding-bottom: 2.875em; }
   .in-the-media .mediaItem .imgWrapper {
     position: relative;
     overflow: hidden; }

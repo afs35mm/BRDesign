@@ -1508,3 +1508,8 @@ footer {
     display: none; }
   .projectsHome .projectMobileSlider {
     display: block; } }
+/**
+THIS LINE IS FOR WHEN OWNERS/DEV GETS DOUBLE CAROUSEL FUNCTIONALITY
+**/
+.owners .btnPaginate {
+  background: red; }

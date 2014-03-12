@@ -51,18 +51,22 @@
 			</div>
 			{{ if project_choice:value ===  "owners-developers" }}
 				<h4>Owners &amp; Developers Projects</h4>
-				<div class="filmstrip">
-				{{ streams:cycle stream="project_grid-owners" order_by="ordering_count" }}
-				    {{ entries }}
-			 			<a href="{{ project_grid_relative_link }}"></a>	
-			 				<div class="item">
-				 			<img src="http://s3.amazonaws.com/brdesign_project-gird/{{project_grid_image:filename}}" alt="">
-				 			<div class="cover"></div>
-				 			<h5>{{project_grid_text}}</h5>
-				 			</div>
-				 		</a>
-				    {{ /entries }} 
-				{{ /streams:cycle }}
+
+				<div class="BRD-ui-module carousel workplaceFilmStrip" data-module="slider" data-slider="workplaceFilmStrip">
+				    <div class="mask">
+				        <ul>
+						 	{{ streams:cycle stream="project_grid-owners" order_by="ordering_count" }}
+							<li>
+								<a href="{{ project_grid_relative_link }}">
+									<div class="box item{{count}}">
+									<img src="http://s3.amazonaws.com/brdesign_project-gird/{{project_grid_image:filename}}" alt="">
+									<div class="cover"></div>
+									<h5>{{project_grid_text}}</h5>
+									</div>
+								</a>
+							</li>
+						{{ /streams:cycle }}
+				    </div>
 				</div>
 			
 			{{ elseif project_choice:value ===  "workplace" }}

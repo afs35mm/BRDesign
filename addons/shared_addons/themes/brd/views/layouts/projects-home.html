@@ -6,11 +6,11 @@
 			
 			<h4>{{variables:workplace}}</h4>
 			<a name="workplace"></a>
-			<div id="desktopSlider" class="BRD-ui-module carousel projectDesktopSlider" data-module="slider" data-slider="projectDesktopSlider">
+			<!--WORKPLACE DESKTOP SLIDER-->
+			<div class="BRD-ui-module carousel projectDesktopSlider" data-module="slider" data-slider="projectDesktopSlider">
 			    <div class="mask">
 			        <ul>
 					 	{{ streams:cycle stream="project_grid_workplace" order_by="ordering_count" }}
-							
 							{{if count == 1 || 
 								 count == 2 || 
 								 count == 6 || 
@@ -23,14 +23,11 @@
 								<li data-sliderIndex="{{count}}">
 							{{endif}}
 								<div class="box item{{count}}">
-									<a href="projects/{{ project_grid_relative_link }}">
+									<a href="{{ project_grid_relative_link }}">
 										<img src="http://s3.amazonaws.com/brdesign_project-gird/{{project_grid_image:filename}}" alt="">
 										<div class="cover"></div>
 										<h5>{{project_grid_text}}</h5>
 									</a>
-									<!-- <a href="projects/{{ project_grid_relative_link }}"> -->
-				 					<!-- </a> -->
-				 					<!-- <a class="link roundedButton" href="projects/{{ project_grid_relative_link }}">Direct Link</a> -->
 								</div>
 							{{if count == 1 || 
 								 count == 5 || 
@@ -43,38 +40,30 @@
 							}}
 								</li>
 							{{endif}}
-							
 						{{ /streams:cycle }}
 			        </ul>
 			    </div>
 			</div> 
-
-			<div id="mobileSlider" class="BRD-ui-module carousel projectMobileSlider" data-module="slider" data-slider="projectMobileSlider">
+			<!--WORKPLACE MOBILE SLIDER-->
+			<div class="BRD-ui-module carousel projectMobileSlider" data-module="slider" data-slider="projectMobileSlider">
 			    <div class="mask">
 			        <ul>
 						{{ streams:cycle stream="project_grid_workplace" order_by="ordering_count" }}							
-							
 							{{if count % 5 == 1}}
 								<li class="gridMobile cf">
 							{{endif}} 	
 								<div class="box item{{count}}">
 									
-									<a href="projects/{{ project_grid_relative_link }}">	
+									<a href="{{ project_grid_relative_link }}">	
 
 										<img src="http://s3.amazonaws.com/brdesign_project-gird/{{project_grid_image:filename}}" alt="">
 										<div class="cover"></div>
 										<h5>{{project_grid_text}}</h5>
-
 									</a>
-									<!-- <a href="projects/{{ project_grid_relative_link }}"> -->
-										
-				 					<!-- </a> -->
-				 					<!-- <a class="link roundedButton" href="projects/{{ project_grid_relative_link }}">Direct Link</a> -->
 								</div>
 							{{if count % 5 == 0}}
 								</li>
 							{{endif}} 	
-							
 						{{ /streams:cycle }}
 			        </ul>
 			    </div>
@@ -82,21 +71,67 @@
 
 			<h4 class="owners">{{variables:owners}}</h4>
 			<a name="owners"></a>
-			<div class="grid cf">
-				{{ streams:cycle stream="project_grid-owners" order_by="ordering_count" }}
-				    {{ entries }}
-				 		<div class="box item{{count}}">
-							<a href="projects/{{ project_grid_relative_link }}">
-					 			<img src="http://s3.amazonaws.com/brdesign_project-gird/{{project_grid_image:filename}}" alt="">
-					 			<div class="cover"></div>
-					 			<h5>{{project_grid_text}}</h5>
-				 			</a>
-				 			<!-- <a href="projects/{{ project_grid_relative_link }}"> -->
-				 			<!-- </a> -->
-				 			<!-- <a class="link roundedButton" href="projects/{{ project_grid_relative_link }}">Direct Link</a> -->
-				 		</div>
-				    {{ /entries }}
-				{{ /streams:cycle }}
-			</div>
+			<!--OWNERS/DEV DESKTOP SLIDER-->
+			<div class="BRD-ui-module carousel projectDesktopSlider" data-module="slider" data-slider="projectDesktopSlider">
+			    <div class="mask">
+			        <ul>
+					 	{{ streams:cycle stream="project_grid-owners" order_by="ordering_count" }}
+							{{if count == 1 || 
+								 count == 2 || 
+								 count == 6 || 
+								 count == 7 || 
+								 count == 11 || 
+								 count == 12 || 
+								 count == 16 ||
+								 count == 17
+							}} 
+								<li data-sliderIndex="{{count}}">
+							{{endif}}
+								<div class="box item{{count}}">
+									<a href="{{ project_grid_relative_link }}">
+										<img src="http://s3.amazonaws.com/brdesign_project-gird/{{project_grid_image:filename}}" alt="">
+										<div class="cover"></div>
+										<h5>{{project_grid_text}}</h5>
+									</a>
+								</div>
+							{{if count == 1 || 
+								 count == 5 || 
+								 count == 6 || 
+								 count == 10 || 
+								 count == 11 || 
+								 count == 15 || 
+								 count == 16 ||
+								 count == 20
+							}}
+								</li>
+							{{endif}}
+						{{ /streams:cycle }}
+			        </ul>
+			    </div>
+			</div> 
+			<!--OWNERS/DEV MOBILE SLIDER-->
+			<div class="BRD-ui-module carousel projectMobileSlider" data-module="slider" data-slider="projectMobileSlider">
+			    <div class="mask">
+			        <ul>
+						{{ streams:cycle stream="project_grid-owners" order_by="ordering_count" }}							
+							{{if count % 5 == 1}}
+								<li class="gridMobile cf">
+							{{endif}} 	
+								<div class="box item{{count}}">
+									
+									<a href="{{ project_grid_relative_link }}">	
+
+										<img src="http://s3.amazonaws.com/brdesign_project-gird/{{project_grid_image:filename}}" alt="">
+										<div class="cover"></div>
+										<h5>{{project_grid_text}}</h5>
+									</a>
+								</div>
+							{{if count % 5 == 0}}
+								</li>
+							{{endif}} 	
+						{{ /streams:cycle }}
+			        </ul>
+			    </div>
+			</div> 
 		</div>
 {{ theme:partial name="footer" }}

@@ -240,7 +240,10 @@ footer {
 @media (max-width: 860px) {
   nav ul#nav li {
     padding-left: .68em;
-    padding-right: .68em; } }
+    padding-right: .68em; }
+
+  nav.fixed {
+    right: 0; } }
 @media (max-width: 721px) {
   footer ul.social {
     padding: 3.5em 0 0 0em; }

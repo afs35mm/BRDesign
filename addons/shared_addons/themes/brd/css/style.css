@@ -208,6 +208,12 @@ ul.social {
     ul.social li .pi {
       background: url("/assets/img/pi.png") no-repeat;
       background-position: 0 0; }
+    ul.social li .ig {
+      background: url("/assets/img/ig.png") no-repeat;
+      background-position: 0 0; }
+    ul.social li .tw {
+      background: url("/assets/img/tw.png") no-repeat;
+      background-position: 0 0; }
 
 footer {
   background: url("/assets/img/divider.jpg") center top no-repeat;
@@ -224,7 +230,7 @@ footer {
   footer ul.social {
     margin: 0 auto;
     position: absolute;
-    width: 121px;
+    width: 170px;
     left: 0;
     right: 0; }
   footer h4 {
@@ -238,7 +244,7 @@ footer {
     padding-right: .68em; } }
 @media (max-width: 721px) {
   footer ul.social {
-    padding: 4.5em 0 0 4em; }
+    padding: 3.5em 0 0 0em; }
 
   nav {
     height: 7em; }
@@ -293,16 +299,22 @@ footer {
       width: 109%;
       height: auto; }
   .home #doubleSlider #foregroundSlider {
-    margin-top: 8%;
+    margin-top: 6%;
     background: white;
     background: rgba(255, 255, 255, 0.8);
     position: absolute !important;
     top: 0;
     width: 40%;
-    height: 16em;
+    height: 20em;
     width: 26em;
     right: 0;
-    padding: 2.5em 1.5625em; }
+    padding: 1.6em 1.5625em; }
+    .home #doubleSlider #foregroundSlider h5 {
+      color: #444444;
+      font-family: "Fjalla One", sans-serif;
+      text-transform: uppercase;
+      font-size: 1em;
+      padding-bottom: .8em; }
     .home #doubleSlider #foregroundSlider .carousel,
     .home #doubleSlider #foregroundSlider .carousel .mask {
       width: 500px; }

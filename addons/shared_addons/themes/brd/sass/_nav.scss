@@ -101,6 +101,14 @@ ul.social{
 			background: url('/assets/img/pi.png') no-repeat;	
 			background-position: 0 0;
 		}
+		.ig{
+			background: url('/assets/img/ig.png') no-repeat;	
+			background-position: 0 0;
+		}
+		.tw{
+			background: url('/assets/img/tw.png') no-repeat;	
+			background-position: 0 0;
+		}
 	}
 }
 
@@ -121,7 +129,7 @@ footer{
 	ul.social{
 		margin: 0 auto;
 		position: absolute;
-		width: 121px;
+		width: 170px;
 		left: 0;
 		right: 0;
 	}
@@ -142,7 +150,7 @@ footer{
 
 @media (max-width: $small) {
 	footer ul.social{
-		padding:4.5em 0 0 4em;
+		padding:3.5em 0 0 0em;
 	}
 	nav{
 		// &.fixed{

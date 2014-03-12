@@ -182,8 +182,7 @@ nav {
     top: 0;
     margin-right: 0; }
     .mobileOpen nav.fixed {
-      right: 45% !important;
-      background: red; }
+      right: 45% !important; }
 
 ul.social {
   float: right;

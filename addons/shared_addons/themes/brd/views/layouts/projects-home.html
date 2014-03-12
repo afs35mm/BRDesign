@@ -6,7 +6,7 @@
 			
 			<h4>{{variables:workplace}}</h4>
 			<a name="workplace"></a>
-			<!--WORKPLACE DESKTOP SLIDER-->
+			<!--WORKPLACE DESKTOP CAROUSEL-->
 			<div class="BRD-ui-module carousel projectDesktopSlider" data-module="slider" data-slider="projectDesktopSlider">
 			    <div class="mask">
 			        <ul>
@@ -44,11 +44,12 @@
 			        </ul>
 			    </div>
 			</div> 
-			<!--WORKPLACE MOBILE SLIDER-->
+			<!-- WORKPLACE MOBILE CAROUSEL-->
 			<div class="BRD-ui-module carousel projectMobileSlider" data-module="slider" data-slider="projectMobileSlider">
 			    <div class="mask">
 			        <ul>
 						{{ streams:cycle stream="project_grid_workplace" order_by="ordering_count" }}							
+							
 							{{if count % 5 == 1}}
 								<li class="gridMobile cf">
 							{{endif}} 	
@@ -59,19 +60,21 @@
 										<img src="http://s3.amazonaws.com/brdesign_project-gird/{{project_grid_image:filename}}" alt="">
 										<div class="cover"></div>
 										<h5>{{project_grid_text}}</h5>
+
 									</a>
 								</div>
 							{{if count % 5 == 0}}
 								</li>
 							{{endif}} 	
+							
 						{{ /streams:cycle }}
 			        </ul>
 			    </div>
 			</div> 
-			<a name="owners"></a>
-			<h4 class="owners">{{variables:owners}}</h4>
-			<!--OWNERS/DEV DESKTOP SLIDER-->
-			<div class="BRD-ui-module carousel projectDesktopSlider" data-module="slider" data-slider="projectDesktopSlider">
+
+			<!-- OWNERS DEVELOPERS DESKTP CAROUSEL
+			UNCOMMENT WHEN MORE THEN 5 ITEMS ARE IN project_grid-owners STREAM
+			<div class="BRD-ui-module carousel owners projectDesktopSlider" data-module="slider" data-slider="projectDesktopSlider">
 			    <div class="mask">
 			        <ul>
 					 	{{ streams:cycle stream="project_grid-owners" order_by="ordering_count" }}
@@ -108,11 +111,14 @@
 			        </ul>
 			    </div>
 			</div> 
-			<!--OWNERS/DEV MOBILE SLIDER-->
-			<div class="BRD-ui-module carousel projectMobileSlider" data-module="slider" data-slider="projectMobileSlider">
+			-->
+			<!-- OWNERS DEVELOPERS MOBILE CAROUSEL
+			UNCOMMENT WHEN MORE THEN 5 ITEMS ARE IN project_grid-owners STREAM
+			<div class="BRD-ui-module carousel owners projectMobileSlider" data-module="slider" data-slider="projectMobileSlider">
 			    <div class="mask">
 			        <ul>
 						{{ streams:cycle stream="project_grid-owners" order_by="ordering_count" }}							
+							
 							{{if count % 5 == 1}}
 								<li class="gridMobile cf">
 							{{endif}} 	
@@ -123,14 +129,34 @@
 										<img src="http://s3.amazonaws.com/brdesign_project-gird/{{project_grid_image:filename}}" alt="">
 										<div class="cover"></div>
 										<h5>{{project_grid_text}}</h5>
+
 									</a>
 								</div>
 							{{if count % 5 == 0}}
 								</li>
 							{{endif}} 	
+							
 						{{ /streams:cycle }}
 			        </ul>
 			    </div>
 			</div> 
+			-->
+
+
+			<h4 class="owners">{{variables:owners}}</h4>
+			<a name="owners"></a>
+			<div class="grid cf">
+				{{ streams:cycle stream="project_grid-owners" order_by="ordering_count" }}
+				    {{ entries }}
+				 		<div class="box item{{count}}">
+							<a href="projects/{{ project_grid_relative_link }}">
+					 			<img src="http://s3.amazonaws.com/brdesign_project-gird/{{project_grid_image:filename}}" alt="">
+					 			<div class="cover"></div>
+					 			<h5>{{project_grid_text}}</h5>
+				 			</a>
+				 		</div>
+				    {{ /entries }}
+				{{ /streams:cycle }}
+			</div>
 		</div>
 {{ theme:partial name="footer" }}

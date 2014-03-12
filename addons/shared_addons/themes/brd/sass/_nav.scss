@@ -145,6 +145,11 @@ footer{
   		padding-left: .68em;
   		padding-right: .68em;
   	}
+  nav{
+  	&.fixed{
+	  	right:0;
+	  }	
+  }
 }
 
 @media (max-width: $small) {

@@ -1386,16 +1386,16 @@ footer {
     .projectsHome .projectDesktopSlider .item12, .projectsHome .projectDesktopSlider .item13, .projectsHome .projectDesktopSlider .item14, .projectsHome .projectDesktopSlider .item15 {
       width: 46%;
       float: left; }
-    .projectsHome .projectDesktopSlider .item17, .projectsHome .projectDesktopSlider .item19 {
+    .projectsHome .projectDesktopSlider .item12, .projectsHome .projectDesktopSlider .item14 {
       margin: 0 4% 0 0%; }
-    .projectsHome .projectDesktopSlider .item17, .projectsHome .projectDesktopSlider .item18 {
+    .projectsHome .projectDesktopSlider .item12, .projectsHome .projectDesktopSlider .item13 {
       margin-bottom: 4%; }
     .projectsHome .projectDesktopSlider .item17, .projectsHome .projectDesktopSlider .item18, .projectsHome .projectDesktopSlider .item19, .projectsHome .projectDesktopSlider .item20 {
       width: 46%;
       float: left; }
-    .projectsHome .projectDesktopSlider .item12, .projectsHome .projectDesktopSlider .item14 {
+    .projectsHome .projectDesktopSlider .item17, .projectsHome .projectDesktopSlider .item19 {
       margin: 0 4% 0 0%; }
-    .projectsHome .projectDesktopSlider .item12, .projectsHome .projectDesktopSlider .item13 {
+    .projectsHome .projectDesktopSlider .item17, .projectsHome .projectDesktopSlider .item18 {
       margin-bottom: 4%; }
   .projectsHome .projectMobileSlider {
     display: none; }

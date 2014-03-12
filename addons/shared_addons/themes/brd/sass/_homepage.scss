@@ -20,16 +20,23 @@
 			}
 		}
 		#foregroundSlider{
-			margin-top: 8%;
+			h5{
+				color:$drk-grey;
+				font-family: $fjalla;
+				text-transform: uppercase;
+				font-size:1em;
+				padding-bottom:.8em;
+			}
+			margin-top: 6%;
 			background: rgb(255, 255, 255);
 			background: rgba(255, 255, 255, 0.8);
 			position:absolute !important;
 			top:0;
 			width: 40%;
-			height: 16em;
+			height: 20em;
 			width:26em;
 			right: 0;
-			padding: 2.5em 1.5625em;
+			padding: 1.6em 1.5625em;
 			.carousel,
 			.carousel .mask {
 				width: 500px;

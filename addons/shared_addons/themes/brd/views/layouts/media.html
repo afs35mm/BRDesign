@@ -4,11 +4,13 @@
 			{{ streams:cycle stream="media_stream" order_by="ordering_count" }}
 			    {{ entries }}
 			 		<div class="mediaItem number{{id}}">
-				        <div class="imgWrapper">
-				        	<img src="http://s3.amazonaws.com/brdesign-media/{{media_image:filename}}" alt="">
-				        	<div class="imgCover"></div>
-				        	<a target="_blank" class="link roundedButton" href="{{ media_link }}">Direct Link</a>
-				        </div>
+				        <a target="_blank" href="{{ media_link }}">
+					        <div class="imgWrapper">
+					        	<img src="http://s3.amazonaws.com/brdesign-media/{{media_image:filename}}" alt="">
+					        	<div class="imgCover"></div>
+					        	<!-- <a target="_blank" class="link roundedButton" href="{{ media_link }}">Direct Link</a> -->
+					        </div>
+					    </a>
 				        <!-- <h5 class="blurb">{{ media_blurb }}</h5> -->
 			 		</div>
 			    {{ /entries }}

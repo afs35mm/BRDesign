@@ -684,6 +684,19 @@ footer {
     -webkit-transition: opacity .25s ease-in-out; }
   .in-the-media .mediaItem img {
     width: 100%; }
+  .in-the-media .mediaItem h4 {
+    position: absolute;
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    font-family: "Fjalla One", sans-serif;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    color: #fff;
+    font-size: 1.6em;
+    display: none; }
   .in-the-media .mediaItem .link {
     position: absolute;
     visibility: hidden;
@@ -708,6 +721,9 @@ footer {
   opacity: .9; }
 .in-the-media .mediaItem:hover .link {
   visibility: visible; }
+.in-the-media .mediaItem:hover h4 {
+  display: block;
+  color: #f60112; }
 
 .contact #main h3 {
   font-family: "Fjalla One", sans-serif;

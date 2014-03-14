@@ -28,6 +28,17 @@
 		img{
 			width:100%;
 		}
+		h4{
+			position:absolute;
+			position: absolute;
+			top: 1em;
+			left: 1em;
+			font-family: $fjalla;
+			@include transition-all; 
+			color: #fff;
+			font-size: 1.6em;
+			display:none;
+		}
 		.link{
 			position:absolute;
 			visibility:hidden;
@@ -56,6 +67,10 @@
 		}
 		.link{
 			visibility: visible;
+		}
+		h4{
+			display:block;
+			color:$red;
 		}
 	}
 }

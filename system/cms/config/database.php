@@ -53,10 +53,10 @@ $db[PYRO_DEVELOPMENT] = array(
 // Staging
 
 $db[PYRO_STAGING] = array(
-	'hostname'		=> 	'external-db.s131847.gridserver.com',
-	'username'		=> 	'db131847_afs35mm',
-	'password'		=> 	'Agway123',
-	'database'		=> 	'db131847_brd',
+	'hostname'		=> 	'mysql',
+	'username'		=> 	'BRDesign',
+	'password'		=> 	'233SpringSt',
+	'database'		=> 	'brd',
 	'dbdriver' 		=> 	'mysqli',
 	'dbprefix' 		=>	'', 
 	'pconnect' 		=>	FALSE,

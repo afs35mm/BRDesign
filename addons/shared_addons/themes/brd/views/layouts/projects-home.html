@@ -71,9 +71,10 @@
 			        </ul>
 			    </div>
 			</div> 
-
-			<!-- OWNERS DEVELOPERS DESKTP CAROUSEL
-			UNCOMMENT WHEN MORE THEN 5 ITEMS ARE IN project_grid-owners STREAM
+			<h4 class="owners">{{variables:owners}}</h4>
+			<a name="owners"></a>
+			<!--  OWNERS DEVELOPERS DESKTP CAROUSEL
+			UNCOMMENT WHEN MORE THEN 5 ITEMS ARE IN project_grid-owners STREAM -->
 			<div class="BRD-ui-module carousel owners projectDesktopSlider" data-module="slider" data-slider="projectDesktopSlider">
 			    <div class="mask">
 			        <ul>
@@ -111,9 +112,9 @@
 			        </ul>
 			    </div>
 			</div> 
-			-->
-			<!-- OWNERS DEVELOPERS MOBILE CAROUSEL
-			UNCOMMENT WHEN MORE THEN 5 ITEMS ARE IN project_grid-owners STREAM
+			
+			<!--  OWNERS DEVELOPERS MOBILE CAROUSEL
+			UNCOMMENT WHEN MORE THEN 5 ITEMS ARE IN project_grid-owners STREAM -->
 			<div class="BRD-ui-module carousel owners projectMobileSlider" data-module="slider" data-slider="projectMobileSlider">
 			    <div class="mask">
 			        <ul>
@@ -140,10 +141,10 @@
 			        </ul>
 			    </div>
 			</div> 
-			-->
+			
 
 
-			<h4 class="owners">{{variables:owners}}</h4>
+			<!-- <h4 class="owners">{{variables:owners}}</h4>
 			<a name="owners"></a>
 			<div class="grid cf">
 				{{ streams:cycle stream="project_grid-owners" order_by="ordering_count" }}
@@ -157,6 +158,6 @@
 				 		</div>
 				    {{ /entries }}
 				{{ /streams:cycle }}
-			</div>
+			</div> -->
 		</div>
 {{ theme:partial name="footer" }}

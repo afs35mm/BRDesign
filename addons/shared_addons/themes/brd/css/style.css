@@ -706,7 +706,7 @@ footer {
     transition: all 0.3s;
     bottom: 1.5em;
     right: 1.5em;
-    border-color: white;
+    border-color: #fff;
     color: #fff;
     width: 4.6em;
     text-align: center; }
@@ -784,7 +784,7 @@ footer {
   box-sizing: border-box; }
   .blog .blogSidebar #inner {
     display: block;
-    background: gainsboro;
+    background: #dcdcdc;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -811,7 +811,7 @@ footer {
       font-size: 0.7em; }
       .blog .blogSidebar #inner .textBox.searchBox {
         padding-left: 4em;
-        background: url(/assets/img/search-icon.jpg) no-repeat white;
+        background: url(/assets/img/search-icon.jpg) no-repeat #fff;
         background-position: 3% 50%; }
     .blog .blogSidebar #inner button[type="submit"], .blog .blogSidebar #inner input[type="submit"] {
       margin-top: .6em;
@@ -1003,7 +1003,7 @@ footer {
     font-size: 1.125em;
     line-height: 1.3em; }
 .blog #create-comment {
-  background: gainsboro;
+  background: #dcdcdc;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1157,7 +1157,7 @@ footer {
     bottom: 3%;
     right: 5%;
     display: none;
-    border-color: white;
+    border-color: #fff;
     color: #fff; }
 .project .filmstrip .item:hover h5, .project .filmstrip .item:hover a {
   display: block; }
@@ -1298,7 +1298,7 @@ footer {
       bottom: 3%;
       right: 5%;
       display: none;
-      border-color: white;
+      border-color: #fff;
       color: #fff;
       -webkit-transition: all 0.3s;
       -moz-transition: all 0.3s;
@@ -1385,7 +1385,7 @@ footer {
         bottom: 3%;
         right: 5%;
         display: none;
-        border-color: white;
+        border-color: #fff;
         color: #fff;
         -webkit-transition: all 0.3s;
         -moz-transition: all 0.3s;
@@ -1488,7 +1488,7 @@ footer {
         bottom: 3%;
         right: 5%;
         display: none;
-        border-color: white;
+        border-color: #fff;
         color: #fff;
         -webkit-transition: all 0.3s;
         -moz-transition: all 0.3s;
@@ -1528,6 +1528,7 @@ footer {
     display: block; } }
 /**
 THIS LINE IS FOR WHEN OWNERS/DEV GETS DOUBLE CAROUSEL FUNCTIONALITY
+.owners .btnPaginate{background:red;}
 **/
-.owners .btnPaginate {
-  background: red; }
+
+/*# sourceMappingURL=style.css.map */

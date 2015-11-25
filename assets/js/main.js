@@ -62,7 +62,6 @@ BRD.App = (function(){
 				var $el, moduleType, moduleInstance;
 				$el = $(this);
 				moduleType = $el.data('module');
-                console.log(moduleType);
 				moduleInstance = $el.data(moduleType);
                 // if(moduleInstance == 'projectHome'){
                 //     duplicateCarouselForMobile();

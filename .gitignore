@@ -3,3 +3,6 @@ system/cms/logs/
 uploads/ 
 addons/shared_addons/themes/brd/.sass-cache/
 .htaccess
+# Ignore docs files
+styles/.sass-cache
+styles/.sass-cache/*

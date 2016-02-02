@@ -149,8 +149,7 @@ nav {
     text-transform: uppercase; }
   nav #logo {
     display: block;
-    float: left;
-    margin-top: 1.7em; }
+    float: left; }
   nav ul#nav {
     float: right;
     display: block;

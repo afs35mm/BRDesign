@@ -25,6 +25,11 @@ nav{
 	#logo{
 		display:block;
 		float:left;
+    	padding-top: 12px;
+
+    	img {
+    		max-width: 75px;
+    	}
 	}
 	ul#nav{
 		float:right;

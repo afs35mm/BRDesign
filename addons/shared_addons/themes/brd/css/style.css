@@ -150,7 +150,7 @@ nav {
   nav #logo {
     display: block;
     float: left;
-    padding-top: 12px; }
+    padding-top: 1px; }
     nav #logo img {
       max-width: 75px; }
   nav ul#nav {
@@ -254,6 +254,8 @@ footer {
     height: 7em; }
     nav #inner {
       height: inherit; }
+    nav #logo {
+      padding-top: 3px; }
     nav ul#nav {
       position: fixed;
       top: 0;
@@ -285,6 +287,9 @@ footer {
       background: #444444; }
     nav .navMenuBtn span:first-child {
       margin-top: 0.875em; } }
+@media only screen and (min-width: 980px) {
+  nav #logo {
+    padding-top: 12px; } }
 .home .roundedButton {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
